@@ -1,12 +1,12 @@
-PWD /media/thebali/INFORMATION/Own/PEC---/ME 4 SEM/Research Paper 1/conference_format
+PWD /media/thebali/INFORMATION/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /media/thebali/INFORMATION/Own/PEC---/ME 4 SEM/Research Paper 1/conference_format/document.tex
-OUTPUT document.log
-INPUT IEEEtran.cls
-INPUT IEEEtran.cls
+INPUT /media/thebali/INFORMATION/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format/document.tex
+OUTPUT /media/thebali/INFORMATION/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format/document.log
+INPUT /media/thebali/INFORMATION/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format/IEEEtran.cls
+INPUT /media/thebali/INFORMATION/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format/IEEEtran.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
@@ -66,7 +66,7 @@ INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
 INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
@@ -85,13 +85,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/lettrine/lettrine.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/lettrine/lettrine.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/lettrine/lettrine.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/lettrine/lettrine.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
-INPUT document.aux
-INPUT document.aux
-OUTPUT document.aux
-INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
@@ -116,10 +111,20 @@ INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+INPUT /media/thebali/INFORMATION/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format/document.aux
+INPUT /media/thebali/INFORMATION/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format/document.aux
+OUTPUT /media/thebali/INFORMATION/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format/document.aux
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-OUTPUT document.pdf
+INPUT /media/thebali/INFORMATION/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format/images/history-use.png
+INPUT /media/thebali/INFORMATION/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format/images/history-use.png
+OUTPUT /media/thebali/INFORMATION/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format/document.pdf
+INPUT /media/thebali/INFORMATION/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format/images/history-use.png
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
@@ -135,31 +140,16 @@ INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmrc7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
-INPUT document.bbl
-INPUT document.bbl
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT document.aux
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /media/thebali/INFORMATION/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format/document.bbl
+INPUT /media/thebali/INFORMATION/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format/document.bbl
+INPUT /media/thebali/INFORMATION/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format/document.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
@@ -167,7 +157,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
