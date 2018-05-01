@@ -1,0 +1,191 @@
+\documentclass[12pt,a4paper,oldfontcommands]{memoir}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage[dvips]{graphicx}
+\usepackage{xcolor}
+\usepackage{times}
+
+% \usepackage[Rejne]{fncychap}
+% Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+
+
+\usepackage[
+breaklinks=true,colorlinks=true,
+%linkcolor=blue,urlcolor=blue,citecolor=blue,% PDF VIEW
+linkcolor=black,urlcolor=black,citecolor=black,% PRINT
+bookmarks=true,bookmarksopenlevel=2]{hyperref}
+
+\usepackage{geometry}
+% PDF VIEW
+% \geometry{total={210mm,297mm},
+% left=25mm,right=25mm,%
+% bindingoffset=0mm, top=25mm,bottom=25mm}
+% PRINT
+\geometry{total={210mm,297mm},
+left=20mm,right=20mm,
+bindingoffset=10mm, top=25mm,bottom=25mm}
+
+\OnehalfSpacing
+%\linespread{1.3}
+
+%% Custom Chapter Style
+\usepackage{calc,fourier}
+\usepackage[T1]{fontenc}
+\makeatletter
+\setlength\midchapskip{7pt}
+\makechapterstyle{VZ21}{
+    \renewcommand\chapnamefont{\Large\scshape}\renewcommand\chapnumfont{\Large\scshape\centering}\renewcommand\chaptitlefont{\huge\bfseries\centering}\renewcommand\printchaptertitle[1]{
+        \setlength\tabcolsep{7pt}% used as indentation on both sides
+        \settowidth\@tempdimc{\chaptitlefont ##1}%
+        \setlength\@tempdimc{\textwidth-\@tempdimc-2\tabcolsep}
+        \chaptitlefont
+        \ifdim\@tempdimc > 0pt\relax% one line
+        \begin{tabular}{c}
+            \toprule  ##1\\ \bottomrule
+        \end{tabular}
+        \else% two+ lines
+        \begin{tabular}{%
+            >{\chaptitlefont\arraybackslash}p{\textwidth-2\tabcolsep}}
+            \toprule ##1\\ \bottomrule
+        \end{tabular}
+        \fi
+    }
+}
+\makeatother
+
+
+
+
+
+%%% CHAPTER'S STYLE
+% \chapterstyle{bianchi}
+% \chapterstyle{ger}
+% \chapterstyle{madsen}
+% \chapterstyle{ell}
+% \chapterstyle{companion}
+% \chapterstyle{hansen}
+% \chapterstyle{verly}
+% \chapterstyle{crosshead}
+% \chapterstyle{veelo}
+% \chapterstyle{thatcher}
+% \chapterstyle{southall}
+\chapterstyle{VZ21}
+% \chapterstyle{VZ23}
+% \chapterstyle{VZ34}
+% \chapterstyle{VZ43}
+%%% STYLE OF SECTIONS, SUBSECTIONS, AND SUBSUBSECTIONS
+\setsecheadstyle{\Large\bfseries\sffamily\raggedright}
+\setsubsecheadstyle{\large\bfseries\sffamily\raggedright}
+\setsubsubsecheadstyle{\bfseries\sffamily\raggedright}
+
+
+%%% STYLE OF PAGES NUMBERING
+%\pagestyle{companion}\nouppercaseheads 
+%\pagestyle{headings}
+%\pagestyle{Ruled}
+\pagestyle{plain}
+\makepagestyle{plain}
+\makeevenfoot{plain}{\thepage}{}{}
+\makeoddfoot{plain}{}{}{\thepage}
+\makeevenhead{plain}{}{}{}
+\makeoddhead{plain}{}{}{}
+
+
+\maxsecnumdepth{subsection} % chapters, sections, and subsections are numbered
+\maxtocdepth{subsection} % chapters, sections, and subsections are in the Table of Contents
+
+
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+
+\begin{document}
+
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+%   TITLEPAGE
+%
+%   due to variety of titlepage schemes it is probably better to make titlepage manually
+%
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+\thispagestyle{empty}
+
+{%%%
+\sffamily
+\centering
+\Large
+
+~\vspace{\fill}
+
+{\huge 
+Personalised help in recommendations for Amazon Review Dataset
+}
+
+\vspace{2.5cm}
+
+{\LARGE
+Rahul Bali
+}
+
+\vspace{3.5cm}
+
+A thesis submitted in partial fulfillment for the\\
+degree of Doctor of Philosophy\\[1em]
+in the\\[1em]
+Faculty Name\\
+University Name
+
+\vspace{3.5cm}
+
+Supervisor: Prof. Shilpa Verma
+
+\vspace{\fill}
+
+May 2018
+
+%%%
+}%%%
+
+\cleardoublepage
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+
+\include{acknowledge}
+
+\include{abstract}
+
+\tableofcontents*
+
+\include{preface}
+
+\clearpage
+
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+
+
+\include{intro}
+
+\include{problem}
+
+\include{chap2}
+
+\include{chap3}
+
+\include{chap4}
+\include{chap5}
+
+
+\include{appendix}
+
+\include{results}
+
+\include{conclusion}
+
+
+
+
+
+\bibliographystyle{unsrt}
+\bibliography{refer}
+
+\end{document}
+
