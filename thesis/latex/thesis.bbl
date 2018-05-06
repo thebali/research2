@@ -1,9 +1,9 @@
 \begin{thebibliography}{1}
 
-\bibitem{Einstein}
-Albert Einstein.
-\newblock {Zur Elektrodynamik bewegter K{\"o}rper}. ({German}) [{On} the
-  electrodynamics of moving bodies].
-\newblock {\em Annalen der Physik}, 322(10):891--921, 1905.
+\bibitem{park2012literature}
+Deuk~Hee Park, Hyea~Kyeong Kim, Il~Young Choi, and Jae~Kyeong Kim.
+\newblock A literature review and classification of recommender systems
+  research.
+\newblock {\em Expert Systems with Applications}, 39(11):10059--10072, 2012.
 
 \end{thebibliography}
