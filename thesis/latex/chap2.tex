@@ -7,3 +7,15 @@ in algorithms for recommender systems within garment-based e-commerce. Here foll
 \section{Collaborative Filtering}
 The basic idea of collaborative filtering is to find information or patterns using collaborative techniques among multiple data sources. Data sources typically consist of users and items such as movies, songs etc. Within e-commerce, and this project specifically, those data sources mainly consist of users, and products that can be bought by these users. Finding these patterns is accomplished through collecting and analysing huge amounts of data on users’ behaviours and activities as well as items. Within e-commerce those activities and behaviours include but are not limited to purchases and click-able ad- vertisements. Collaborative filtering[18] is one of the most common general methods for recommender systems being applicable within several big use-areas. Collaborative Filtering is frequently used in social networks such as Facebook, LinkedIn, mySpace, Twitter etc to effectively recommend new friends, pages, groups as well as who to follow or what to like. But also applications such as Youtube, Reddit, Netflix etc make use of collaborative filtering. Collaborative filtering is viable in all applications where one can observe connections between a user and their registered friends or followers. But it is also widely used within e-commerce, where Amazon is a good example who popularised algorithms for item-to-item based collaborative filtering [21].
 
+Most Collaborative Filtering techniques can be expressed by the two general steps, Similarity Computation and Prediction Generation, described under 2.2
+
+\subsection{User based collaborative filtering}
+The main idea of recommender systems built on user-based collaborative filtering con- sists in computing the similarity between users’ {u,j} profiles, s uj . That is, computing a prediction for the probability of the user u liking a specific item i, consists in computing a rating based on all ratings made by users with similar profiles. All similar profiles contribute to this prediction depending on the similarity factor, s uj [34, 35, 36]. 
+
+Typically this can be reduced to the two general steps. 
+1. While observing a user’s actions in a system, look for similar users with equal behaviour- and activity-patterns. 
+2. Use the observations from step 1 to compute a prediction for the specified user. 
+
+See 2.2 for more information regarding Similarity Computation and Prediction Genera- tion techniques.
+
+
