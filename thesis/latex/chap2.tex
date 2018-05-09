@@ -27,4 +27,10 @@ This can typically be split into three steps:
 2. Compute the similarity, s i\textsubscript{1}, i\textsubscript{2}, of two items i 1 and i 2 by looking at co-rated pairs from different users.
 3. Generate predictions based on some prediction method, described under 2.2. Item-based collaborative filtering is a very common approach, often used together with algorithms for matrix factorization.
 
-
+\subsection{Matrix Factorization}
+Matrix factorization [39] is an algebraic operation consisting in factorising a matrix M,
+meaning finding the matrices M 1 ,M 2 ,...,M 3 such that when they are multiplied, the
+resulting matrix is M.
+In collaborative filtering based recommender systems this can be used as a rather simple
+and very intuitive algorithm for discovering latent features. By constructing a User-Item
+matrix M, where each index contains a rating r on an item i performed by a user u:
