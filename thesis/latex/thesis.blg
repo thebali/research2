@@ -12,46 +12,46 @@ A level-1 auxiliary file: chap5.aux
 A level-1 auxiliary file: appendix.aux
 A level-1 auxiliary file: results.aux
 A level-1 auxiliary file: conclusion.aux
-The style file: unsrt.bst
+The style file: plain.bst
 Database file #1: references.bib
 You've used 1 entry,
-            1791 wiz_defined-function locations,
-            465 strings with 3862 characters,
-and the built_in function-call counts, 322 in all, are:
-= -- 28
-> -- 14
+            2118 wiz_defined-function locations,
+            517 strings with 4337 characters,
+and the built_in function-call counts, 453 in all, are:
+= -- 43
+> -- 23
 < -- 0
-+ -- 5
-- -- 4
-* -- 30
-:= -- 56
++ -- 10
+- -- 8
+* -- 41
+:= -- 80
 add.period$ -- 3
 call.type$ -- 1
-change.case$ -- 1
+change.case$ -- 7
 chr.to.int$ -- 0
 cite$ -- 1
-duplicate$ -- 9
-empty$ -- 29
-format.name$ -- 4
-if$ -- 65
+duplicate$ -- 11
+empty$ -- 32
+format.name$ -- 8
+if$ -- 87
 int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 1
 newline$ -- 8
-num.names$ -- 1
-pop$ -- 1
+num.names$ -- 2
+pop$ -- 5
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 6
 quote$ -- 0
-skip$ -- 3
+skip$ -- 7
 stack$ -- 0
-substring$ -- 37
+substring$ -- 43
 swap$ -- 1
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 4
 warning$ -- 0
-while$ -- 3
+while$ -- 4
 width$ -- 2
 write$ -- 13

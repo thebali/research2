@@ -1,16 +1,29 @@
-\contentsline {chapter}{Acknowledgement}{3}{section*.1}
-\contentsline {chapter}{\chapternumberline {1}Introduction}{7}{chapter.1}
-\contentsline {section}{\numberline {1.1}Background}{7}{section.1.1}
-\contentsline {section}{\numberline {1.2}Methodology}{7}{section.1.2}
-\contentsline {section}{\numberline {1.3}Related Work}{8}{section.1.3}
-\contentsline {section}{\numberline {1.4}Scope}{8}{section.1.4}
-\contentsline {chapter}{\chapternumberline {2}Motivation}{11}{chapter.2}
-\contentsline {chapter}{\chapternumberline {3}Objective}{13}{chapter.3}
-\contentsline {chapter}{\chapternumberline {4}Background and Literature Review}{15}{chapter.4}
-\contentsline {chapter}{\chapternumberline {5}Reasons for Advantages and Disadvantages}{17}{chapter.5}
-\contentsline {appendix}{\chapternumberline {A}Additional}{19}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Results}{21}{appendix.B}
-\contentsline {section}{\numberline {B.1}Third section}{21}{section.B.1}
-\contentsline {section}{\numberline {B.2}Fourth section}{21}{section.B.2}
-\contentsline {appendix}{\chapternumberline {C}Conclusion and Future Work}{23}{appendix.C}
-\contentsline {chapter}{Bibliography}{25}{appendix*.4}
+\contentsline {chapter}{Acknowledgement}{4}{section*.1}
+\contentsline {chapter}{\chapternumberline {1}Introduction}{9}{chapter.1}
+\contentsline {section}{\numberline {1.1}Background}{9}{section.1.1}
+\contentsline {section}{\numberline {1.2}Methodology}{9}{section.1.2}
+\contentsline {section}{\numberline {1.3}Related Work}{9}{section.1.3}
+\contentsline {section}{\numberline {1.4}Scope}{10}{section.1.4}
+\contentsline {chapter}{\chapternumberline {2}Recommender System}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}Collaborative Filtering}{13}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}User based collaborative filtering}{14}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Item based collaborative filtering}{14}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Matrix Factorization}{14}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Similarity Calculation and Prediction Generation}{15}{section.2.2}
+\contentsline {section}{\numberline {2.3}Content Based Filtering}{16}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Selecting a (Learning) Model}{16}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Demographic Filtering}{16}{section.2.4}
+\contentsline {section}{\numberline {2.5}Other recommendations techniques}{17}{section.2.5}
+\contentsline {section}{\numberline {2.6}Hybrid Recommender Systems}{17}{section.2.6}
+\contentsline {section}{\numberline {2.7}Implementation Challenges in Recommender Systems}{18}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Grey/Black Sheep}{18}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Sparsity and Subjective Problems}{18}{subsection.2.7.2}
+\contentsline {chapter}{\chapternumberline {3}Objective}{47}{chapter.3}
+\contentsline {chapter}{\chapternumberline {4}Background and Literature Review}{49}{chapter.4}
+\contentsline {chapter}{\chapternumberline {5}Methodology}{51}{chapter.5}
+\contentsline {appendix}{\chapternumberline {A}Additional}{53}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Results}{55}{appendix.B}
+\contentsline {section}{\numberline {B.1}Third section}{55}{section.B.1}
+\contentsline {section}{\numberline {B.2}Fourth section}{55}{section.B.2}
+\contentsline {appendix}{\chapternumberline {C}Conclusion and Future Work}{57}{appendix.C}
+\contentsline {chapter}{Bibliography}{59}{appendix*.4}

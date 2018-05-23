@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.18)  7 MAY 2018 04:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.18)  22 MAY 2018 17:05
 entering extended mode
 **"E:/ACADEMICS/PEC---/ME 4 SEM/thesis/latex/thesis.tex"
 ("E:/ACADEMICS/PEC---/ME 4 SEM/thesis/latex/thesis.tex"
@@ -31,8 +31,8 @@ Package ifluatex Info: LuaTeX not detected.
 \trimtop=\skip46
 \trimedge=\skip47
 
-("C:\MiKTeX 2.9\tex\latex\memoir\mem12.clo"
-File: mem12.clo 2010/10/19 v0.4b memoir class 12pt size option
+("C:\MiKTeX 2.9\tex\latex\memoir\mem11.clo"
+File: mem11.clo 2008/01/30 v0.3 memoir class 11pt size option
 )
 \binding=\skip48
 \spinemargin=\skip49
@@ -721,182 +721,89 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\MiKTeX 2.9\tex\latex\psnfss\times.sty"
-Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
-)
-("C:\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
-Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+("C:\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip186
 
-("C:\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
-Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+For additional information on amsmath, use the `?' option.
+("C:\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
 
-
-("C:\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
-Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-Package hobsub Info: Skipping package `ifluatex' (already loaded).
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
-Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
-)
-Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
-Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
-)
-Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
-Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
-Package: xcolor-patch 2016/05/16 xcolor patch
-Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
-Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
-Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-)
-("C:\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
-Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-)
-("C:\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-)
-\@linkdim=\dimen150
-\Hy@linkcounter=\count140
-\Hy@pagecounter=\count141
-
-("C:\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
-File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
-)
-\Hy@SavedSpaceFactor=\count142
-
-("C:\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
-File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
-)
-Package hyperref Info: Option `breaklinks' set `true' on input line 4383.
-Package hyperref Info: Option `colorlinks' set `true' on input line 4383.
-Package hyperref Info: Option `bookmarks' set `true' on input line 4383.
-Package hyperref Info: Hyper figures OFF on input line 4509.
-Package hyperref Info: Link nesting OFF on input line 4514.
-Package hyperref Info: Hyper index ON on input line 4517.
-Package hyperref Info: Plain pages OFF on input line 4524.
-Package hyperref Info: Backreferencing OFF on input line 4529.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count143
-
-("C:\MiKTeX 2.9\tex\latex\url\url.sty"
-\Urlmuskip=\muskip10
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen151
-\Fld@menulength=\count144
-\Field@Width=\dimen152
-\Fld@charsize=\dimen153
-Package hyperref Info: Hyper figures OFF on input line 6369.
-Package hyperref Info: Link nesting OFF on input line 6374.
-Package hyperref Info: Hyper index ON on input line 6377.
-Package hyperref Info: backreferencing OFF on input line 6384.
-Package hyperref Info: Link coloring ON on input line 6387.
-Package hyperref Info: Link coloring with OCG OFF on input line 6394.
-Package hyperref Info: PDF/A mode OFF on input line 6399.
-LaTeX Info: Redefining \ref on input line 6439.
-LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count145
-\c@Item=\count146
-\c@Hfootnote=\count147
-)
-("C:\MiKTeX 2.9\tex\latex\memoir\memhfixc.sty"
-Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
-ass
-\c@memhycontfloat=\count148
-\c@Hpagenote=\count149
-)
-Package hyperref Info: Driver (autodetected): hpdftex.
-
-("C:\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
-File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count150
-\c@bookmark@seq@number=\count151
-
-("C:\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
-Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
-)
-\Hy@SectionHShift=\skip186
-)
-("C:\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
-Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count152
-\Gm@cntv=\count153
-\c@Gm@tempcnt=\count154
-\Gm@bindingoffset=\dimen154
-\Gm@wd@mp=\dimen155
-\Gm@odd@mp=\dimen156
-\Gm@even@mp=\dimen157
-\Gm@layoutwidth=\dimen158
-\Gm@layoutheight=\dimen159
-\Gm@layouthoffset=\dimen160
-\Gm@layoutvoffset=\dimen161
-\Gm@dimlist=\toks26
-
-("C:\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-
-Package geometry Warning: Over-specification in `h'-direction.
-    `width' (597.50787pt) is ignored.
-
-
-Package geometry Warning: Over-specification in `v'-direction.
-    `height' (845.04684pt) is ignored.
-
-("C:\MiKTeX 2.9\tex\latex\tools\calc.sty"
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count155
-\calc@Bcount=\count156
-\calc@Adimen=\dimen162
-\calc@Bdimen=\dimen163
-\calc@Askip=\skip187
-\calc@Bskip=\skip188
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count157
-\calc@Cskip=\skip189
-)
-("C:\MiKTeX 2.9\tex\latex\fourier\fourier.sty"
-Package: fourier 2005/01/01 1.4 fourier-GUTenberg package
-Now handling font encoding FML ...
-... no UTF-8 mapping file for font encoding FML
-Now handling font encoding FMS ...
-... no UTF-8 mapping file for font encoding FMS
-Now handling font encoding FMX ...
-... no UTF-8 mapping file for font encoding FMX
-
-("C:\MiKTeX 2.9\tex\latex\base\fontenc.sty"
-Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
-
-("C:\MiKTeX 2.9\tex\latex\base\t1enc.def"
-File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+("C:\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks26
+\ex@=\dimen150
 ))
+("C:\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen151
+)
+("C:\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count140
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count141
+\leftroot@=\count142
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count143
+\DOTSCASE@=\count144
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen152
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count145
+\c@MaxMatrixCols=\count146
+\dotsspace@=\muskip10
+\c@parentequation=\count147
+\dspbrk@lvl=\count148
+\tag@help=\toks27
+\row@=\count149
+\column@=\count150
+\maxfields@=\count151
+\andhelp@=\toks28
+\eqnshift@=\dimen153
+\alignsep@=\dimen154
+\tagshift@=\dimen155
+\tagwidth@=\dimen156
+\totwidth@=\dimen157
+\lineht@=\dimen158
+\@envbody=\toks29
+\multlinegap=\skip187
+\multlinetaggap=\skip188
+\mathdisplay@stack=\toks30
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty"
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+("C:\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count152
+\c@Blindtext=\count153
+\c@blind@countparstart=\count154
+\blind@countxx=\count155
+\blindtext@numBlindtext=\count156
+\blind@countyy=\count157
+\c@blindlist=\count158
+\c@blindlistlevel=\count159
+\c@blindlist@level=\count160
+\blind@listitem=\count161
+\c@blind@listcount=\count162
+\c@blind@levelcount=\count163
+\blind@mathformula=\count164
+\blind@Mathformula=\count165
+\c@blind@randomcount=\count166
+\c@blind@randommax=\count167
+\c@blind@pangramcount=\count168
+\c@blind@pangrammax=\count169
+)
 ("C:\MiKTeX 2.9\tex\latex\base\textcomp.sty"
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
@@ -1053,6 +960,179 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
+("C:\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+
+("C:\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("C:\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen159
+\Hy@linkcounter=\count170
+\Hy@pagecounter=\count171
+
+("C:\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count172
+
+("C:\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `breaklinks' set `true' on input line 4383.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4383.
+Package hyperref Info: Option `bookmarks' set `true' on input line 4383.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count173
+
+("C:\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen160
+\Fld@menulength=\count174
+\Field@Width=\dimen161
+\Fld@charsize=\dimen162
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring ON on input line 6387.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count175
+\c@Item=\count176
+\c@Hfootnote=\count177
+)
+("C:\MiKTeX 2.9\tex\latex\memoir\memhfixc.sty"
+Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
+ass
+\c@memhycontfloat=\count178
+\c@Hpagenote=\count179
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+("C:\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count180
+\c@bookmark@seq@number=\count181
+
+("C:\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip189
+)
+("C:\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count182
+\Gm@cntv=\count183
+\c@Gm@tempcnt=\count184
+\Gm@bindingoffset=\dimen163
+\Gm@wd@mp=\dimen164
+\Gm@odd@mp=\dimen165
+\Gm@even@mp=\dimen166
+\Gm@layoutwidth=\dimen167
+\Gm@layoutheight=\dimen168
+\Gm@layouthoffset=\dimen169
+\Gm@layoutvoffset=\dimen170
+\Gm@dimlist=\toks31
+
+("C:\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (597.50787pt) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (845.04684pt) is ignored.
+
+("C:\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count185
+\calc@Bcount=\count186
+\calc@Adimen=\dimen171
+\calc@Bdimen=\dimen172
+\calc@Askip=\skip190
+\calc@Bskip=\skip191
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count187
+\calc@Cskip=\skip192
+)
+("C:\MiKTeX 2.9\tex\latex\fourier\fourier.sty"
+Package: fourier 2005/01/01 1.4 fourier-GUTenberg package
+Now handling font encoding FML ...
+... no UTF-8 mapping file for font encoding FML
+Now handling font encoding FMS ...
+... no UTF-8 mapping file for font encoding FMS
+Now handling font encoding FMX ...
+... no UTF-8 mapping file for font encoding FMX
+
+("C:\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+("C:\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
 ("C:\MiKTeX 2.9\tex\latex\fourier\fourier-orns.sty"
 Package: fourier-orns 2004/01/30 1.1 fourier-ornaments package
 )
@@ -1130,6 +1210,10 @@ LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 186.
 LaTeX Font Info:    Redeclaring math symbol \varvarrho on input line 187.
 LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 210.
 LaTeX Font Info:    Redeclaring math delimiter \vert on input line 215.
+LaTeX Font Info:    Redeclaring math delimiter \lvert on input line 217.
+LaTeX Font Info:    Redeclaring math delimiter \rvert on input line 219.
+LaTeX Font Info:    Redeclaring math delimiter \lVert on input line 221.
+LaTeX Font Info:    Redeclaring math delimiter \rVert on input line 223.
 LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 225.
 LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 227.
 LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 229.
@@ -1163,59 +1247,59 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 (chap5.aux) (appendix.aux) (results.aux) (conclusion.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 101.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 101
-.
-
-("C:\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd"
-File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
-)
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 101.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 101
-.
-
-("C:\MiKTeX 2.9\tex\latex\fourier\fmsfutm.fd"
-File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
-)
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 101.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 101
-.
-
-("C:\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd"
-File: fmxfutm.fd futm-extension
-)
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 101.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 109.
 
 
 ("C:\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 101.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 109.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 109
+.
+
+("C:\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd"
+File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
+)
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 109.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 109
+.
+
+("C:\MiKTeX 2.9\tex\latex\fourier\fmsfutm.fd"
+File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
+)
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 109.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 109
+.
+
+("C:\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd"
+File: fmxfutm.fd futm-extension
+)
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 109.
 
 
 ("C:\MiKTeX 2.9\tex\latex\fourier\t1futs.fd"
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
-LaTeX Info: Redefining \microtypecontext on input line 101.
+LaTeX Info: Redefining \microtypecontext on input line 109.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1232,17 +1316,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 ("C:\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count158
-\scratchdimen=\dimen164
-\scratchbox=\box29
-\nofMPsegments=\count159
-\nofMParguments=\count160
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count161
-\MPscratchDim=\dimen165
-\MPnumerator=\count162
-\makeMPintoPDFobject=\count163
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count188
+\scratchdimen=\dimen173
+\scratchbox=\box31
+\nofMPsegments=\count189
+\nofMParguments=\count190
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count191
+\MPscratchDim=\dimen174
+\MPnumerator=\count192
+\makeMPintoPDFobject=\count193
+\everyMPtoPDFconversion=\toks33
 ) ("C:\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1256,8 +1340,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring ON on input line 101.
+\AtBeginShipoutBox=\box32
+Package hyperref Info: Link coloring ON on input line 109.
 
 ("C:\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1265,14 +1349,14 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count164
+\c@section@level=\count194
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 101.
-LaTeX Info: Redefining \ref on input line 101.
-LaTeX Info: Redefining \pageref on input line 101.
-LaTeX Info: Redefining \nameref on input line 101.
+LaTeX Info: Redefining \nameref on input line 109.
+LaTeX Info: Redefining \ref on input line 109.
+LaTeX Info: Redefining \pageref on input line 109.
+LaTeX Info: Redefining \nameref on input line 109.
 (thesis.out) (thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
@@ -1285,22 +1369,21 @@ LaTeX Info: Redefining \nameref on input line 101.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* bindingoffset: 28.45274pt
 * modes: twoside 
-* h-part:(L,W,R)=(56.9055pt, 455.24413pt, 56.9055pt)
-* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* h-part:(L,W,R)=(99.58464pt, 398.3386pt, 99.58464pt)
+* v-part:(T,H,B)=(71.13188pt, 688.5567pt, 85.35826pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=455.24413pt
-* \textheight=702.78308pt
-* \oddsidemargin=13.08826pt
-* \evensidemargin=-15.36449pt
-* \topmargin=-35.5119pt
-* \headheight=14.5pt
+* \textwidth=398.3386pt
+* \textheight=688.5567pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=27.31465pt
+* \topmargin=-34.61191pt
+* \headheight=13.6pt
 * \headsep=19.8738pt
-* \topskip=12.0pt
-* \footskip=30.0pt
-* \marginparwidth=92.0pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=101.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
 * \skip\footins=12.0pt plus 4.0pt minus 4.0pt
@@ -1313,202 +1396,2450 @@ LaTeX Info: Redefining \nameref on input line 101.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for T1+phv on input line 112.
-("C:\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
-File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `phv' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [1
+[1
 Non-PDF special ignored!
 <special> papersize=597.50787pt,845.04684pt
 
 {C:/Users/cramdog/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 ]
+[3]
 \openout2 = `acknowledge.aux'.
 
-
-(acknowledge.tex
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
+ (acknowledge.tex
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
-) [3
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 1.
+ ("C:\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
+File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+) [4
 
 ]
 \openout2 = `abstract.aux'.
 
- (abstract.tex) [4
+
+(abstract.tex) [5
 
 
 ]
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 155.
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 15
-5.
-
-("C:\MiKTeX 2.9\tex\latex\fourier\fmlfutmi.fd"
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 167.
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 16
+7.
+ ("C:\MiKTeX 2.9\tex\latex\fourier\fmlfutmi.fd"
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 22.88956pt on input line 155.
+(Font)              scaled to size 19.08076pt on input line 167.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 155.
+(Font)              scaled to size 13.24796pt on input line 167.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 155.
+(Font)              scaled to size 9.19998pt on input line 167.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 22.88956pt on input line 155.
+(Font)              scaled to size 19.08076pt on input line 167.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 155.
+(Font)              scaled to size 13.24796pt on input line 167.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 155.
+(Font)              scaled to size 9.19998pt on input line 167.
  (thesis.toc
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 1.
+(Font)              scaled to size 10.07397pt on input line 1.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 1.
+(Font)              scaled to size 7.63599pt on input line 1.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 1.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 1.
+(Font)              scaled to size 10.07397pt on input line 1.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 1.
-) [5
+(Font)              scaled to size 7.63599pt on input line 1.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 1.
 
-]
-\openout2 = `intro.aux'.
-
- (intro.tex
 [6
 
+]) [7]
+\openout2 = `intro.aux'.
+
+ (intro.tex [8
+
 
 
 ]
-LaTeX Font Info:    Font shape `T1/futs/bx/sc' in size <24.88> not available
+LaTeX Font Info:    Font shape `T1/futs/bx/sc' in size <20.74> not available
 (Font)              Font shape `T1/futs/b/sc' tried instead on input line 1.
-
-Underfull \vbox (badness 3525) has occurred while \output is active []
-
- [7]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 29.
-
-("C:\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+ [9]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 31.
+ ("C:\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `pcr' (encoding: T1).
+(microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) [8]
+)
+[10]
 \openout2 = `problem.aux'.
 
- (problem.tex) [9
+ (problem.tex) [11
 
 
 ]
 \openout2 = `chap2.aux'.
 
- (chap2.tex
-[10
+ (chap2.tex [12
 
 
 
-]) [11]
+] [13]
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 34.
+
+Underfull \vbox (badness 2027) has occurred while \output is active []
+
+ [14]
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 44.
+
+
+("C:\MiKTeX 2.9\tex\latex\fourier\ts1futs.fd"
+File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `futs' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+LaTeX Warning: Reference `ratingmatrix' on page 15 undefined on input line 46.
+
+[15] [16] [17] [18] [19]
+
+! Package inputenc Error: Unicode char ∈ (U+2208)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.224 r ∈
+            R independently, from its own distribution in a setting where al...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ρ (U+3C1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 the total regret ρ
+                          after m rounds can be seen as the expected differe...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ρ (U+3C1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239 ρ
+         = mµ∗ −
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ∗ (U+2217)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239 ρ = mµ∗
+                  −
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char − (U+2212)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239 ρ = mµ∗ −
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.253 1 previousP urchases ←
+                               {}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+("C:\MiKTeX 2.9\tex\latex\microtype\mt-cmr.cfg"
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.256 a ←
+            policyLogic(A, previousP urchases) // Choose an arm depending on
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.259 ListOfItems ←
+                      pullArm(a)
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.263 reward ←
+                 1
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.267 reward ←
+                 0
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[20]
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.284 ...ithm but the most common way is having α
+                                                   and β variables that
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.284 ...t the most common way is having α and β
+                                                   variables that
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.298 
+       -greedy
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.300 The 
+           -greedy[47] policy works by having a fixed value, , that determi...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.300 ...] policy works by having a fixed value, 
+                                                  , that determines how much...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.302 ...the randomly generated value x is below 
+                                                   it chooses an arm at random,
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.304 ...: Multi-armed bandit algorithm with the 
+                                                  -greedy policy
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.305 Data: A: the arms, P: the purchases, β
+                                             a : tries of arm a, αa : succe...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.305 ...: the purchases, βa : tries of arm a, α
+                                                  a : successful tries of
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.307 1 Initialise all α
+                         a and βa to 0
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.307 1 Initialise all αa and β
+                                 a to 0
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.310 x ←
+            random[0,1]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.312 if x < 
+               then
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.314 a ←
+            random(A)
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.318 a ←
+            argmax( αβaa )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.318 a ← argmax( α
+                      βaa )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.318 a ← argmax( αβ
+                        aa )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.322 ListOfItems ←
+                      pullArm(a)
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.326 inc(α
+            a )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.330 inc(β
+            a )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.339 ...ence bound does not, in contrary to the 
+                                                  -greedy policy, continuous...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char λ (U+3BB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.350 µa + λ
+              σa
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char σ (U+3C3)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.350 µa + λσ
+                a
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char σ (U+3C3)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.354 ...is the estimated reward for arm a, and σ
+                                                  a a confidence bound measu...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char λ (U+3BB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.355 accuracy of our estimate, mean µa . The λ
+                                                  is, just as when using the...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.355 ...µa . The λ is, just as when using the 
+                                                  -greedy policy, a
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.357 ...48], can be performed by setting µa = α
+                                                  βaa
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.357 ...], can be performed by setting µa = αβ
+                                                  aa
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char λ (U+3BB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.359 and λ
+            σa = 2·lnβa β where αa is the number of times a specific ar...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char σ (U+3C3)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.359 and λσ
+              a = 2·lnβa β where αa is the number of times a specific ar...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.359 and λσa = 2·lnβ
+                         a β where αa is the number of times a specific ar...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.359 and λσa = 2·lnβa β
+                              where αa is the number of times a specific ar...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.359 and λσa = 2·lnβa β where α
+                                      a is the number of times a specific ar...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.360 ...ting a future purchase of an item, and β
+                                                  a is the number of times t...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.363 Data: A: the arms, P: the purchases, β
+                                             a : tries of arm a, αa : succe...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.363 ...: the purchases, βa : tries of arm a, α
+                                                  a : successful tries of
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.365 1 Initialise all α
+                         a and βa to 0
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.365 1 Initialise all αa and β
+                                 a to 0
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.368 a ←
+            argmax( αβaa +
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.368 a ← argmax( α
+                      βaa +
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.368 a ← argmax( αβ
+                        aa +
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[21]
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.380 2·ln β
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.382 β
+        a
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.384 ListOfItems ←
+                      pullArm(a)
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.386 inc(α
+            a )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.388 inc(β
+            a )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.399 comparison with the so called 
+                                     -greedy policy which constantly keeps o...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.414 Data: A: the arms, P: the purchases, β
+                                             a : tries of arm a, αa : succe...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.414 ...: the purchases, βa : tries of arm a, α
+                                                  a : successful tries of
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char λ (U+3BB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.415 arm a, B: beta-distribution function, λ
+                                              : decay-factor
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.416 1 Initialise all α
+                         a and βa to 1
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.416 1 Initialise all αa and β
+                                 a to 1
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char λ (U+3BB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.417 2 λ
+           = 1.0
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.422 sa ←
+             B(αa , βa )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.422 sa ← B(α
+                 a , βa )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.422 sa ← B(αa , β
+                       a )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.426 a ←
+            arg max (sa )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.428 ListOfItems ←
+                      pullArm(a)
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.430 β
+        a ← βa · λ
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.430 βa ←
+              βa · λ
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.430 βa ← β
+                a · λ
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char λ (U+3BB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.430 βa ← βa · λ
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.432 α
+        a ← αa · λ
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.432 αa ←
+              αa · λ
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.432 αa ← α
+                a · λ
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char λ (U+3BB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.432 αa ← αa · λ
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.436 inc(α
+            a )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.440 inc(β
+            a )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.450 ...t Thompson Sampling is by default. The α
+                                                   and β parameters in
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.450 ...son Sampling is by default. The α and β
+                                                   parameters in
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char λ (U+3BB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.452 λ
+         to less than 1.0. If the intention is to trust old results rather t...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char λ (U+3BB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.452 ... to trust old results rather than new, λ
+                                                   can also be
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[22]
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.478 system will update its α
+                               , as described in 1, to remember that the cur...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[23] [24] [25]
+
+! Package inputenc Error: Unicode char θ (U+3B8)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.632 ...orithm initially draws a random sample θ
+                                                   from a beta
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.633 distribution, using each arm’s α
+                                         - and β- variables. The arm arm wi...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.633 distribution, using each arm’s α- and β
+                                                 - variables. The arm arm wi...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char θ (U+3B8)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.633 ...�- variables. The arm arm with highest θ
+                                                   will
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.641 ...n of arm is considered correct and the α
+                                                   parameter of arm is
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.650 predictions the β
+                         is increased by one, whereas the α is left unchanged.
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.650 ...he β is increased by one, whereas the α
+                                                   is left unchanged.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char θ (U+3B8)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.657 θ
+        a ← BetaDistribution(αa , βa )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.657 θa ←
+              BetaDistribution(αa , βa )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char α (U+3B1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.657 θa ← BetaDistribution(α
+                                 a , βa )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char β (U+3B2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.657 θa ← BetaDistribution(αa , β
+                                       a )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.661 arm ←
+              arg max (θa )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char θ (U+3B8)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.661 arm ← arg max (θ
+                         a )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.663 user ←
+               puser
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ∗ (U+2217)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.667 itemreward = armcontext · (usercontext ∗
+                                                  itemcontext )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.671 ListOfItems ←
+                      top10 arg max (itemreward )
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.673 itemsBought ←
+                      pitems
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.677 reward ←
+                 1
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package textcomp Error: Symbol \textleftarrow not provided by
+(textcomp)                font family futs in TS1 encoding.
+(textcomp)                Default family used instead.
+
+See the textcomp package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.681 reward ←
+                 0
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[26] [27]
+
+! Package inputenc Error: Unicode char − (U+2212)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.802 by three age spans; young −
+                                    the buyer is younger than 18 years old, ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char − (U+2212)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.802 ...ounger than 18 years old, middle aged −
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char − (U+2212)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.803 the buyer is between 18 and 33, old −
+                                              where the buyer is older than ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.813 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.815 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.816 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.817 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.818 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.819 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.820 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.821 
+          Category = By observing the category of purchases from a specific ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.823 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.824 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.825 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.827 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.828 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.829 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F3)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.830 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.838 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.840 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.841 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.842 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.843 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.844 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.845 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.846 
+          Category = Given by the admin/database
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.848 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.849 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.850 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.851 
+          ZipCode = By observing the domicile of users who bought this item
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.852 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.853 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F3)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.854 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[28]
+
+! Package inputenc Error: Unicode char  (U+F8F1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.872 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.874 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.875 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.876 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.877 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.878 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.879 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.880 
+          Category = Randomly
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.882 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.883 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.884 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.886 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.887 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.888 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char  (U+F8F3)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.889 
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[29]
+
+! Package inputenc Error: Unicode char ∩ (U+2229)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.998 |u1 ∩
+              u2 |
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ∪ (U+222A)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1001 |u1 ∪
+               u2 |
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[30]
+
+! Package inputenc Error: Unicode char ∈ (U+2208)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1012 ...tween a user u and all other users u ∈
+                                                   {u1 , u2 , . . . , un }
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ∈ (U+2208)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1023 i∈
+           uj ,j6=k
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[31] [32] [33] [34] [35] [36] [37] [38] [39]
+Overfull \hbox (8.15402pt too wide) in paragraph at lines 1751--1757
+[]\T1/futs/m/n/10.95 (-20) Predictions made of data from 1 month in time 25 Bes
+t Arm All Arms Pop-u-lar-ity(Baseline)
+ []
+
+[40] [41] [42] [43] [44] [45]) [46]
 \openout2 = `chap3.aux'.
 
- (chap3.tex [12
-
-
-
-]) [13]
-\openout2 = `chap4.aux'.
-
- (chap4.tex [14
-
-
-
-]) [15]
-\openout2 = `chap5.aux'.
-
- (chap5.tex [16
-
-
-
-])
-[17]
-\openout2 = `appendix.aux'.
-
- (appendix.tex [18
-
-
-
-]) [19]
-\openout2 = `results.aux'.
-
- (results.tex [20
+ (chap3.tex) [47
 
 
 
 ]
-Overfull \hbox (507.35956pt too wide) in paragraph at lines 4--5
-\T1/futs/m/n/12 (-20) Lorem ifk-t-dt-du-lu-fyhlfgjugjuhuhjhjjjjl-hjl-fy-lu-tulo
-fdltuftragui;huiulyrahulbsa;liuyfgldtlkcglujrahui;rsrsah;plrsahiu;rahu;rahi'rah
-ulrahuilrahulorahulrahu;lrahjiulrsahu;lrahulrahul;ralrahultrahulraarauhl
+\openout2 = `chap4.aux'.
+
+ (chap4.tex [48
+
+
+
+]) [49]
+\openout2 = `chap5.aux'.
+
+
+(chap5.tex [50
+
+
+
+]) [51]
+\openout2 = `appendix.aux'.
+
+ (appendix.tex [52
+
+
+
+]) [53]
+\openout2 = `results.aux'.
+
+ (results.tex [54
+
+
+
+]
+Overfull \hbox (480.03722pt too wide) in paragraph at lines 4--5
+\T1/futs/m/n/10.95 (-20) Lorem ifk-t-dt-du-lu-fyhlfgjugjuhuhjhjjjjl-hjl-fy-lu-t
+ulofdltuftragui;huiulyrahulbsa;liuyfgldtlkcglujrahui;rsrsah;plrsahiu;rahu;rahi'
+rahulrahuilrahulorahulrahu;lrahjiulrsahu;lrahulrahul;ralrahultrahulraarauhl
  []
 
 
-Overfull \hbox (328.6338pt too wide) in paragraph at lines 4--5
-\T1/futs/m/n/12 (-20) rahul-rahu-lar-rhaulrahul-rahul-rhaulrhaulrahul-rahul-rah
-ul-rhaulrahulrhaulrhaulrhualrhaulrahulrahulrhaulrhaulrhaulrhaulrhaulrahulrahuah
-ulrhaulrhularrahulinim
+Overfull \hbox (316.95007pt too wide) in paragraph at lines 4--5
+\T1/futs/m/n/10.95 (-20) rahul-rahu-lar-rhaulrahul-rahul-rhaulrhaulrahul-rahul-
+rahul-rhaulrahulrhaulrhaulrhualrhaulrahulrahulrhaulrhaulrhaulrhaulrhaulrahulrah
+uahulrhaulrhularrahulinim
  []
 
-) [21]
+) [55]
 \openout2 = `conclusion.aux'.
 
- (conclusion.tex [22
+ (conclusion.tex [56
 
 
 
-]) [23] (thesis.bbl [24
+]) [57] (thesis.bbl [58
 
 
 ]
 bibitemlist
-) [25]
+) [59]
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
  (thesis.aux (acknowledge.aux) (abstract.aux) (intro.aux) (problem.aux)
 (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux) (appendix.aux) (results.aux)
 (conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 197.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4386BC22F1108F95DAFF7B3E80BC7900;895.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
+(rerunfilecheck)             Checksum: 07D9A5521114F0A8EB0007D031D31E8F;1927.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
  ) 
 Here is how much of TeX's memory you used:
- 12213 strings out of 492976
- 177925 string characters out of 3125865
- 336760 words of memory out of 3000000
- 15664 multiletter control sequences out of 15000+200000
- 102563 words of font info for 178 fonts, out of 3000000 for 9000
+ 13225 strings out of 492976
+ 192029 string characters out of 3125865
+ 358199 words of memory out of 3000000
+ 16529 multiletter control sequences out of 15000+200000
+ 147337 words of font info for 260 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,12n,38p,794b,336s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/MiKTeX 2.9/fonts/type1/adobe/u
-topia/putb8a.pfb><C:/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/MiKTeX 
-2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/MiKTeX 2.9/fonts/type1/urw/courier
-/ucrr8a.pfb><C:/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/MiKTeX 2.9/f
-onts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (25 pages, 118333 bytes).
+ 35i,12n,38p,1453b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\cramdog\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
+0\tcrm1095.pk>{C:/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\cramdog\App
+Data\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk> <C:\Users
+\cramdog\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.p
+k> <C:\Users\cramdog\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
+0\ecsx1440.pk><C:/MiKTeX 2.9/fonts/type1/public/fourier/fourier-alt.pfb><C:/MiK
+TeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/MiKTeX 2.9/fonts/type1/p
+ublic/fourier/fourier-ms.pfb><C:/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb
+><C:/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/MiKTeX 2.9/fonts/type1/
+adobe/utopia/putri8a.pfb>
+Output written on thesis.pdf (59 pages, 257595 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
- 22145 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 600 PDF objects out of 1000 (max. 8388607)
+ 92 named destinations out of 1000 (max. 500000)
+ 28905 words of extra memory for PDF output out of 29859 (max. 10000000)
 

@@ -1,0 +1,10 @@
+\form#0:\[ \max_\Theta \sum_{(u,i,j) \in D_S} \ln g(\hat{s}_{u,i,j}(\Theta)) - \lambda ||\Theta||^2 , \]
+\form#1:$\hat{s}_{u,i,j}(\Theta) := \hat{s}_{u,i}(\Theta) - \hat{s}_{u,j}(\Theta)$
+\form#2:$D_S = \{ (u, i, j) | i \in \mathcal{I}^+_u \wedge j \in \mathcal{I}^-_u \}$
+\form#3:$\Theta$
+\form#4:$\lambda$
+\form#5:$g$
+\form#6:\[ \min_{\mathbf{a}, \mathbf{b}} \sum_{(u, i, r) \in R} (r - \mu_R - a_u - b_i)^2 + \lambda_1 \|\mathbf{a}\|^2 + \lambda_2 \|\mathbf{b}\|^2, \]
+\form#7:$R$
+\form#8:$\lambda_1$
+\form#9:$\lambda_2$
