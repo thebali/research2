@@ -1,36 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02f0da15-ca86-4b84-87ac-2aec0041aca2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../RP1/conference_format/document.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../RP1/conference_format/document.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RP1/conference_format/document.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/../RP1/conference_format/document.bbl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RP1/conference_format/document.blg" beforeDir="false" afterPath="$PROJECT_DIR$/../RP1/conference_format/document.blg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RP1/conference_format/document.log" beforeDir="false" afterPath="$PROJECT_DIR$/../RP1/conference_format/document.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RP1/conference_format/document.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../RP1/conference_format/document.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LDA.py" beforeDir="false" afterPath="$PROJECT_DIR$/LDA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/abstract.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/abstract.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/acknowledge.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/acknowledge.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/appendix.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/appendix.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/chap2.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/chap2.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/chap3.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/chap3.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/chap4.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/chap4.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/chap5.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/chap5.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/conclusion.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/conclusion.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/intro.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/intro.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/problem.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/problem.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/results.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/results.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/thesis.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/thesis.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/thesis.blg" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/thesis.blg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/thesis.fdb_latexmk" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/thesis.fdb_latexmk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/thesis.fls" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/thesis.fls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/thesis.log" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/thesis.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/thesis.out" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/thesis.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/thesis.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/thesis.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/thesis.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/thesis.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thesis/latex/thesis.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/thesis.toc" afterDir="false" />
-    </list>
+    <list default="true" id="02f0da15-ca86-4b84-87ac-2aec0041aca2" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,17 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
-      <file leaf-file-name="LDA.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LDA.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="225" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -76,7 +37,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -89,7 +50,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -234,6 +195,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/LDA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LDA.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
