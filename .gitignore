@@ -1,5 +1,8 @@
 mendeley/
 code/data/
+code/graph-code/dataset/
+code/mml-code/mml-docs/
 *.pdf
 literature_reference/
 *.zip
+*.csv

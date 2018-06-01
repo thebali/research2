@@ -2,9 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02f0da15-ca86-4b84-87ac-2aec0041aca2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/gensim-code/topicmodel.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gensim-code/.ipynb_checkpoints/Singular-valuedDecomposition-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gensim-code/.ipynb_checkpoints/gensim-lda-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gensim-code/Singular-valuedDecomposition.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gensim-code/gensim-lda.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gensim-code/lee_background.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thesis/latex/abstract.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/abstract.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thesis/latex/acknowledge.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/acknowledge.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thesis/latex/appendix.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/appendix.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thesis/latex/chap2.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/chap2.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thesis/latex/chap3.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/chap3.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thesis/latex/chap4.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/chap4.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thesis/latex/chap5.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/chap5.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thesis/latex/conclusion.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/conclusion.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thesis/latex/intro.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/intro.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thesis/latex/problem.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/problem.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thesis/latex/results.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/results.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thesis/latex/thesis.log" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/thesis.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thesis/latex/thesis.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../thesis/latex/thesis.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thesis/proposed/Proposed Algorithm.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thesis/proposed/techniques.rtf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +31,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,6 +68,7 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -68,7 +86,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,7 +227,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32792208" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />

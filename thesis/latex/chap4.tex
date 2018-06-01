@@ -1,3 +1,95 @@
 \chapter{Background and Literature Review}
 
+Privacy-Preserving Aspects
+Personal integrity is a frequently discussed topic in the connected world.
+Most new products today come with the feature of being able to use the Internet; phones, clocks, cars, TVs, baby monitors and even entire households etc.
+There are more devices connected to the Internet than there are people living
+on the planet earth [52]. Being able to stay connected around the clock every day of
+the month has shed some light on new ethical dilemmas and issues. Internet started
+out as a place where its users were more or less anonymous. But despite the efforts in
+present time, creating techniques so as to be more or less anonymous online, a very small
+portion of the connected world actually make use of these kind of techniques. Applications on our smart devices ask for much more privileges than what their functionality
+requires, most of the time. This, however, is the case for most online-based systems in
+general. People are naive most of the time so as to trust systems and applications with
+whatever personal information they might ask for. This kind of data can then be sold
+to companies, authorities or in the worst case, hacked or stolen.
 
+4.1
+General Aspects of Personal Integrity
+
+Smart phone applications are a big part of many people’s lives. They are used for browsing social medias, calendar and scheduling, public transport, work-out, calorie-tracking,
+storage, e-commerce and just about anything else. Commonly applications do not ask
+for any privileges when they are new. However, as the amount of users increase one
+can be certain that sooner or later the application might ask for extended privileges [53]
+such as access to files, text-messages, contacts and in some cases even camera and GPS.
+Most people do not see an issue with this, if it is a good application. In many cases this
+might not even be a problem. Commonly, regular people, would not complain about an
+applications performing movie, TV-shows or shopping recommendations despite using
+all possible private data, as long as the recommendations are valid. In many cases, data
+
+
+4.2. USER-APPROACH
+
+CHAPTER 4. PRIVACY-PRESERVING ASPECTS
+
+changes hands every now and then. Mostly probably because of being sold. What most
+people do not think of is the fact that once data hits the Internet, it is out of control.
+Most of the time one can never be sure where its personal data ends up. The more
+places containing our personal data, the bigger the chance is of it getting leaked, hacked
+or stolen[54].
+These issues are obviously not limited to smart phone applications. It concerns other
+applications that possess personal information as well. It could be games, e-commerce
+systems, normal web sites and systems connected to the web in general. It becomes
+relevant in e-commerce platforms that make use of complex recommender systems and
+personalised predictions, as those personalised predictions are based on personal information, actions and behaviour in the system. See Chapter 2 for more about recommender
+systems.
+To this comes ethical dilemmas; People actively choose to provide companies with their
+personal data through consistent use of their applications and products. From the aspect
+of the groups possessing this kind of data, what is ethically acceptable to do with it?
+Could it be sold or distributed freely? See [55] and [56] for further research on this topic.
+
+4.2
+
+A Privacy-Preserving User Approach
+
+There are several techniques, of which most are very easy to use, the regular user can
+apply to achieve good privacy when browsing the web. Other than common sense such
+as to be careful and critical, normal methods are through use of proxy servers and virtual
+private networks. One of the more popular techniques as of last years are through use
+of onion routing protocols [57].
+Onion routing means using layers of encryption where each layer consists of decryption at individual nodes. After decryption is done at each individual node the next
+destination node, in the chain of nodes, is uncovered. As the message reaches the final
+destination there should be only one layer of encryption left, which when decrypted provides the original message. Because of each individual node only knowing the location of
+the immediately preceding and following nodes, the original sender remains anonymous.
+To create and transmit the message initially, an initiator node selects a set of nodes
+from a list provided by a leader node. The initiator node then obtains a public key
+from the leader node to send an encrypted message to the first node in the chain, using
+asymmetric key cryptography to establish a connection and a shared session key[58].
+
+4.3
+
+Privacy-Preserving Systems
+
+Privacy-Preserving systems is an area where much research has been made the last
+century[5, 19, 59], but despite this very little of the research is being applied in commercial systems. And this for several reasons such as companies wanting to make use of
+
+21
+
+4.3. SYSTEMS
+
+CHAPTER 4. PRIVACY-PRESERVING ASPECTS
+
+personal features to improve their systems and the user-experience as a whole, but also
+for more controversial reasons as those mentioned in 4.1.
+
+4.3.1
+
+Developing a Privacy-Preserving System
+
+Generally you could describe a privacy-preserving system as a system which is developed
+so as to actively avoid using or even asking for personal data[19, 59]. Although, privacypreserving systems can contain various levels of privacy where the highest level of privacy
+would be total anonymity. Obviously some systems are more privacy-preserving than
+others. Examples of lower levels of privacy are systems that only make use of usersubmitted data or data that a user actively choose to provide the service or system
+with. Among the lowest levels of privacy are systems that record user-activity and behaviour of actions performed by users. Personal data that can be used, perhaps by
+the system itself, to classify users in ways that might or might not be more or less
+ethically acceptable.
