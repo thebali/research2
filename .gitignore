@@ -6,3 +6,5 @@ code/mml-code/mml-docs/
 literature_reference/
 *.zip
 *.csv
+.*
+!/.gitignore
