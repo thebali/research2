@@ -1,5 +1,6 @@
 \documentclass[12pt,a4paper]{memoir}
-\usepackage[utf8]{inputenc}
+
+%%\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{microtype}
 \usepackage[dvips]{graphicx}
@@ -8,6 +9,14 @@
 \usepackage{blindtext}
 
 \usepackage{tgtermes} % times font
+
+\usepackage{emptypage}
+
+
+\usepackage{nomencl}
+\makenomenclature
+
+\renewcommand{\nomname}{List of Symbols}
 
 
 % \usepackage{textcomp}
@@ -156,13 +165,29 @@ May 2018
 %%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
 
 
-\sfdefault
+%\sfdefault
 
 \include{acknowledge}
 
 \include{abstract}
 
 \tableofcontents*
+
+\listoffigures
+
+\listoftables
+
+
+\printnomenclature[6em]
+
+
+\nomenclature{$a$}{The number of angels per unit area}%
+\nomenclature{$N$}{The number of angels per needle point}%
+\nomenclature{$A$}{The area of the needle point}%
+\nomenclature{$\sigma$}{The total mass of angels per unit area}%
+\nomenclature{$m$}{The mass of one angel}
+
+
 
 \clearpage
 
@@ -192,9 +217,9 @@ May 2018
 
 \include{conclusion}
 
-
 \bibliographystyle{plain}
-\bibliography{references}
+\bibliography{references}\addcontentsline{toc}{chapter}{Bibliography}
+
 
 \end{document}
 
