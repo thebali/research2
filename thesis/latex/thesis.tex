@@ -1,16 +1,14 @@
 \documentclass[12pt,a4paper]{memoir}
 
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{microtype}
+%\usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+% \usepackage{microtype}
 \usepackage[dvips]{graphicx}
-\usepackage{xcolor}
-\usepackage{mathtools}
-\usepackage{blindtext}
+% \usepackage{xcolor}
+\usepackage{amsmath}
+% \usepackage{blindtext}
 
-% \usepackage{tgtermes} % times font
-
-\usepackage{emptypage}
+% \usepackage{emptypage}
 
 %% \renewcommand{\nomname}{List of Symbols}
 %%%% list of symbols package below
@@ -21,9 +19,6 @@
 \glsxtrnewsymbol[description={velocity}]{v}{\ensuremath{v}}
 \glsxtrnewsymbol[description={time}]{t}{\ensuremath{t}}
 \glsxtrnewsymbol[description={force}]{F}{\ensuremath{F}}
-
-
-
 
 % \usepackage{textcomp}
 
@@ -116,7 +111,7 @@ heightrounded,}
 
 
 \maxsecnumdepth{subsection} % chapters, sections, and subsections are numbered
-\maxtocdepth{subsection} % chapters, sections, and subsections are in the Table of Contents
+\maxtocdepth{section} % chapters, sections, and subsections are in the Table of Contents
 
 
 %%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
@@ -130,42 +125,43 @@ heightrounded,}
 %   due to variety of titlepage schemes it is probably better to make titlepage manually
 %
 %%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
-\thispagestyle{empty}
 
-{%%%
-\centering
-\Large
-
-~\vspace{\fill}
-
-{\huge 
-Personalised help in recommendations for Amazon Review Dataset
-}
-
-\vspace{2.5cm}
-
-{\LARGE
-Rahul Bali
-}
-
-\vspace{3.5cm}
-
-A thesis submitted in fulfillment for the\\
-degree of Master of Engineering\\[1em]
-in the\\[1em]
-Faculty Name\\
-University Name
-
-\vspace{3.5cm}
-
-Supervisor: Prof. Shilpa Verma
-
-\vspace{\fill}
-
-May 2018
-
-%%%
-}%%%
+\begin{center}
+    \thispagestyle{empty}
+    %\vspace*{1.0cm}
+    {\centering
+        {{A Report of}\\}
+        %       \vspace{0.1cm}
+        %       \vspace{0.1cm}
+        \vspace{1cm}
+        {\Large\textbfRecommendations using Active Learning on Amazon Ratings Dataset\\}
+        \vspace{1cm}
+        {\textit Submitted in partial fulfillment of the requirements for the degree of \\}
+        \vspace{0.5cm}
+        {\textbf Master of Technology}
+        \\{\textit in}
+        \\{\textbf Computer Science and Engineering}
+        \vspace{1.5cm}
+        \\{\textit by}\\
+        \vspace{0.2cm}
+        {\large \textbf {Rahul Bali}} \\ (Roll No. 16205025)\\
+        \vspace{1.5cm}
+        {\textit{under the supervision of}} \\
+        \vspace{0.2cm}
+        { Prof. Shilpa Verma }\\
+        \vspace {1.6cm}
+        \begin{figure}[h]
+            {\centering {\includegraphics[width = .25 \textwidth]{logopec.png}}\par}
+        \end{figure}
+        \vspace{1cm}
+        {\normalsize{\textbf{COMPUTER SCIENCE AND ENGINEERING}}}\\
+        \vspace{0.3cm}
+        {PEC UNIVERSITY OF TECHNOLOGY, CHANDIGARH, INDIA\\}
+        \vspace{.7 cm}
+        {DECEMEBER 2017}\\
+    }
+    \pagebreak
+\end{center}
 
 \cleardoublepage
 %%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
