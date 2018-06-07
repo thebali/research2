@@ -13,6 +13,17 @@
 \usepackage{emptypage}
 
 %% \renewcommand{\nomname}{List of Symbols}
+%%%% list of symbols package below
+
+\usepackage[symbols,nogroupskip,sort=none]{glossaries-extra}
+
+\glsxtrnewsymbol[description={position}]{x}{\ensuremath{x}}
+\glsxtrnewsymbol[description={velocity}]{v}{\ensuremath{v}}
+\glsxtrnewsymbol[description={acceleration}]{a}{\ensuremath{a}}
+\glsxtrnewsymbol[description={time}]{t}{\ensuremath{t}}
+\glsxtrnewsymbol[description={force}]{F}{\ensuremath{F}}
+
+
 
 
 % \usepackage{textcomp}
@@ -175,7 +186,16 @@ May 2018
 
 \clearpage
 
+%%%%%%%%%%%%%%%%%%%%%%%%
 
+\printunsrtglossary[type=symbols,style=long]
+
+\chapter{Sample}
+Reference symbols: $\gls{x}$, $\gls{v}$, $\gls{a}$, $\gls{t}$,
+$\gls{F}$.
+
+
+%%%%%%%%%%%%%%%
 
 \clearpage
 
