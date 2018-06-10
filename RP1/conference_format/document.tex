@@ -287,10 +287,10 @@ where $R_{u,i}$ and $R_{u,j}$ represent the rating of user $u$ on items $i$ \& $
 
 \end{figure*}
 
-
+%% pearson correlation for the user similarity
 \begin{figure*}[b]
 \begin{equation}
-UserSim(u_t, u) = \frac{\sum_{u \in U_{i,j}} ({R_{u,i} - \overline{R}_u}) ({R_{u,j} - \overline{R}_u})} {\sqrt{\sum_{u \in U_{i,j}}({R_{u,i} - \overline{R}_u})^2} \sqrt{\sum_{u \in U_{i,j}}({R_{u,j} - \overline{R}_u})^2}}
+UserSim(x, y) = \frac{\sum_{i \in I} ({R_{x,i} - \overline{R}_x}) ({R_{y,i} - \overline{R}_y})} {\sqrt{\sum_{i \in I}({R_{x,i} - \overline{R}_x})^2} \sqrt{\sum_{u \in I}({R_{y,i} - \overline{R}_y})^2}}
 \label{eq:UserSim} \tag{6}
 \end{equation}
 
