@@ -275,12 +275,6 @@ Memory based CF techniques intend to utilize past information to foresee the obs
 Collaborative filtering calculates certain similarities between neighbours in memory based CF. This technique is called memory based; the database of segments will be stacked in working memory and utilized specifically in order to generate recommendations. In contrast to this technique, there is the model based strategy, in which a model is adjusted and used to used to create recommendations. Model based strategy creates a model in offline environment, and recommendations take place in the online system almost immediately. Model Based algorithms were huge part of the final solution for the winning team on the Netflix Million Dollar prize 2006. The winning solution had over 100 different techniques and methodologies of a weighted ensemble, the major algorithms were Model based Matrix Factorization.
 
 \section{Memory Based Classification}
-As we said before, the memory based CF strategies work based on the past information and anticipate rating, the normal memory based CF techniques are based on the idea of closest neighbors. Memory based CF strategies for the most part rely upon client has a place of a gathering of individuals who have comparative interests. CF approaches which follow the same ideas of the memory based divided into the following approach.
-
-\subsection{Item based}
-Item based collaborative filtering is a sort of model based technique for making suggestions. There are two stages in thing based collaborative filtering. Initially, discover the likenesses between things that are processed by utilizing one of the number closeness measures. Furthermore, surveyed likeness esteems by utilizing foresee appraisals for obscure thing. Thing based closest neighbor strategies are transpose of the client based closest neighbor techniques. Be that as it may, it can make expectations rely upon similitudes among items. 
-
-The cosine based similarity strategy is regular approach to figure out the similarity between items, as should be obvious in \eqref{eq:ItemSim}.
 
 \begin{figure*}[b]
 \begin{equation}
@@ -288,6 +282,13 @@ ItemSim(x, y) = \frac{\sum_{u \in U_{i,j}} ({R_{u,i} - \overline{R}_u}) ({R_{u,j
 \label{eq:ItemSim} \tag{4}
 \end{equation}
 \end{figure*}
+
+As we said before, the memory based CF strategies work based on the past information and anticipate rating, the normal memory based CF techniques are based on the idea of closest neighbors. Memory based CF strategies for the most part rely upon client has a place of a gathering of individuals who have comparative interests. CF approaches which follow the same ideas of the memory based divided into the following approach.
+
+\subsection{Item based}
+Item based collaborative filtering is a sort of model based technique for making suggestions. There are two stages in thing based collaborative filtering. Initially, discover the likenesses between things that are processed by utilizing one of the number closeness measures. Furthermore, surveyed likeness esteems by utilizing foresee appraisals for obscure thing. Thing based closest neighbor strategies are transpose of the client based closest neighbor techniques. Be that as it may, it can make expectations rely upon similitudes among items. 
+
+The cosine based similarity strategy is regular approach to figure out the similarity between items, as should be obvious in \eqref{eq:ItemSim}.
 
 
 \subsection{User based}
