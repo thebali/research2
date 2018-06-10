@@ -309,13 +309,18 @@ The cosine based similarity strategy is regular approach to figure out the simil
 
 Also, the prediction calculation for the item based nearest neighbour model for user $u$ and item $j$, given item $i$ similarity in equation 
 
-\begin{equation}
-P_{user-based}(x,i) = \overline{R}_{x} + \frac{\sum_{u_n = 0}^{N} UserSim(x,y) \ast (R_{y,i}-\overline{R}_{y})}{\sum_{u_n = 0}^{N} UserSim(x,y)}
-\end{equation}
+
+
+
 
 
 \subsection{User based}
 User based collaborative filtering techniques for decide the closeness of the client by breaking down the components partook in the vote between the client and that of the client utilizes the similitudes and anticipated weight keeping in mind the end goal to evaluate the imperative rating of the client on the effectiveness of the component. The Pearson connection efficient similitude is the most used to register comparability strategies as given in condition \eqref{eq:UserSim} [4].
+
+
+\begin{equation}
+P_{user-based}(x,i) = \overline{R}_{x} + \frac{\sum_{u_n = 0}^{N} UserSim(x,y) \ast (R_{y,i}-\overline{R}_{y})}{\sum_{u_n = 0}^{N} UserSim(x,y)}
+\end{equation}
 
 
 
