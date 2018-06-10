@@ -224,7 +224,11 @@ CBF approaches recommend items that are similar in content of the items that the
 CBF approaches prescribe things that are comparable in substance to the things that the user enjoyed previously or match to the properties of the user [5]. In content based filtering technique, every thing is spoken to by an element vector or a characteristic profile. The component holds numeric or ostensible esteems speaking to specific parts of the thing, for example, shading, cost, and so forth. An assortment of (dis) closeness measures between the component vectors might be utilized to ascertain the comparability between two things. The Euclidean or cosine (dis) comparability calculations can be utilized as in conditions (1) and (2) [4].
 
 
+\begin{equation}
 
+dissim(x, y) = \sqrt{\sum_{i=1}^{n}\left ( x_{i} - y_{i} \right )^{2}} = \left \| x - y \right \|_2
+
+\end{equation}
 
 
 Where x and y are vectors of things with n components in them, dissim (x,y) and sim(x,y) measure the separation separated and closeness individually. The (dis) similarty values are then used to acquire a ranked list of recommended items. These techniques are relying upon information retrieval, and they can give recommendations in any area. In content based strategies, when the items are spoken to as an arrangement of highlights in a legitimate and clear way, at that point the framework can function admirably. Content-based recommender systems make proposals through substance examination of printed data, for instance, reports, thing portrayals, newsletter, URLs, web logs, profiles for users' needs, inclinations, tastes, and discover consistency in the content.
