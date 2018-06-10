@@ -290,12 +290,12 @@ where $R_{u,i}$ and $R_{u,j}$ represent the rating of user $u$ on items $i$ \& $
 %% pearson correlation for the user similarity
 \begin{figure*}[b]
 \begin{equation}
-UserSim(x, y) = \frac{\sum_{i \in I} ({R_{x,i} - \overline{R}_x}) ({R_{y,i} - \overline{R}_y})} {\sqrt{\sum_{i \in I}({R_{x,i} - \overline{R}_x})^2} \sqrt{\sum_{u \in I}({R_{y,i} - \overline{R}_y})^2}}
+UserSim(x, y) = \frac{\sum_{i \in I_{x,y}} ({R_{x,i} - \overline{R}_x}) ({R_{y,i} - \overline{R}_y})} {\sqrt{\sum_{i \in I_{x,y}}({R_{x,i} - \overline{R}_x})^2} \sqrt{\sum_{u \in I_{x,y}}({R_{y,i} - \overline{R}_y})^2}}
 \label{eq:UserSim} \tag{6}
 \end{equation}
 
 
-where $I$ is the set of items rated by both user $x$ and user $y$.
+where $I_{x,y}$ is the set of items rated by both user $x$ and user $y$, $\overline{R}_x$ \& $\overline{R}_y$ is the mean of the x\textsuperscript{th} \& y\textsuperscript{th} user's ratings respectively.
 
 \end{figure*}
 
