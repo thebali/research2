@@ -278,7 +278,7 @@ Collaborative filtering calculates certain similarities between neighbours in me
 
 \begin{figure*}[b]
 \begin{equation}
-ItemSim(x, y) = \frac{\sum_{u \in U_{i,j}} ({R_{u,i} - \overline{R}_u}) ({R_{u,j} - \overline{R}_u})} {\sqrt{\sum_{u \in U_{i,j}}({R_{u,i} - \overline{R}_u})^2} \sqrt{\sum_{u \in U_{i,j}}({R_{u,j} - \overline{R}_u})^2}}
+ItemSim(i, y) = \frac{\sum_{u \in U_{i,j}} ({R_{u,i} - \overline{R}_u}) ({R_{u,j} - \overline{R}_u})} {\sqrt{\sum_{u \in U_{i,j}}({R_{u,i} - \overline{R}_u})^2} \sqrt{\sum_{u \in U_{i,j}}({R_{u,j} - \overline{R}_u})^2}}
 \label{eq:ItemSim} \tag{4}
 \end{equation}
 
