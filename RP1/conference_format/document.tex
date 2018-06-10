@@ -280,7 +280,7 @@ As we said before, the memory based CF strategies work based on the past informa
 \subsection{Item based}
 Item based collaborative filtering is a sort of model based technique for making suggestions. There are two stages in thing based collaborative filtering. Initially, discover the likenesses between things that are processed by utilizing one of the number closeness measures. Furthermore, surveyed likeness esteems by utilizing foresee appraisals for obscure thing. Thing based closest neighbor strategies are transpose of the client based closest neighbor techniques. Be that as it may, it can make expectations rely upon similitudes among items. 
 
-The cosine based similarity strategy is regular approach to figure out the similarity between items, as should be obvious in equation(3).
+The cosine based similarity strategy is regular approach to figure out the similarity between items, as should be obvious in \eqref{eq:ItemSim}.
 
 \begin{equation}
 ItemSim(x, y) = \frac{\sum_{u \in U_{i,j}} ({R_{u,i} - \overline{R}_u}) ({R_{u,j} - \overline{R}_u})} {\sqrt{\sum_{u \in U_{i,j}}({R_{u,i} - \overline{R}_u})^2} \sqrt{\sum_{u \in U_{i,j}}({R_{u,j} - \overline{R}_u})^2}}
