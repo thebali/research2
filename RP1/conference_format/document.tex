@@ -282,7 +282,7 @@ Item based collaborative filtering is a sort of model based technique for making
 
 The cosine based similarity strategy is regular approach to figure out the similarity between items, as should be obvious in \eqref{eq:ItemSim}.
 
-\begin[b]{figure*}
+\begin{figure*}[b]
 \begin{equation}
 ItemSim(x, y) = \frac{\sum_{u \in U_{i,j}} ({R_{u,i} - \overline{R}_u}) ({R_{u,j} - \overline{R}_u})} {\sqrt{\sum_{u \in U_{i,j}}({R_{u,i} - \overline{R}_u})^2} \sqrt{\sum_{u \in U_{i,j}}({R_{u,j} - \overline{R}_u})^2}}
 \label{eq:ItemSim} \tag{4}
