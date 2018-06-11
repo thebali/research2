@@ -373,7 +373,18 @@ The evaluation metrics are of huge importance in the field of recommender system
 {\color{white}r}
 Some other new classified metrics are Recall, Precision, F1 Measure, F1-F2 measure .
 
-\textbf{some portion missing here-- like equations}
+Root Mean Squared Error (RMSE) between the predicted and actual ratings is given by
+\[
+RMSE = \sqrt{\frac{1}{|N|} \sum_{u,i\in N} (\hat{r}_{ui} - r_{ui})^2}
+\]
+
+where, $N$ is the test set of user-item pairs $(u,i)$ for the true ratings $r_{u,i}$ are known.
+
+Mean Absolute Error (MAE) is another way to measure Accuracy, genrally given by
+\[
+MAE = \frac{1}{|N|} \sum_{u,i\in N} |\hat{r}_{ui} - r_{ui}|
+\]
+
 
 \section{Conclusion}
 Collaborative filtering techniques emphasize the accomplishment of utilizing recommender systems strategy in various regions of research. In this paper, we presented the fundamental recommender systems strategies. At that point, the fundamental classifications of collaborative filtering strategies have been presented which incorporate; memory-based, model based, and hybrid CF technique that consolidate CF with other recommender framework strategies. In addition, a few cases of specified CF systems have been given. The paper also features a few proposals to upgrade CF technique and utilizing the improvement in various application applying CF strategy. The assessment measures have been talked about also. This examination seems to propose as well as show that the more far off future may have a place with different calculations, it enhances the recommender framework.
