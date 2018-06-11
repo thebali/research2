@@ -313,7 +313,7 @@ Also, the prediction calculation for the item based nearest neighbour model for 
 
 
 \begin{equation}
-P_{item-based}(u,i) = \frac{\sum_{i,j \in I} ItemSim(i,j) \ast R_{u,j} {\sum_{i,j \in I} ItemSim(i,j)}
+P_{item-based}(u,i) = \frac{\sum_{i,j \in I} ItemSim(i,j) \ast R_(u,j)} {\sum_{i,j \in I} ItemSim(i,j)}
 \label{eq:ItemPred} \tag{5}
 \end{equation}
 
