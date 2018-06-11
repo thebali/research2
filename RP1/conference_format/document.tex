@@ -224,13 +224,14 @@ CBF approaches recommend items that are similar in content of the items that the
 
 CBF approaches prescribe things that are comparable in substance to the things that the user enjoyed previously or match to the properties of the user [5]. In content based filtering technique, every thing is spoken to by an element vector or a characteristic profile. The component holds numeric or ostensible esteems speaking to specific parts of the thing, for example, shading, cost, and so forth. An assortment of (dis) closeness measures between the component vectors might be utilized to ascertain the comparability between two things. The Euclidean or cosine (dis) comparability calculations can be utilized as in conditions (1) and (2) [4].
 
-
+Euclidean Dissimilarity
 \begin{equation}
 dissim(x, y) = \sqrt{\sum_{i=1}^{n}\left ( x_{i} - y_{i} \right )^{2}} = \left \| x - y \right \|_2
 \label{dissimilarity} \tag{3}
 \end{equation}
 
 
+cosine similarity
 \begin{equation}
 sim(x,y) = \frac{\sum_{i=1}^{n} x_{i} \ast y_{i}}{\sqrt{\sum_{i=1}^{n} x_{i}^{2}} \sqrt{\sum_{i=1}^{n} y_{i}^{2}}}
 \label{eq:similarity} \tag{4}
