@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6630 64-bit) (preloaded format=xelatex 2018.4.18)  8 JUN 2018 03:47
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6630 64-bit) (preloaded format=xelatex 2018.4.18)  9 JUN 2018 23:40
 entering extended mode
 **"E:/ACADEMICS/PEC---/ME 4 SEM/thesis/latex/thesis.tex"
 ("E:/ACADEMICS/PEC---/ME 4 SEM/thesis/latex/thesis.tex"
@@ -346,10 +346,10 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 ("C:\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: dvips.def on input line 99.
+Package graphics Info: Driver file: xetex.def on input line 99.
 
-("C:\MiKTeX 2.9\tex\latex\graphics-def\dvips.def"
-File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+("C:\MiKTeX 2.9\tex\latex\graphics-def\xetex.def"
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 ))
 \Gin@req@height=\dimen147
 \Gin@req@width=\dimen148
@@ -411,6 +411,32 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \mathdisplay@stack=\toks27
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\MiKTeX 2.9\tex\latex\cite\cite.sty"
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+("C:\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+("C:\MiKTeX 2.9\tex\latex\ms\everysel.sty"
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip188
+\RaggedLeftLeftskip=\skip189
+\RaggedRightLeftskip=\skip190
+\CenteringRightskip=\skip191
+\RaggedLeftRightskip=\skip192
+\RaggedRightRightskip=\skip193
+\CenteringParfillskip=\skip194
+\RaggedLeftParfillskip=\skip256
+\RaggedRightParfillskip=\skip257
+\JustifyingParfillskip=\skip258
+\CenteringParindent=\skip259
+\RaggedLeftParindent=\skip260
+\RaggedRightParindent=\skip261
+\JustifyingParindent=\skip262
 )
 ("C:\MiKTeX 2.9\tex\latex\glossaries-extra\glossaries-extra.sty"
 Package: glossaries-extra 2018/05/24 v1.32 (NLCT)
@@ -509,7 +535,7 @@ Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks32
 \@dtl@tmpcount=\count164
-\dtl@tmplength=\skip188
+\dtl@tmplength=\skip263
 \dtl@sortresult=\count165
 \@dtl@numgrpsepcount=\count166
 \@dtl@datatype=\count167
@@ -522,7 +548,7 @@ Package: glossaries-compatible-307 2018/06/01 v4.40 (NLCT)
 )
 \gls@level=\count171
 \@gls@tmpb=\toks33
-\gls@tmplen=\skip189
+\gls@tmplen=\skip264
 \glskeylisttok=\toks34
 \glslabeltok=\toks35
 \glsshorttok=\toks36
@@ -533,17 +559,17 @@ Package: glossary-hypernav 2018/06/01 v4.40 (NLCT)
 )
 ("C:\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-list.sty"
 Package: glossary-list 2018/06/01 v4.40 (NLCT)
-\glslistdottedwidth=\skip190
+\glslistdottedwidth=\skip265
 )
 ("C:\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-long.sty"
 Package: glossary-long 2018/06/01 v4.40 (NLCT)
 
 ("C:\MiKTeX 2.9\tex\latex\tools\longtable.sty"
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip191
-\LTright=\skip192
-\LTpre=\skip193
-\LTpost=\skip194
+\LTleft=\skip266
+\LTright=\skip267
+\LTpre=\skip268
+\LTpost=\skip269
 \LTchunksize=\count172
 \LTcapwidth=\dimen158
 \LT@head=\box31
@@ -556,8 +582,8 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count176
 \LT@p@ftn=\toks38
 )
-\glsdescwidth=\skip256
-\glspagelistwidth=\skip257
+\glsdescwidth=\skip270
+\glspagelistwidth=\skip271
 )
 ("C:\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-super.sty"
 Package: glossary-super 2018/06/01 v4.40 (NLCT)
@@ -566,9 +592,9 @@ Package: glossary-super 2018/06/01 v4.40 (NLCT)
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \c@tracingst=\count177
 \ST@wd=\dimen159
-\ST@rightskip=\skip258
-\ST@leftskip=\skip259
-\ST@parfillskip=\skip260
+\ST@rightskip=\skip272
+\ST@leftskip=\skip273
+\ST@parfillskip=\skip274
 \ST@pageleft=\dimen160
 \ST@headht=\dimen161
 \ST@tailht=\dimen162
@@ -583,7 +609,7 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 ))
 ("C:\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-tree.sty"
 Package: glossary-tree 2018/06/01 v4.40 (NLCT)
-\glstreeindent=\skip261
+\glstreeindent=\skip275
 ))
 \glsxtrresourcecount=\count178
 \@glsxtrnewgls@inner=\count179
@@ -721,7 +747,7 @@ Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
 tly
 (rerunfilecheck)             and the loading of the package is aborted.
 )
-\Hy@SectionHShift=\skip262
+\Hy@SectionHShift=\skip276
 )
 ("C:\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -745,12 +771,12 @@ Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count269
 \calc@Adimen=\dimen182
 \calc@Bdimen=\dimen183
-\calc@Askip=\skip263
-\calc@Bskip=\skip264
+\calc@Askip=\skip277
+\calc@Bskip=\skip278
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count270
-\calc@Cskip=\skip265
+\calc@Cskip=\skip279
 )
 ("C:\MiKTeX 2.9\tex\latex\fourier\fourier.sty"
 Package: fourier 2005/01/01 1.4 fourier-GUTenberg package
@@ -955,61 +981,63 @@ LaTeX Font Info:    Redeclaring math accent \mathring on input line 256.
 ))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 119.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 119
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 120.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 120
 .
  ("C:\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd"
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 119.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 119
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 120.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 120
 .
 
 ("C:\MiKTeX 2.9\tex\latex\fourier\fmsfutm.fd"
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 119.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 119
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 120.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 120
 .
 
 ("C:\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd"
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 119.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 120.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 120.
 
 
 ("C:\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 119.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 120.
 
 
 ("C:\MiKTeX 2.9\tex\latex\fourier\t1futs.fd"
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 120.
 \AtBeginShipoutBox=\box37
 
 ("C:\MiKTeX 2.9\tex\latex\graphics\color.sty"
@@ -1019,11 +1047,8 @@ Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: xetex.def on input line 147.
-
-("C:\MiKTeX 2.9\tex\latex\graphics-def\xetex.def"
-File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
-))
-Package hyperref Info: Link coloring ON on input line 119.
+)
+Package hyperref Info: Link coloring ON on input line 120.
 
 ("C:\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1035,10 +1060,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 119.
-LaTeX Info: Redefining \ref on input line 119.
-LaTeX Info: Redefining \pageref on input line 119.
-LaTeX Info: Redefining \nameref on input line 119.
+LaTeX Info: Redefining \nameref on input line 120.
+LaTeX Info: Redefining \ref on input line 120.
+LaTeX Info: Redefining \pageref on input line 120.
+LaTeX Info: Redefining \nameref on input line 120.
 (thesis.out) (thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
@@ -1078,17 +1103,13 @@ LaTeX Info: Redefining \nameref on input line 119.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 137.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 136.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 141.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 140.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 147.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 146.
 File: logo.jpg Graphic file (type bmp)
 <logo.jpg>
-
-Underfull \vbox (badness 3312) has occurred while \output is active []
-
-
 ("C:\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def"
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
@@ -1108,25 +1129,25 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 ]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 175.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 174.
 LaTeX Font Info:    Try loading font information for FML+futmi on input line 17
-5.
+4.
 
 ("C:\MiKTeX 2.9\tex\latex\fourier\fmlfutmi.fd"
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 22.88956pt on input line 175.
+(Font)              scaled to size 22.88956pt on input line 174.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 175.
+(Font)              scaled to size 15.89755pt on input line 174.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 175.
+(Font)              scaled to size 11.03998pt on input line 174.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 22.88956pt on input line 175.
+(Font)              scaled to size 22.88956pt on input line 174.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 175.
+(Font)              scaled to size 15.89755pt on input line 174.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 175.
+(Font)              scaled to size 11.03998pt on input line 174.
  (thesis.toc
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 1.
@@ -1136,25 +1157,18 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 1.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.43999pt on input line 1.
-
-Underfull \vbox (badness 1406) has occurred while \output is active []
-
  [4
 
-])
-[5] (thesis.lof) [6
+]) [5]
+(thesis.lof) (thesis.lot) [6
 
-] (thesis.lot) [7
+] [7
 
-] [8
-
-
-] [9
 
 ]
 \openout2 = `abstract.aux'.
 
- (abstract.tex) [10
+ (abstract.tex) [8
 
 
 ]
@@ -1164,8 +1178,7 @@ Underfull \vbox (badness 1406) has occurred while \output is active []
 LaTeX Font Info:    Font shape `T1/futs/bx/sc' in size <24.88> not available
 (Font)              Font shape `T1/futs/b/sc' tried instead on input line 1.
 Missing character: There is no ’ in font futr8t!
-
-[11
+ [9
 
 
 
@@ -1178,23 +1191,23 @@ Overfull \hbox (1.1098pt too wide) in paragraph at lines 26--27
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 31.
 ("C:\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [12]
+)) [10]
 \openout2 = `problem.aux'.
 
- (problem.tex) [13
+ (problem.tex) [11
 
 
 ]
 \openout2 = `chap2.aux'.
 
  (chap2.tex
-[14
+[12
 
 
 
 ]
 Missing character: There is no ’ in font futr8t!
- [15]
+ [13]
 Missing character: There is no ’ in font futr8t!
 Missing character: There is no ’ in font futr8t!
 
@@ -1203,7 +1216,7 @@ Overfull \hbox (3.30571pt too wide) in paragraph at lines 18--19
 -pu-ta-tion and Pre-dic-tion Genera-
  []
 
-[16]
+[14]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 34.
 
@@ -1215,7 +1228,7 @@ ts of col-lab-o-ra-tive fil-ter-ing based
 
 Underfull \vbox (badness 2698) has occurred while \output is active []
 
- [17]
+ [15]
 Missing character: There is no ’ in font futr8t!
 
 Overfull \hbox (0.28188pt too wide) in paragraph at lines 74--75
@@ -1230,7 +1243,7 @@ n-tion is that, af-ter suf-fi-cient amounts
  []
 
 Missing character: There is no ’ in font futr8t!
-[18]
+[16]
 Overfull \hbox (0.76175pt too wide) in paragraph at lines 85--86
 \T1/futs/m/n/12 Recommender sys-tems built around the con-cept of de-mo-graphic
  fil-ter-ing work very much
@@ -1239,7 +1252,7 @@ Overfull \hbox (0.76175pt too wide) in paragraph at lines 85--86
 
 Underfull \vbox (badness 1325) has occurred while \output is active []
 
- [19]
+ [17]
 LaTeX Font Info:    Try loading font information for TS1+futs on input line 96.
 
 
@@ -1261,28 +1274,30 @@ Missing character: There is no ” in font futr8t!
 Missing character: There is no ” in font futr8t!
 Missing character: There is no ” in font futr8t!
 Missing character: There is no ” in font futr8t!
-[20]
+[18]
 Overfull \hbox (1.1452pt too wide) in paragraph at lines 117--118
 \T1/futs/m/n/12 A com-mon chal-lenge when im-ple-ment-ing al-go-rithms for col-
 lab-o-ra-tive filtering-based rec-
  []
 
-[21]) [22]
+[19]) [20]
 \openout2 = `chap3.aux'.
 
  (chap3.tex
+File: img/PearsonEqn.png Graphic file (type bmp)
+<img/PearsonEqn.png>
 Missing character: There is no ’ in font futr8t!
- [23
+ [21
 
 
 
 ]
-Overfull \hbox (10.8657pt too wide) in paragraph at lines 67--95
+Overfull \hbox (10.8657pt too wide) in paragraph at lines 69--97
 \T1/futs/m/n/12 dateArm(a, re-ward) // Up-date the arm de-pend-ing on suc-cess 
 or fail-ure 11 ap-pend(previousP
  []
 
-[24]
+[22]
 Missing character: There is no β in font futr8t!
 Missing character: There is no α in font futr8t!
 Missing character: There is no α in font futr8t!
@@ -1319,7 +1334,7 @@ Missing character: There is no β in font futr8t!
 Missing character: There is no ← in font futr8t!
 Missing character: There is no α in font futr8t!
 Missing character: There is no β in font futr8t!
- [25]
+ [23]
 Missing character: There is no β in font futr8t!
 Missing character: There is no α in font futr8t!
 Missing character: There is no λ in font futr8t!
@@ -1345,25 +1360,22 @@ Missing character: There is no α in font futr8t!
 Missing character: There is no β in font futr8t!
 Missing character: There is no λ in font futr8t!
 Missing character: There is no λ in font futr8t!
+ [24]
 Missing character: There is no ’ in font futr8t!
 Missing character: There is no α in font futr8t!
- [26]) [27]
+) [25]
 \openout2 = `chap4.aux'.
 
- (chap4.tex [28
+ (chap4.tex [26
 
 
 
 ]
 Missing character: There is no ’ in font futr8t!
-
-Underfull \vbox (badness 1102) has occurred while \output is active []
-
- [29]
-[30]) [31]
+ [27] [28]) [29]
 \openout2 = `chap5.aux'.
 
- (chap5.tex [32
+ (chap5.tex [30
 
 
 
@@ -1373,7 +1385,7 @@ Overfull \hbox (5.8137pt too wide) in paragraph at lines 12--18
 e ac-tual use-area and dataset,
  []
 
-[33]
+[31]
 Missing character: There is no θ in font futr8t!
 Missing character: There is no ’ in font futr8t!
 Missing character: There is no α in font futr8t!
@@ -1394,32 +1406,32 @@ Missing character: There is no ← in font futr8t!
 Missing character: There is no ← in font futr8t!
 Missing character: There is no ← in font futr8t!
 Missing character: There is no ← in font futr8t!
+ [32]
+Missing character: There is no ’ in font futr8t!
+Missing character: There is no ’ in font futr8t!
+ [33]
+Missing character: There is no ” in font futr8t!
+Missing character: There is no ” in font futr8t!
+Missing character: There is no ’ in font futr8t!
+Missing character: There is no − in font futr8t!
+Missing character: There is no − in font futr8t!
+Missing character: There is no − in font futr8t!
  [34]
-Missing character: There is no ’ in font futr8t!
-Missing character: There is no ’ in font futr8t!
- [35]
-Missing character: There is no ” in font futr8t!
-Missing character: There is no ” in font futr8t!
-Missing character: There is no ’ in font futr8t!
-Missing character: There is no − in font futr8t!
-Missing character: There is no − in font futr8t!
-Missing character: There is no − in font futr8t!
- [36]
 Missing character: There is no ’ in font futr8t!
 Missing character: There is no  in font futr8t!
 Missing character: There is no ” in font futr8t!
 Missing character: There is no ” in font futr8t!
- [37] [38]
+ [35] [36]
 Missing character: There is no ” in font futr8t!
 Missing character: There is no ” in font futr8t!
 Missing character: There is no ∈ in font futr8t!
- [39]
+ [37]
 Missing character: There is no ∈ in font futr8t!
 Missing character: There is no • in font futr8t!
 Missing character: There is no • in font futr8t!
 Missing character: There is no • in font futr8t!
 Missing character: There is no • in font futr8t!
-) [40]
+) [38]
 \openout2 = `results.aux'.
 
  (results.tex
@@ -1433,20 +1445,20 @@ Overfull \hbox (1.01364pt too wide) in paragraph at lines 22--26
  and learned user-behaviour
  []
 
-[41
+[39
 
 
 
-] [42] [43] [44]
+] [40] [41] [42]
 Overfull \hbox (14.60971pt too wide) in paragraph at lines 298--304
 \T1/futs/m/n/12 gen-er-ated only through ob-serv-ing the flow of prod-ucts, wha
 t are be-ing bought and when.Due
  []
 
-[45] [46] [47] [48]) [49]
+[43] [44] [45] [46]) [47]
 \openout2 = `discuss.aux'.
 
- (discuss.tex [50
+ (discuss.tex [48
 
 
 
@@ -1463,7 +1475,7 @@ rience as well as some thoughts
  []
 
 Missing character: There is no ’ in font futr8t!
-[51] [52]
+[49] [50]
 Overfull \hbox (12.79771pt too wide) in paragraph at lines 80--86
 []\T1/futs/m/n/12 Predictions made of data from 1 month in time 25 Best Arm All
  Arms Pop-u-lar-ity(Baseline)
@@ -1475,7 +1487,7 @@ Overfull \hbox (23.4657pt too wide) in paragraph at lines 137--143
 ll Arms Pop-u-lar-ity(Baseline)
  []
 
-[53]
+[51]
 Missing character: There is no ’ in font futr8t!
 Missing character: There is no ’ in font futr8t!
 Missing character: There is no ’ in font futr8t!
@@ -1484,16 +1496,16 @@ Missing character: There is no ’ in font futr8t!
 Missing character: There is no ’ in font futr8t!
 Missing character: There is no ’ in font futr8t!
 Missing character: There is no ’ in font futr8t!
- [54]
+ [52]
 Missing character: There is no ’ in font futr8t!
 Missing character: There is no ’ in font futr8t!
 Missing character: There is no ’ in font futr8t!
 Missing character: There is no ’ in font futr8t!
 Missing character: There is no ’ in font futr8t!
 Missing character: There is no ’ in font futr8t!
- [55]
+ [53]
 Missing character: There is no ’ in font futr8t!
- [56] [57]
+ [54] [55]
 Missing character: There is no ” in font futr8t!
 Missing character: There is no ” in font futr8t!
 Missing character: There is no ” in font futr8t!
@@ -1508,20 +1520,20 @@ Overfull \hbox (11.94572pt too wide) in paragraph at lines 429--441
 m well enough to be-long among
  []
 
-[58]) [59]
+[56]) [57]
 \openout2 = `conclusion.aux'.
 
- (conclusion.tex [60
+ (conclusion.tex [58
 
 
 
-]) [61] (thesis.bbl [62
+]) [59] (thesis.bbl [60
 
 
 
 ]
 bibitemlist
-) [63]
+) [61]
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
@@ -1531,21 +1543,21 @@ bibitemlist
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 233.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 233.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
  (thesis.aux (acknowledge.aux) (abstract.aux) (intro.aux) (problem.aux)
 (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux) (results.aux) (discuss.aux)
 (conclusion.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 233.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 233.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 228.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 228.
  ) 
 Here is how much of TeX's memory you used:
- 18873 strings out of 427799
- 272966 string characters out of 3147465
- 500050 words of memory out of 3000000
- 22587 multiletter control sequences out of 15000+200000
+ 19032 strings out of 427799
+ 275400 string characters out of 3147465
+ 501426 words of memory out of 3000000
+ 22738 multiletter control sequences out of 15000+200000
  131180 words of font info for 84 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  58i,12n,48p,2034b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on thesis.pdf (63 pages).
+Output written on thesis.pdf (61 pages).

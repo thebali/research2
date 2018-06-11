@@ -21,48 +21,13 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{su2009survey}
-X.~Su and T.~M. Khoshgoftaar, ``A survey of collaborative filtering
-  techniques,'' \emph{Advances in artificial intelligence}, vol. 2009, p.~4,
-  2009.
-
-\bibitem{zuva2012survey}
-T.~Zuva, S.~O. Ojo, S.~Ngwira, K.~Zuva \emph{et~al.}, ``A survey of recommender
-  systems techniques, challenges and evaluation metrics,'' \emph{International
-  Journal of Emerging Technology and Advanced Engineering}, vol.~2, no.~11, pp.
-  382--386, 2012.
-
-\bibitem{herlocker2004evaluating}
-J.~L. Herlocker, J.~A. Konstan, L.~G. Terveen, and J.~T. Riedl, ``Evaluating
-  collaborative filtering recommender systems,'' \emph{ACM Transactions on
-  Information Systems (TOIS)}, vol.~22, no.~1, pp. 5--53, 2004.
-
-\bibitem{linden2003amazon}
-G.~Linden, B.~Smith, and J.~York, ``Amazon.com recommendations: Item-to-item
-  collaborative filtering,'' \emph{IEEE Internet computing}, vol.~7, no.~1, pp.
-  76--80, 2003.
-
-\bibitem{adomavicius2005toward}
-G.~Adomavicius and A.~Tuzhilin, ``Toward the next generation of recommender
-  systems: A survey of the state-of-the-art and possible extensions,''
-  \emph{IEEE transactions on knowledge and data engineering}, vol.~17, no.~6,
-  pp. 734--749, 2005.
-
-\bibitem{park2012literature}
-D.~H. Park, H.~K. Kim, I.~Y. Choi, and J.~K. Kim, ``A literature review and
-  classification of recommender systems research,'' \emph{Expert Systems with
-  Applications}, vol.~39, no.~11, pp. 10\,059--10\,072, 2012.
-
-\bibitem{sarwar2001item}
-B.~Sarwar, G.~Karypis, J.~Konstan, and J.~Riedl, ``Item-based collaborative
-  filtering recommendation algorithms,'' in \emph{Proceedings of the 10th
-  international conference on World Wide Web}.\hskip 1em plus 0.5em minus
-  0.4em\relax ACM, 2001, pp. 285--295.
-
-\bibitem{ekstrand2011collaborative}
-M.~D. Ekstrand, J.~T. Riedl, J.~A. Konstan \emph{et~al.}, ``Collaborative
-  filtering recommender systems,'' \emph{Foundations and
-  Trends{\textregistered} in Human--Computer Interaction}, vol.~4, no.~2, pp.
-  81--173, 2011.
+\bibitem{Claypool1999}
+\BIBentryALTinterwordspacing
+M.~Claypool, T.~Miranda, A.~Gokhale, P.~Murnikov, D.~Netes, and M.~Sartin,
+  ``{Combining content-based and collaborative filters in an online
+  newspaper},'' \emph{Proceedings of Recommender Systems Workshop at ACM
+  SIGIR}, pp. 40--48, 1999. [Online]. Available:
+  \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.45.5230{\&}rep=rep1{\&}type=pdf}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}

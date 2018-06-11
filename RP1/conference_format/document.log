@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.18)  21 MAY 2018 14:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.18)  11 JUN 2018 20:17
 entering extended mode
 **"E:/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format/document.tex"
 ("E:/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format/document.tex"
@@ -147,6 +147,33 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
+("C:\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\MiKTeX 2.9\tex\latex\sttools\stfloats.sty"
+Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip sett
+ings
+\@dblbotnum=\count105
+\c@dblbotnumber=\count106
+)
 ("C:\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2018/02/14 3.18 The Babel package
 
@@ -165,11 +192,11 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 
 ("C:\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2018/02/14 3.18 Babel common definitions
-\babel@savecnt=\count105
+\babel@savecnt=\count107
 \U@D=\dimen126
 
 ("C:\MiKTeX 2.9\tex\generic\babel\txtbabel.def")
-\bbl@dirlevel=\count106
+\bbl@dirlevel=\count108
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -192,10 +219,7 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
-
-("C:\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-))
+)
 \Gin@req@height=\dimen127
 \Gin@req@width=\dimen128
 )
@@ -205,16 +229,16 @@ atched RF)
 )
 ("C:\MiKTeX 2.9\tex\latex\lettrine\lettrine.sty"
 File: lettrine.sty 2015/08/31 v1.9 (Daniel Flipo)
-\c@DefaultLines=\count107
-\c@DefaultDepth=\count108
+\c@DefaultLines=\count109
+\c@DefaultDepth=\count110
 \DefaultFindent=\dimen129
 \DefaultNindent=\dimen130
 \DefaultSlope=\dimen131
 \DiscardVskip=\dimen132
 \L@lbox=\box29
 \L@tbox=\box30
-\c@L@lines=\count109
-\c@L@depth=\count110
+\c@L@lines=\count111
+\c@L@depth=\count112
 \L@Pindent=\dimen133
 \L@Findent=\dimen134
 \L@Nindent=\dimen135
@@ -296,70 +320,125 @@ LaTeX Warning: Label `fig:verticalcell' multiply defined.
 )
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
  ("C:\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count111
+\scratchcounter=\count113
 \scratchdimen=\dimen145
 \scratchbox=\box31
-\nofMPsegments=\count112
-\nofMParguments=\count113
+\nofMPsegments=\count114
+\nofMParguments=\count115
 \everyMPshowfont=\toks21
-\MPscratchCnt=\count114
+\MPscratchCnt=\count116
 \MPscratchDim=\dimen146
-\MPnumerator=\count115
-\makeMPintoPDFobject=\count116
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
 \everyMPtoPDFconversion=\toks22
 )
 <images/history-use.png, id=1, 1216.545pt x 413.545pt>
 File: images/history-use.png Graphic file (type png)
 <use images/history-use.png>
-Package pdftex.def Info: images/history-use.png  used on input line 207.
+Package pdftex.def Info: images/history-use.png  used on input line 193.
 (pdftex.def)             Requested size: 516.0pt x 175.41039pt.
- [1{C:/Users/cramdog/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+LaTeX Warning: Citation `su2009survey' on page 1 undefined on input line 211.
+
+
+LaTeX Warning: Citation `zuva2012survey' on page 1 undefined on input line 212.
+
+
+
+LaTeX Warning: Citation `herlocker2004evaluating' on page 1 undefined on input 
+line 213.
+
+
+LaTeX Warning: Citation `linden2003amazon' on page 1 undefined on input line 21
+4.
+
+
+LaTeX Warning: Citation `adomavicius2005toward' on page 1 undefined on input li
+ne 215.
+
+
+LaTeX Warning: Citation `park2012literature' on page 1 undefined on input line 
+216.
+
+[1{C:/Users/cramdog/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
+
+LaTeX Warning: Citation `sarwar2001item' on page 2 undefined on input line 255.
+
+
 [2 <./images/history-use.png>]
-<images/chart.png, id=13, 448.67625pt x 348.55219pt>
+<images/chart.png, id=19, 448.67625pt x 348.55219pt>
 File: images/chart.png Graphic file (type png)
 <use images/chart.png>
-Package pdftex.def Info: images/chart.png  used on input line 263.
+Package pdftex.def Info: images/chart.png  used on input line 262.
 (pdftex.def)             Requested size: 516.0pt x 400.8957pt.
-
-Overfull \hbox (1.54782pt too wide) detected at line 289
-\OML/cmm/m/it/10 ItemSim\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 )
- = []([])([])\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 ([])
+ [3 <./images/chart.png>]
+Overfull \hbox (10.76727pt too wide) detected at line 328
+\OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; i\OT1/cmr/m/n/10 ) = [
+][] + []
  []
 
-[3]
-Underfull \hbox (badness 1990) in paragraph at lines 313--314
+[4]
+
+LaTeX Warning: Citation `ekstrand2011collaborative' on page 5 undefined on inpu
+t line 346.
+
+
+Underfull \hbox (badness 1990) in paragraph at lines 350--351
 []\OT1/ptm/m/n/10 Recommendations used for the large large on-line e-
  []
 
 
-Underfull \vbox (badness 2717) has occurred while \output is active []
+LaTeX Warning: Citation `heree' on page 5 undefined on input line 373.
 
- [4 <./images/chart.png>] [5] (document.bbl
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 65.
- ("C:\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 65.
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 65.
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--374
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--381
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 385--387
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--394
+
+ []
+
+<images/AUC.png, id=33, 458.46281pt x 173.89969pt>
+File: images/AUC.png Graphic file (type png)
+<use images/AUC.png>
+Package pdftex.def Info: images/AUC.png  used on input line 399.
+(pdftex.def)             Requested size: 206.39685pt x 78.28862pt.
+(document.bbl
+Overfull \hbox (45.43745pt too wide) in paragraph at lines 26--32
+\OT1/ptm/m/n/8 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.45.5230
+&rep=rep1&type=pdf 
+ []
+
 )
 
 ** Conference Paper **
@@ -372,33 +451,34 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6
+[6 <./images/AUC.png>] (document.aux)
 
-] (document.aux)
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3585 strings out of 492976
- 52391 string characters out of 3125865
- 132870 words of memory out of 3000000
- 7390 multiletter control sequences out of 15000+200000
- 41646 words of font info for 79 fonts, out of 3000000 for 9000
+ 4057 strings out of 492976
+ 57789 string characters out of 3125865
+ 143783 words of memory out of 3000000
+ 7859 multiletter control sequences out of 15000+200000
+ 38868 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,23p,1757b,280s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,9n,35p,1757b,252s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmex10.pfb><C:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-><C:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><C:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/MiKTeX 2.9/fonts/type1/urw/tim
-es/utmb8a.pfb><C:/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/MiKTeX 2.9/f
-onts/type1/urw/times/utmr8a.pfb><C:/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pf
-b>
-Output written on document.pdf (6 pages, 177145 bytes).
+><C:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi7.pfb><C:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr10.pfb><C:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmsy7.pfb><C:/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/MiKTeX
+ 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/MiKTeX 2.9/fonts/type1/urw/times/utm
+r8a.pfb><C:/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on document.pdf (6 pages, 211552 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
+ 76 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
