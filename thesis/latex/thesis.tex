@@ -6,7 +6,9 @@
 % \usepackage{xcolor}
 \usepackage{amsmath}
 % \usepackage[LGRgreek]{mathastext}
-\usepackage{cite}
+% incompatible \usepackage{cite}
+\usepackage[sorting=none]{biblatex}
+\bibliography{MyCollection}
 % \usepackage{blindtext}
 \usepackage{ragged2e}
 
@@ -222,11 +224,11 @@ heightrounded,}
 
 
 %% special package for bibliography
-\usepackage[sorting=none]{biblatex}
-\bibliography{MyCollection}
 %\bibliographystyle{plainnat}
 %\bibliographystyle{plain}
 %\bibliographystyle{unsrt}
+\printbibliography
 
 
 \end{document}
+
