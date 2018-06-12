@@ -11,9 +11,22 @@ A variety of methods are commonly available in the literature [76] for stop-word
 about 300 to 400 words are used for the retrieval process. In addition,
 words which occur extremely infrequently can also be removed from
 the collection. This is because such words do not add anything to the
-similarity computations which are used in most clustering methods. In
+similarity computations which are used in most clustering methods. In some cases, such words may be misspellings or typographical errors in
+documents. Noisy text collections which are derived from the web, blogs
+or social networks are more likely to contain such terms. We note that
+some lines of research define document frequency based selection purely
+on the basis of very infrequent terms, because these terms contribute the
+least to the similarity calculations. However, it should be emphasized
+that very frequent words should also be removed, especially if they are
+not discriminative between clusters. Note that the TF-IDF weighting
+method can also naturally filter out very common words in a “soft” way.
+Clearly, the standard set of stop words provide a valid set of words to
+prune. Important words might be the next
+
+\section{Term Strength}
+A much more aggressive technique for stop-word removal is pro
 
 
 
-3.2
+
 
