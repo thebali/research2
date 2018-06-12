@@ -7,8 +7,11 @@
 \usepackage{amsmath}
 % \usepackage[LGRgreek]{mathastext}
 % incompatible \usepackage{cite}
-\usepackage[sorting=none]{biblatex}
-\bibliography{MyCollection}
+\usepackage[sorting=none, 
+%style=verbose, citestyle=alphabetic
+]{biblatex}
+%\bibliography{MyCollection}
+\addbibresource{MyCollection.bib} %Imports bibliography file
 % \usepackage{blindtext}
 \usepackage{ragged2e}
 
