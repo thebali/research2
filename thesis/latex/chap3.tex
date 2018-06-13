@@ -8,18 +8,19 @@ $k$ nearest neighbor or kNN classification determines the decision boundary loca
 surrounding $d$.
 
 For general, k ∈ N in kNN, consider the region in the space for which the set of k nearest neighbors is the same. This again is a convex polygon and the space is partitioned into convex polygons, within each of which the set of k nearest neighbours is invariant.
-
-
 The parameter k in kNN is often chosen based on experience or knowledge about the classification problem at hand.  It is desirable for k to be odd to make ties less likely. k = 3 and k = 5 are common choices, but much larger values between 50 and 100 are also used.  An alternative way of setting the parameter is to select the k that gives best results on a held-out portion of the training set.
 \begin{figure}[H]
     {\centering {\includegraphics[width = 0.7 \textwidth]{img/kNNtrain}}\par}
     \caption{kNN  training(with preprocessing) and testing. $p_{j}$ is an estimate for $P(c_{j}|S_{k}) = P(c_{j}|d)$. $c_{j}$ denotes the set of all documents in the class $c_{j}$.}
 \end{figure}
 
-
 \section{Matrix Factorization | Singular Valued Decomposition | LSA }
+The square decompositions are simpler and can be treated with sufficient mathematical rigor to help understand how such decompositions work. Square symmetric matrices is the basis of the singular valued decomposition.
 
 In LSI, we use SVD to construct a low-rank approximation matrix C, to the term-document matrix, for a value of k that is far smaller than original rank of C. 
+
+\subsection{Term-document matrices and Singular value Decomposition}The decompositions we have been studying thus far apply to sq uare matri- ces.  However, the matrix we are interested in is the M × N term-document matrix C where (barring a rare coincidence) M 6 = N ; furthermore, C is very unlikely to be symmetric.  To this end we first describe an exte nsion of the symmetric  diagonal decomposition  known  as  the singular value decomposi- S I NG ULAR VALUE DEC O MPO S ITION tion .  We then show in Section 18.3 how this can be used to construct an ap- proximate version of C .  It is beyond the scope of this book to develop a full
+
 
 
 
