@@ -25,7 +25,7 @@ However, the matrix we are interested in is the M × N term-document matrix C wh
 Given an M × N matrix C and  a positive  integer k ,  we  wish  to  find  an M × N matrix C k of rank at most k , so as to minimize the Frobenius norm of F RO BENI US NO RM the matrix difference X = C − C k , defined to be
 
 \[
-    \| X_{F} \| = \sqrt{\sum{i=1}{M} \sum{j=1}{N} X_{ij}^2}
+    \| X_{F} \| = \sqrt{\sum_{i=1}^{M} \sum_{j=1}^{N} X_{ij}^2}
 \]
 
 Thus, the Frobenius norm of X measures the discrepancy between C k and C ; our goal is to find a matrix C k that minimizes this discrepancy, while con- straining C k to have rank at most k .   If r is the  rank of C ,  clearly C r = C and the Frobenius norm of the discrepancy is zero in this case . When k is far smaller than r , we refer to C k as a low-rank approximation. The singular value decomposition can be used to solve the low -rank ma- trix approximation problem.   We then derive from it an applic ation to ap- proximating term-document matrices.
