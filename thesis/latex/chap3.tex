@@ -19,9 +19,10 @@ The square decompositions are simpler and can be treated with sufficient mathema
 
 In LSI, we use SVD to construct a low-rank approximation matrix C, to the term-document matrix, for a value of k that is far smaller than original rank of C. 
 
-\subsection{Term-document matrices and Singular value Decomposition}The decompositions we have been studying thus far apply to sq uare matri- ces.  However, the matrix we are interested in is the M × N term-document matrix C where (barring a rare coincidence) M 6 = N ; furthermore, C is very unlikely to be symmetric.  To this end we first describe an exte nsion of the symmetric  diagonal decomposition  known  as  the singular value decomposi- S I NG ULAR VALUE DEC O MPO S ITION tion .  We then show in Section 18.3 how this can be used to construct an ap- proximate version of C .  It is beyond the scope of this book to develop a full
+\subsection{Term-document matrices and Singular value Decomposition}
+However, the matrix we are interested in is the M × N term-document matrix C where (barring a rare coincidence) M 6 = N ;furthermore, C is very unlikely to be symmetric. To this end, we first describe an extension of the symmetric diagonal decomposition known as the singular value decomposition.
 
-
+The singular value decomposition can be used to solve the low -rank ma- trix approximation problem.   We then derive from it an applic ation to ap- proximating term-document matrices.   We invoke the followi ng three-step procedure to this end:
 
 
 
@@ -30,6 +31,13 @@ In LSI, we use SVD to construct a low-rank approximation matrix C, to the term-d
     {\centering {\includegraphics[width = 0.9 \textwidth]{img/SVD}}\par}
     \caption{Svd}
 \end{figure}
+
+
+1. Given C , construct its SVD in the form shown in ( 18.9 ); thus, C = U Σ V T . 2. Derive from Σ the matrix Σ k formed by replacing by zeros the r − k small- est singular values on the diagonal of Σ . 3. Compute and output C k = U Σ k V T as the rank- k approximation to C . The rank of C k is at most k :  this follows from the fact that Σ k has at most k non-zero values.  Next, we recall the intuition of Example 18.1 :  the effect of small eigenvalues on matrix products is small.  Thus, it se ems plausible that replacing these small eigenvalues by zero will not subs tantially alter the product, leaving it “close” to C .  The following theorem due to Eckart and Young tells us that, in fact, this procedure yields the matri x of rank k with the lowest possible Frobenius error.
+
+
+
+
 
 
 
