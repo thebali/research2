@@ -30,4 +30,12 @@ M.~Claypool, T.~Miranda, A.~Gokhale, P.~Murnikov, D.~Netes, and M.~Sartin,
   \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.45.5230{\&}rep=rep1{\&}type=pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Bamber1975}
+\BIBentryALTinterwordspacing
+D.~Bamber, ``{The area above the ordinal dominance graph and the area below the
+  receiver operating characteristic graph},'' \emph{Journal of Mathematical
+  Psychology}, vol.~12, no.~4, pp. 387--415, nov 1975. [Online]. Available:
+  \url{https://www.sciencedirect.com/science/article/pii/0022249675900012}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

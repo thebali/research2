@@ -24,8 +24,7 @@ asymmetric key cryptography to establish a connection and a shared session key[5
 
 \section{Privacy-Preserving Systems}
 
-Privacy-Preserving systems is an area where much research has been made the last
-century[5, 19, 59], but despite this very little of the research is being applied in commercial systems. And this for several reasons such as companies wanting to make use of personal features to improve their systems and the user-experience as a whole, but also for more controversial reasons as those mentioned in 4.1.
+Privacy-Preserving systems is an area where much research has been made the last century[5, 19, 59], but despite this very little of the research is being applied in commercial systems. And this for several reasons such as companies wanting to make use of personal features to improve their systems and the user-experience as a whole, but also for more controversial reasons as those mentioned in 4.1.
 
 
 Generally you could describe a privacy-preserving system as a system which is developed
@@ -35,3 +34,51 @@ others. Examples of lower levels of privacy are systems that only make use of us
 with. Among the lowest levels of privacy are systems that record user-activity and behaviour of actions performed by users. Personal data that can be used, perhaps by
 the system itself, to classify users in ways that might or might not be more or less
 ethically acceptable.
+
+\section{Privacy Risks in Recommender Systems}
+Most scholars argue that in the modern information age people regard their personal
+information as a commodity: they are willing to give up some personal information
+in return for personal gains. Recommender systems are a perfect example of this
+dynamic: They collect a wide variety of user data as input for their recommender
+systems, and in return provide their users with better services and products [10, 37,
+44, 87, 139]. The information collected might include users’ clicking or viewing
+behavior; contextual information like the location or mood; social information like
+user friends, family, or colleagues; as well as demographic parameters like age and
+occupation [72]. To make sure that data collectors treat the collected information
+responsibly, the OECD [114] has defined a set of Fair Information Practices (FIPS):
+Collection Limitation Data should be collected within limits, by lawful and fair
+means and with consent (where appropriate).
+Data Quality Data should be relevant, accurate, complete and kept up-to-date.
+Purpose Specification The purposes of collection should be specified at the time
+of collection.
+Use Limitation Data should not be used or disclosed for other purposes except
+with consent or by the authority of law.
+Security Safeguards Personal data should be protected against unauthorized
+access, destruction, use, modification or disclosure.
+Openness Users should be able to know what data is being collected, who
+controls the data, and for what purposes they are used.
+Individual Participation An individual should be allowed to inspect the
+collected data about themselves, and have them erased, rectified, completed
+or amended.
+Accountability The collector of the data should be accountable for complying
+with the above measures.
+Generally speaking, privacy is breached when any of these principles are
+violated. Given their need to collect large amounts of information and innate
+capability to infer users’ personal tastes from this data, recommender systems run
+a heightened risk to violate the Collection Limitation, Purpose Specification, Use
+Limitation, and Security Safeguards principles. In this light, we categorize privacy
+risks in Table 19.1 along two dimensions: whether the privacy breach is due to direct
+access to existing data (a violation of the Collection and Use Limitation principles)
+or due to inference of new data (a violation of the Purpose Specification principle),
+and who the adversary trying to uncover user information is. We consider three
+types of adversaries: (1) the recommender system interacts with the user, but it
+might operate in a way that is incompatible with the user’s expectations of privacy
+(a violation of the Collection and Use Limitation principles); (2) other users of the
+systemhave no directaccess toanother user’sprivate data, butthey might exploit the
+outputs of the recommender to uncover the information of a target user (a violation
+of the Security Safeguards principle); and finally, (3) external entities are not users
+of the recommender, but they may try to access the information retained by the
+system or intervene in the interaction between the system and its users to get access
+to such information (another violation of the Security Safeguards principle, but
+regarding a different type of security safeguard). We next look in detail at the risks
+imposed by each of these actors.
