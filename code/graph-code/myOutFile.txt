@@ -1,0 +1,1500 @@
+{'reviewerID': Columns:
+	reviewerID	str
+	linear_terms	float
+	factors	array
+
+Rows: 3895
+
+Data:
++----------------+--------------+-------------------------------+
+|   reviewerID   | linear_terms |            factors            |
++----------------+--------------+-------------------------------+
+| A3JG72P0KY27HW |     0.0      | [-2.1497297287, 0.27149194... |
+| A1K9IW99EFBZ52 |     0.0      | [-0.421859681606, 0.004399... |
+| A1AT95C4D1Q3OF |     0.0      | [-5.59292507172, -0.754502... |
+| A2KW2KWKABNYNO |     0.0      | [-2.89415168762, 1.1984217... |
+| AFTN9ZLB22PSZ  |     0.0      | [5.2243885994, 7.207328319... |
+| A1JRHL29A1ABOT |     0.0      | [-7.08078432083, -3.037899... |
+| AUGLT2E8VUVGM  |     0.0      | [-0.363973468542, 0.006360... |
+| A3K8YRUI9ECW8G |     0.0      | [-0.822774469852, 0.002256... |
+| A31HTN51QNSQ3F |     0.0      | [0.275846540928, -0.477065... |
+| ADMFY78ISE8N6  |     0.0      | [-0.113557964563, 4.366796... |
++----------------+--------------+-------------------------------+
+[3895 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'asin': Columns:
+	asin	str
+	linear_terms	float
+	factors	array
+
+Rows: 2763
+
+Data:
++------------+--------------+-------------------------------+
+|    asin    | linear_terms |            factors            |
++------------+--------------+-------------------------------+
+| B0002WZT20 |     0.0      | [0.0, -0.082504555583, -0.... |
+| B00B0NEH8C |     0.0      | [-0.00812230538577, 8.4200... |
+| B00008OM62 |     0.0      | [0.015874851495, 0.0022786... |
+| B001IXQU3O |     0.0      | [-4.99571228829e-07, -1.97... |
+| B000002TWN |     0.0      | [-0.0341260544956, 0.12705... |
+| B00000I926 |     0.0      | [-0.0748669803143, 0.03083... |
+| B0062WV57W |     0.0      | [-0.00667064497247, 0.0001... |
+| B009YU718Q |     0.0      | [0.263971328735, -0.000723... |
+| B000001FC0 |     0.0      | [0.0307803079486, -0.11234... |
+| B0002MPTDO |     0.0      | [0.0249692406505, 0.041946... |
++------------+--------------+-------------------------------+
+[2763 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'intercept': 4.217222222222236}
+{'precision_recall_overall': Columns:
+	cutoff	int
+	precision	float
+	recall	float
+
+Rows: 18
+
+Data:
++--------+-------------------+------------------+
+| cutoff |     precision     |      recall      |
++--------+-------------------+------------------+
+|   1    |        0.0        |       0.0        |
+|   2    |        0.0        |       0.0        |
+|   3    | 0.000406008932197 | 0.00121802679659 |
+|   4    | 0.000609013398295 | 0.00243605359318 |
+|   5    | 0.000487210718636 | 0.00243605359318 |
+|   6    | 0.000406008932197 | 0.00243605359318 |
+|   7    | 0.000522011484253 | 0.00365408038977 |
+|   8    | 0.000609013398295 | 0.00487210718636 |
+|   9    | 0.000541345242929 | 0.00487210718636 |
+|   10   | 0.000487210718636 | 0.00487210718636 |
++--------+-------------------+------------------+
+[18 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'precision_recall_by_user': Columns:
+	reviewerID	str
+	cutoff	int
+	precision	float
+	recall	float
+	count	int
+
+Rows: 14778
+
+Data:
++----------------+--------+-----------+--------+-------+
+|   reviewerID   | cutoff | precision | recall | count |
++----------------+--------+-----------+--------+-------+
+| A103KNDW8GN92L |   1    |    0.0    |  0.0   |   1   |
+| A103KNDW8GN92L |   2    |    0.0    |  0.0   |   1   |
+| A103KNDW8GN92L |   3    |    0.0    |  0.0   |   1   |
+| A103KNDW8GN92L |   4    |    0.0    |  0.0   |   1   |
+| A103KNDW8GN92L |   5    |    0.0    |  0.0   |   1   |
+| A103KNDW8GN92L |   6    |    0.0    |  0.0   |   1   |
+| A103KNDW8GN92L |   7    |    0.0    |  0.0   |   1   |
+| A103KNDW8GN92L |   8    |    0.0    |  0.0   |   1   |
+| A103KNDW8GN92L |   9    |    0.0    |  0.0   |   1   |
+| A103KNDW8GN92L |   10   |    0.0    |  0.0   |   1   |
++----------------+--------+-----------+--------+-------+
+[14778 rows x 5 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns.}
+{'rmse_by_user': Columns:
+	reviewerID	str
+	count	int
+	rmse	float
+
+Rows: 821
+
+Data:
++----------------+-------+----------------+
+|   reviewerID   | count |      rmse      |
++----------------+-------+----------------+
+| ACE57M02TNPJW  |   1   | 0.172058415694 |
+| A3INN916E4VION |   1   | 1.26433326946  |
+| A1ABDWJU9RTUWU |   1   | 0.782777777778 |
+| AFTN9ZLB22PSZ  |   1   | 0.241340813322 |
+| A2XY7164O8EJ0K |   1   | 0.114865175353 |
+| A19DU0YV4K2MRY |   1   | 0.782777777778 |
+| A1NY71DI2EIUTP |   1   | 0.187120800002 |
+| A3RNC9BGR4J1ZF |   1   | 0.694529331194 |
+| A1WHO8TXC8GJHA |   1   | 0.782777777778 |
+| A2H9UO8RYFX5MB |   2   | 0.553525185103 |
++----------------+-------+----------------+
+[821 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_item': Columns:
+	asin	str
+	count	int
+	rmse	float
+
+Rows: 784
+
+Data:
++------------+-------+----------------+
+|    asin    | count |      rmse      |
++------------+-------+----------------+
+| B000001FC0 |   1   | 0.85282479869  |
+| B0013FDTYA |   2   | 0.985602079718 |
+| B00000HZG9 |   2   | 0.76230501208  |
+| B000002I8D |   1   | 0.341549330486 |
+| B00006IU73 |   1   | 27.7302570258  |
+| B0007NFL18 |   2   | 2.39593581275  |
+| B0000C0FKA |   1   | 0.782777777778 |
+| B0047Z72IC |   1   | 3.60293482886  |
+| B00000D9W1 |   2   | 1.30960261886  |
+| B000002WPK |   1   | 0.778604054263 |
++------------+-------+----------------+
+[784 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_overall': 203.5876293977199}
+balibalibalibalibalibalibbalibbalibbalibalibali
+{'reviewerID': Columns:
+	reviewerID	str
+	linear_terms	float
+	factors	array
+
+Rows: 3880
+
+Data:
++----------------+--------------+-------------------------------+
+|   reviewerID   | linear_terms |            factors            |
++----------------+--------------+-------------------------------+
+| AFTN9ZLB22PSZ  |     0.0      | [5.45064401627, 0.39064866... |
+| A257KXBOBFRLCN |     0.0      | [0.00659170048311, 0.12691... |
+| A351JCJRF3ML1A |     0.0      | [1.48605251312, -1.9579184... |
+| A3W0POMI33YQXQ |     0.0      | [-29.8370552063, 17.227514... |
+| A2CZMI6QP7071R |     0.0      | [0.0838740542531, 0.039068... |
+| A3QWNQ2WA7QZYJ |     0.0      | [-6.0408577919, 5.78382921... |
+| AFNCXMCX7VZWH  |     0.0      | [-8.74878787994, -2.272710... |
+| A3QDHY8XXAOV2U |     0.0      | [-2.07156205177, 1.5083627... |
+| A29RWLP7IALT51 |     0.0      | [2.9417321682, -7.71383428... |
+| AZSN1TO0JI87B  |     0.0      | [-2.52914643288, -4.283010... |
++----------------+--------------+-------------------------------+
+[3880 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'asin': Columns:
+	asin	str
+	linear_terms	float
+	factors	array
+
+Rows: 2755
+
+Data:
++------------+--------------+-------------------------------+
+|    asin    | linear_terms |            factors            |
++------------+--------------+-------------------------------+
+| B000000WBB |     0.0      | [0.0, 0.0, 0.0139488419518... |
+| B0001XAMC2 |     0.0      | [-0.469105958939, -5.49275... |
+| B0000026WD |     0.0      | [0.154624596238, 0.0849049... |
+| B003597ORA |     0.0      | [12.704158783, 2.575877904... |
+| B000Q3646A |     0.0      | [-8.18295860291, 0.0, -4.8... |
+| B000002MFQ |     0.0      | [0.0840541422367, 0.017319... |
+| B000002MH5 |     0.0      | [-0.0212728492916, -0.0068... |
+| B000001EW3 |     0.0      | [-0.630886673927, 0.669066... |
+| B00000DCHG |     0.0      | [-0.0420430116355, 0.08990... |
+| B000B8QF6O |     0.0      | [-0.0245038364083, -0.0377... |
++------------+--------------+-------------------------------+
+[2755 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'intercept': 4.220666666666645}
+{'precision_recall_overall': Columns:
+	cutoff	int
+	precision	float
+	recall	float
+
+Rows: 18
+
+Data:
++--------+-------------------+------------------+
+| cutoff |     precision     |      recall      |
++--------+-------------------+------------------+
+|   1    |  0.00367197062424 | 0.0030599755202  |
+|   2    |  0.00183598531212 | 0.0030599755202  |
+|   3    |  0.00122399020808 | 0.0030599755202  |
+|   4    | 0.000917992656059 | 0.0030599755202  |
+|   5    | 0.000734394124847 | 0.0030599755202  |
+|   6    | 0.000611995104039 | 0.0030599755202  |
+|   7    | 0.000699422976045 | 0.00367197062424 |
+|   8    | 0.000611995104039 | 0.00367197062424 |
+|   9    | 0.000543995648035 | 0.00367197062424 |
+|   10   | 0.000611995104039 | 0.00489596083231 |
++--------+-------------------+------------------+
+[18 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'precision_recall_by_user': Columns:
+	reviewerID	str
+	cutoff	int
+	precision	float
+	recall	float
+	count	int
+
+Rows: 14706
+
+Data:
++----------------+--------+-----------+--------+-------+
+|   reviewerID   | cutoff | precision | recall | count |
++----------------+--------+-----------+--------+-------+
+| A103KNDW8GN92L |   1    |    0.0    |  0.0   |   1   |
+| A103KNDW8GN92L |   2    |    0.0    |  0.0   |   1   |
+| A103KNDW8GN92L |   3    |    0.0    |  0.0   |   1   |
+| A103KNDW8GN92L |   4    |    0.0    |  0.0   |   1   |
+| A103KNDW8GN92L |   5    |    0.0    |  0.0   |   1   |
+| A103KNDW8GN92L |   6    |    0.0    |  0.0   |   1   |
+| A103KNDW8GN92L |   7    |    0.0    |  0.0   |   1   |
+| A103KNDW8GN92L |   8    |    0.0    |  0.0   |   1   |
+| A103KNDW8GN92L |   9    |    0.0    |  0.0   |   1   |
+| A103KNDW8GN92L |   10   |    0.0    |  0.0   |   1   |
++----------------+--------+-----------+--------+-------+
+[14706 rows x 5 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns.}
+{'rmse_by_user': Columns:
+	reviewerID	str
+	count	int
+	rmse	float
+
+Rows: 817
+
+Data:
++----------------+-------+----------------+
+|   reviewerID   | count |      rmse      |
++----------------+-------+----------------+
+| A23T3HUK409QMD |   1   | 0.222578928492 |
+| A1LB819QKVUA1V |   1   |  1.2387457091  |
+| ACE57M02TNPJW  |   1   | 0.779333333333 |
+| A6XHF110BC856  |   1   | 0.379946957191 |
+| A29ZFGK1WJZ873 |   1   | 0.779333333333 |
+| A1QELU1S9PI72H |   1   | 0.220666666667 |
+| ACQT14ZN20YQY  |   1   |  1.5742945474  |
+| A22VYOT4RQ092Z |   1   | 0.220323655353 |
+| AFTN9ZLB22PSZ  |   4   | 1.03914724565  |
+| A3OKL82LSK2D76 |   1   | 0.779333333333 |
++----------------+-------+----------------+
+[817 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_item': Columns:
+	asin	str
+	count	int
+	rmse	float
+
+Rows: 759
+
+Data:
++------------+-------+----------------+
+|    asin    | count |      rmse      |
++------------+-------+----------------+
+| B0009OUAQQ |   1   | 1.22066666667  |
+| B002I53BL0 |   1   | 0.779333333333 |
+| B000065625 |   2   | 0.571965277532 |
+| B000001FC0 |   1   | 0.369946370681 |
+| B00000HZG9 |   3   | 0.585165151903 |
+| B00008VOQM |   2   |  1.0592988813  |
+| B00006IU73 |   2   | 164.605644467  |
+| B0007NFL18 |   7   | 3.48027091829  |
+| B0000C0FKA |   1   | 3.51335356649  |
+| B000002KME |   1   | 0.183482487837 |
++------------+-------+----------------+
+[759 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_overall': 81.42256656911398}
+balibalibalibalibalibalibbalibbalibbalibalibali
+{'reviewerID': Columns:
+	reviewerID	str
+	linear_terms	float
+	factors	array
+
+Rows: 3881
+
+Data:
++----------------+--------------+-------------------------------+
+|   reviewerID   | linear_terms |            factors            |
++----------------+--------------+-------------------------------+
+| AFTN9ZLB22PSZ  |     0.0      | [4.79469633102, -5.9759683... |
+| A257KXBOBFRLCN |     0.0      | [-0.0078730462119, -0.0140... |
+| A351JCJRF3ML1A |     0.0      | [-0.668228626251, -0.40441... |
+| A3W0POMI33YQXQ |     0.0      | [-38.5076789856, 15.772400... |
+| A2CZMI6QP7071R |     0.0      | [-3.77786946297, -0.532063... |
+| A3QWNQ2WA7QZYJ |     0.0      | [1.4294257164, -4.74179649... |
+| AFNCXMCX7VZWH  |     0.0      | [6.16579580307, -1.2900637... |
+| A3QDHY8XXAOV2U |     0.0      | [-1.73325312138, -0.837913... |
+| A29RWLP7IALT51 |     0.0      | [-3.12825274467, -9.574067... |
+| AZSN1TO0JI87B  |     0.0      | [0.711313128471, -1.166868... |
++----------------+--------------+-------------------------------+
+[3881 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'asin': Columns:
+	asin	str
+	linear_terms	float
+	factors	array
+
+Rows: 2785
+
+Data:
++------------+--------------+-------------------------------+
+|    asin    | linear_terms |            factors            |
++------------+--------------+-------------------------------+
+| B000000WBB |     0.0      | [-0.00487359194085, 0.0039... |
+| B0001XAMC2 |     0.0      | [1.00357747078, 2.79637169... |
+| B0000026WD |     0.0      | [0.478073298931, -0.096720... |
+| B003597ORA |     0.0      | [0.0235739983618, 0.0, 0.0... |
+| B000Q3646A |     0.0      | [0.0793948173523, 0.005740... |
+| B000002MFQ |     0.0      | [-0.013001143001, 0.025794... |
+| B000002MH5 |     0.0      | [0.0161134153605, -0.02108... |
+| B000001EW3 |     0.0      | [0.0889672115445, 0.163116... |
+| B00000DCHG |     0.0      | [0.0112999631092, 0.054108... |
+| B000B8QF6O |     0.0      | [0.00854669231921, -0.0305... |
++------------+--------------+-------------------------------+
+[2785 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'intercept': 4.215666666666669}
+{'precision_recall_overall': Columns:
+	cutoff	int
+	precision	float
+	recall	float
+
+Rows: 18
+
+Data:
++--------+-------------------+------------------+
+| cutoff |     precision     |      recall      |
++--------+-------------------+------------------+
+|   1    |        0.0        |       0.0        |
+|   2    |        0.0        |       0.0        |
+|   3    | 0.000793650793651 | 0.0015873015873  |
+|   4    | 0.000595238095238 | 0.0015873015873  |
+|   5    |  0.00047619047619 | 0.0015873015873  |
+|   6    | 0.000793650793651 | 0.00396825396825 |
+|   7    | 0.000850340136054 | 0.00456349206349 |
+|   8    | 0.000892857142857 | 0.00575396825397 |
+|   9    | 0.000793650793651 | 0.00575396825397 |
+|   10   | 0.000952380952381 | 0.00813492063492 |
++--------+-------------------+------------------+
+[18 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'precision_recall_by_user': Columns:
+	reviewerID	str
+	cutoff	int
+	precision	float
+	recall	float
+	count	int
+
+Rows: 15120
+
+Data:
++----------------+--------+-----------+--------+-------+
+|   reviewerID   | cutoff | precision | recall | count |
++----------------+--------+-----------+--------+-------+
+| A105188E1HFWRX |   1    |    0.0    |  0.0   |   1   |
+| A105188E1HFWRX |   2    |    0.0    |  0.0   |   1   |
+| A105188E1HFWRX |   3    |    0.0    |  0.0   |   1   |
+| A105188E1HFWRX |   4    |    0.0    |  0.0   |   1   |
+| A105188E1HFWRX |   5    |    0.0    |  0.0   |   1   |
+| A105188E1HFWRX |   6    |    0.0    |  0.0   |   1   |
+| A105188E1HFWRX |   7    |    0.0    |  0.0   |   1   |
+| A105188E1HFWRX |   8    |    0.0    |  0.0   |   1   |
+| A105188E1HFWRX |   9    |    0.0    |  0.0   |   1   |
+| A105188E1HFWRX |   10   |    0.0    |  0.0   |   1   |
++----------------+--------+-----------+--------+-------+
+[15120 rows x 5 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns.}
+{'rmse_by_user': Columns:
+	reviewerID	str
+	count	int
+	rmse	float
+
+Rows: 840
+
+Data:
++----------------+-------+----------------+
+|   reviewerID   | count |      rmse      |
++----------------+-------+----------------+
+| A15AFDBL95DA5V |   1   | 0.348838686983 |
+| AWCJ12KBO5VII  |   1   | 0.702227018734 |
+| A2AKFJOWF71WGV |   1   | 0.032152309974 |
+| A3A0GTGE1FMV6G |   1   | 1.21566666667  |
+| A1TW2JBAFXBZOK |   1   | 0.929657116572 |
+| AAI57M3OXP5NK  |   1   | 0.784333333333 |
+| ADIDQRLLR4KBQ  |   1   | 1.50839696829  |
+| AFTN9ZLB22PSZ  |   1   | 0.569391056856 |
+|  ASJQPZSBCWSF  |   2   | 0.784333333333 |
+| A1C8XITTTCYEI9 |   1   | 0.215666666667 |
++----------------+-------+----------------+
+[840 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_item': Columns:
+	asin	str
+	count	int
+	rmse	float
+
+Rows: 764
+
+Data:
++------------+-------+----------------+
+|    asin    | count |      rmse      |
++------------+-------+----------------+
+| B000003AB5 |   1   | 0.784333333333 |
+| B00000HZG9 |   2   | 0.932103911665 |
+| B00008VOQM |   1   | 0.258715376218 |
+| B000002I8D |   2   | 0.814311424981 |
+| B00006IU73 |   1   | 1.56791858371  |
+| B0007NFL18 |   1   | 3.21566666667  |
+| B0000AVBDS |   1   | 17.5613490194  |
+| B00005J9U8 |   1   | 0.784333333333 |
+| B000002C2E |   1   | 0.436272040049 |
+| B000BGR0OM |   1   | 4.54143799845  |
++------------+-------+----------------+
+[764 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_overall': 43.24934336133326}
+balibalibalibalibalibalibbalibbalibbalibalibali
+{'reviewerID': Columns:
+	reviewerID	str
+	linear_terms	float
+	factors	array
+
+Rows: 3886
+
+Data:
++----------------+--------------+-------------------------------+
+|   reviewerID   | linear_terms |            factors            |
++----------------+--------------+-------------------------------+
+| AFTN9ZLB22PSZ  |     0.0      | [-5.05466222763, -3.973907... |
+| A257KXBOBFRLCN |     0.0      | [-0.0190467145294, 0.08788... |
+| A351JCJRF3ML1A |     0.0      | [-2.84505772591, -0.735133... |
+| A3W0POMI33YQXQ |     0.0      | [-8.51363945007, -1.100355... |
+| A2CZMI6QP7071R |     0.0      | [-1.26244723797, -0.132141... |
+| A3QWNQ2WA7QZYJ |     0.0      | [9.8446969986, -1.51707124... |
+| AFNCXMCX7VZWH  |     0.0      | [0.00502744782716, -2.3324... |
+| A3QDHY8XXAOV2U |     0.0      | [-0.00783288665116, -0.007... |
+| A29RWLP7IALT51 |     0.0      | [-4.40073442459, 5.4693651... |
+| AZSN1TO0JI87B  |     0.0      | [0.22243309021, -4.4198913... |
++----------------+--------------+-------------------------------+
+[3886 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'asin': Columns:
+	asin	str
+	linear_terms	float
+	factors	array
+
+Rows: 2757
+
+Data:
++------------+--------------+-------------------------------+
+|    asin    | linear_terms |            factors            |
++------------+--------------+-------------------------------+
+| B000000WBB |     0.0      | [0.000199708039872, 0.0147... |
+| B0001XAMC2 |     0.0      | [1.89907169342, -5.4286789... |
+| B0000026WD |     0.0      | [-0.196858584881, -0.06482... |
+| B003597ORA |     0.0      | [3.25488235831e-06, 0.0, 0... |
+| B000Q3646A |     0.0      | [0.524152517319, -2.466471... |
+| B000002MFQ |     0.0      | [-0.0427086055279, -0.1334... |
+| B000002MH5 |     0.0      | [0.00581823987886, -0.0358... |
+| B000001EW3 |     0.0      | [-3.93736505508, -0.894691... |
+| B00000DCHG |     0.0      | [0.0526356138289, -0.04297... |
+| B000B8QF6O |     0.0      | [0.0042558205314, -0.03225... |
++------------+--------------+-------------------------------+
+[2757 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'intercept': 4.218222222222233}
+{'precision_recall_overall': Columns:
+	cutoff	int
+	precision	float
+	recall	float
+
+Rows: 18
+
+Data:
++--------+-------------------+------------------+
+| cutoff |     precision     |      recall      |
++--------+-------------------+------------------+
+|   1    |  0.00123304562269 | 0.00123304562269 |
+|   2    | 0.000616522811344 | 0.00123304562269 |
+|   3    | 0.000411015207563 | 0.00123304562269 |
+|   4    | 0.000616522811344 | 0.00184956843403 |
+|   5    | 0.000739827373613 | 0.00308261405672 |
+|   6    | 0.000616522811344 | 0.00308261405672 |
+|   7    | 0.000528448124009 | 0.00308261405672 |
+|   8    | 0.000462392108508 | 0.00308261405672 |
+|   9    | 0.000685025345938 | 0.00456226880395 |
+|   10   | 0.000616522811344 | 0.00456226880395 |
++--------+-------------------+------------------+
+[18 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'precision_recall_by_user': Columns:
+	reviewerID	str
+	cutoff	int
+	precision	float
+	recall	float
+	count	int
+
+Rows: 14598
+
+Data:
++----------------+--------+-----------+--------+-------+
+|   reviewerID   | cutoff | precision | recall | count |
++----------------+--------+-----------+--------+-------+
+| A103W7ZPKGOCC9 |   1    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   2    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   3    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   4    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   5    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   6    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   7    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   8    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   9    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   10   |    0.0    |  0.0   |   1   |
++----------------+--------+-----------+--------+-------+
+[14598 rows x 5 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns.}
+{'rmse_by_user': Columns:
+	reviewerID	str
+	count	int
+	rmse	float
+
+Rows: 811
+
+Data:
++----------------+-------+----------------+
+|   reviewerID   | count |      rmse      |
++----------------+-------+----------------+
+| A201HVK6NWJJER |   1   | 0.685794138418 |
+| AWCJ12KBO5VII  |   1   | 0.218222222222 |
+| AGRUNN58UZPY1  |   1   | 0.781777777778 |
+| ACE57M02TNPJW  |   1   |  1.2117673279  |
+| A3INN916E4VION |   1   | 0.538082891213 |
+| A21AMFQK5SGWTC |   1   | 0.781777777778 |
+| A3CN9CCJUNIPKT |   1   | 0.734402769314 |
+| AFTN9ZLB22PSZ  |   1   | 0.218222222222 |
+| A8LVAO2H29WII  |   1   | 0.781777777778 |
+| ADTAINNCOFYYQ  |   1   | 3.21822222222  |
++----------------+-------+----------------+
+[811 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_item': Columns:
+	asin	str
+	count	int
+	rmse	float
+
+Rows: 772
+
+Data:
++------------+-------+----------------+
+|    asin    | count |      rmse      |
++------------+-------+----------------+
+| B000001FC0 |   2   | 1.08601151974  |
+| B0013FDTYA |   2   | 0.673657144421 |
+| B00000HZG9 |   2   | 0.755155124996 |
+| B00008VOQM |   1   | 0.222748287419 |
+| B00006IU73 |   1   | 7.67226847161  |
+| B0007NFL18 |   6   | 1.57493333142  |
+| B0000C0FKA |   3   | 6.40484098175  |
+| B0007QS4TQ |   2   | 2.28085238561  |
+| B00000D9W1 |   1   | 0.564639232053 |
+| B000002KME |   1   | 2.21822222222  |
++------------+-------+----------------+
+[772 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_overall': 12.371012071170716}
+balibalibalibalibalibalibbalibbalibbalibalibali
+{'reviewerID': Columns:
+	reviewerID	str
+	linear_terms	float
+	factors	array
+
+Rows: 3872
+
+Data:
++----------------+--------------+-------------------------------+
+|   reviewerID   | linear_terms |            factors            |
++----------------+--------------+-------------------------------+
+| AFTN9ZLB22PSZ  |     0.0      | [0.693449020386, -3.082955... |
+| A257KXBOBFRLCN |     0.0      | [-0.0146344611421, 0.00132... |
+| A351JCJRF3ML1A |     0.0      | [-1.75395202637, 1.7006164... |
+| A3W0POMI33YQXQ |     0.0      | [31.1793479919, 12.2371997... |
+| A2CZMI6QP7071R |     0.0      | [-0.138398349285, 0.0, 0.0... |
+| A3QWNQ2WA7QZYJ |     0.0      | [5.50659132004, -1.9296706... |
+| AFNCXMCX7VZWH  |     0.0      | [-0.00412537669763, 1.9081... |
+| A3QDHY8XXAOV2U |     0.0      | [-0.0476762652397, 0.66614... |
+| A29RWLP7IALT51 |     0.0      | [6.35310125351, 1.45096695... |
+| AZSN1TO0JI87B  |     0.0      | [-4.71720266342, 1.1627311... |
++----------------+--------------+-------------------------------+
+[3872 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'asin': Columns:
+	asin	str
+	linear_terms	float
+	factors	array
+
+Rows: 2775
+
+Data:
++------------+--------------+-------------------------------+
+|    asin    | linear_terms |            factors            |
++------------+--------------+-------------------------------+
+| B000000WBB |     0.0      | [-0.011715608649, 0.000659... |
+| B0001XAMC2 |     0.0      | [18.2454185486, -0.2753643... |
+| B0000026WD |     0.0      | [-0.0445588305593, -0.0778... |
+| B003597ORA |     0.0      | [-0.668088436127, 0.209356... |
+| B000Q3646A |     0.0      | [-7.20107650757, 0.0, 0.01... |
+| B000002MFQ |     0.0      | [-0.113736867905, 0.042773... |
+| B000002MH5 |     0.0      | [0.00746837165207, 0.03119... |
+| B000001EW3 |     0.0      | [0.617333471775, -0.619654... |
+| B00000DCHG |     0.0      | [-0.0542374774814, -0.0110... |
+| B000B8QF6O |     0.0      | [-0.0593315511942, 0.01476... |
++------------+--------------+-------------------------------+
+[2775 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'intercept': 4.22477777777778}
+{'precision_recall_overall': Columns:
+	cutoff	int
+	precision	float
+	recall	float
+
+Rows: 18
+
+Data:
++--------+-------------------+-------------------+
+| cutoff |     precision     |       recall      |
++--------+-------------------+-------------------+
+|   1    |        0.0        |        0.0        |
+|   2    |        0.0        |        0.0        |
+|   3    |        0.0        |        0.0        |
+|   4    | 0.000301204819277 | 0.000401606425703 |
+|   5    | 0.000240963855422 | 0.000401606425703 |
+|   6    | 0.000200803212851 | 0.000401606425703 |
+|   7    | 0.000344234079174 |  0.00160642570281 |
+|   8    | 0.000451807228916 |  0.00281124497992 |
+|   9    | 0.000401606425703 |  0.00281124497992 |
+|   10   | 0.000361445783133 |  0.00281124497992 |
++--------+-------------------+-------------------+
+[18 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'precision_recall_by_user': Columns:
+	reviewerID	str
+	cutoff	int
+	precision	float
+	recall	float
+	count	int
+
+Rows: 14940
+
+Data:
++----------------+--------+-----------+--------+-------+
+|   reviewerID   | cutoff | precision | recall | count |
++----------------+--------+-----------+--------+-------+
+| A103W7ZPKGOCC9 |   1    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   2    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   3    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   4    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   5    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   6    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   7    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   8    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   9    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   10   |    0.0    |  0.0   |   1   |
++----------------+--------+-----------+--------+-------+
+[14940 rows x 5 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns.}
+{'rmse_by_user': Columns:
+	reviewerID	str
+	count	int
+	rmse	float
+
+Rows: 830
+
+Data:
++----------------+-------+-----------------+
+|   reviewerID   | count |       rmse      |
++----------------+-------+-----------------+
+| A106BECWWKQIC9 |   3   |  1.99581206283  |
+| A1LB819QKVUA1V |   1   |  0.226006438006 |
+| A2AKFJOWF71WGV |   1   |  0.209632272931 |
+| A25RUVV98LRKJ1 |   1   |  0.768966667721 |
+| A6XHF110BC856  |   1   |  0.673528450443 |
+| A3V93PE68JKWVA |   1   | 0.0817281800376 |
+| A1ABDWJU9RTUWU |   1   |  0.448541561974 |
+| A1TW2JBAFXBZOK |   1   |  0.775222222222 |
+| A2237MU44T3GCR |   2   |  0.425961238129 |
+| AFTN9ZLB22PSZ  |   2   |  0.794826872667 |
++----------------+-------+-----------------+
+[830 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_item': Columns:
+	asin	str
+	count	int
+	rmse	float
+
+Rows: 770
+
+Data:
++------------+-------+----------------+
+|    asin    | count |      rmse      |
++------------+-------+----------------+
+| B0009OUAQQ |   1   | 0.742480869306 |
+| B000065625 |   1   | 0.36237994851  |
+| B000001FC0 |   1   | 2.28860584916  |
+| B0000CBHQ1 |   1   | 0.775222222222 |
+| B0000024ZF |   2   | 0.940868798834 |
+| B000002I8D |   2   | 1.07200270812  |
+| B0007NFL18 |   3   | 2.65612110403  |
+| B0000C0FKA |   2   | 1.38315214947  |
+| B0000AVBDS |   2   | 30.2687691706  |
+| B00000D9W1 |   1   | 0.224777777778 |
++------------+-------+----------------+
+[770 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_overall': 33.64562541033106}
+balibalibalibalibalibalibbalibbalibbalibalibali
+{'reviewerID': Columns:
+	reviewerID	str
+	linear_terms	float
+	factors	array
+
+Rows: 3886
+
+Data:
++----------------+--------------+-------------------------------+
+|   reviewerID   | linear_terms |            factors            |
++----------------+--------------+-------------------------------+
+| AFTN9ZLB22PSZ  |     0.0      | [-0.542416095734, -3.33339... |
+| A257KXBOBFRLCN |     0.0      | [-0.02857337147, 0.0378616... |
+| A351JCJRF3ML1A |     0.0      | [-0.863121569157, -3.83926... |
+| A3W0POMI33YQXQ |     0.0      | [-5.77496385574, 12.605444... |
+| A2CZMI6QP7071R |     0.0      | [0.129099532962, -0.054232... |
+| A3QWNQ2WA7QZYJ |     0.0      | [3.35339713097, 2.56135153... |
+| AFNCXMCX7VZWH  |     0.0      | [1.29627299309, 2.31912112... |
+| A3QDHY8XXAOV2U |     0.0      | [-0.921626329422, 3.921432... |
+| A29RWLP7IALT51 |     0.0      | [5.38856697083, 2.49903059... |
+| AZSN1TO0JI87B  |     0.0      | [0.723895430565, 2.5976159... |
++----------------+--------------+-------------------------------+
+[3886 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'asin': Columns:
+	asin	str
+	linear_terms	float
+	factors	array
+
+Rows: 2763
+
+Data:
++------------+--------------+-------------------------------+
+|    asin    | linear_terms |            factors            |
++------------+--------------+-------------------------------+
+| B000000WBB |     0.0      | [0.000676936819218, 0.0036... |
+| B0001XAMC2 |     0.0      | [2.65969872475, -3.7171852... |
+| B0000026WD |     0.0      | [0.0186125934124, 0.222412... |
+| B003597ORA |     0.0      | [1.15409111977, 1.79476416... |
+| B000Q3646A |     0.0      | [-3.5648727417, 1.63402044... |
+| B000002MFQ |     0.0      | [-0.00780688226223, -0.067... |
+| B000002MH5 |     0.0      | [0.0115160755813, 0.113480... |
+| B000001EW3 |     0.0      | [-0.798476278782, -1.95328... |
+| B00000DCHG |     0.0      | [-0.0543538406491, -0.0235... |
+| B000B8QF6O |     0.0      | [0.0216822735965, 0.012521... |
++------------+--------------+-------------------------------+
+[2763 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'intercept': 4.223999999999979}
+{'precision_recall_overall': Columns:
+	cutoff	int
+	precision	float
+	recall	float
+
+Rows: 18
+
+Data:
++--------+-------------------+------------------+
+| cutoff |     precision     |      recall      |
++--------+-------------------+------------------+
+|   1    |  0.00123609394314 | 0.00123609394314 |
+|   2    |  0.00123609394314 | 0.00247218788628 |
+|   3    |  0.00082406262876 | 0.00247218788628 |
+|   4    |  0.00061804697157 | 0.00247218788628 |
+|   5    | 0.000741656365884 | 0.00370828182942 |
+|   6    |  0.00144210960033 | 0.00803461063041 |
+|   7    |  0.00194243333922 | 0.0123609394314  |
+|   8    |  0.00169962917182 | 0.0123609394314  |
+|   9    |  0.00151078148606 | 0.0123609394314  |
+|   10   |  0.00135970333745 | 0.0123609394314  |
++--------+-------------------+------------------+
+[18 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'precision_recall_by_user': Columns:
+	reviewerID	str
+	cutoff	int
+	precision	float
+	recall	float
+	count	int
+
+Rows: 14562
+
+Data:
++----------------+--------+-----------+--------+-------+
+|   reviewerID   | cutoff | precision | recall | count |
++----------------+--------+-----------+--------+-------+
+| A10KHX41ONY4U1 |   1    |    0.0    |  0.0   |   1   |
+| A10KHX41ONY4U1 |   2    |    0.0    |  0.0   |   1   |
+| A10KHX41ONY4U1 |   3    |    0.0    |  0.0   |   1   |
+| A10KHX41ONY4U1 |   4    |    0.0    |  0.0   |   1   |
+| A10KHX41ONY4U1 |   5    |    0.0    |  0.0   |   1   |
+| A10KHX41ONY4U1 |   6    |    0.0    |  0.0   |   1   |
+| A10KHX41ONY4U1 |   7    |    0.0    |  0.0   |   1   |
+| A10KHX41ONY4U1 |   8    |    0.0    |  0.0   |   1   |
+| A10KHX41ONY4U1 |   9    |    0.0    |  0.0   |   1   |
+| A10KHX41ONY4U1 |   10   |    0.0    |  0.0   |   1   |
++----------------+--------+-----------+--------+-------+
+[14562 rows x 5 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns.}
+{'rmse_by_user': Columns:
+	reviewerID	str
+	count	int
+	rmse	float
+
+Rows: 809
+
+Data:
++----------------+-------+----------------+
+|   reviewerID   | count |      rmse      |
++----------------+-------+----------------+
+| A2DFAKC40R35J2 |   1   |     0.224      |
+| A34D06JL7LC6MU |   1   | 0.763953974865 |
+| A1LB819QKVUA1V |   1   | 0.214409864903 |
+| A6XHF110BC856  |   1   | 0.591491825342 |
+| A3CN9CCJUNIPKT |   1   | 0.112702079654 |
+| ACQT14ZN20YQY  |   1   |     1.224      |
+| A2237MU44T3GCR |   1   | 0.56180199182  |
+| AFTN9ZLB22PSZ  |   2   | 0.959605533187 |
+| AX19ZP1C2G0S6  |   1   |     0.776      |
+| A2OF0Z2L9STEQF |   1   | 1.13948565775  |
++----------------+-------+----------------+
+[809 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_item': Columns:
+	asin	str
+	count	int
+	rmse	float
+
+Rows: 768
+
+Data:
++------------+-------+----------------+
+|    asin    | count |      rmse      |
++------------+-------+----------------+
+| B0000CBHQ1 |   1   |  0.149698771   |
+| B00000HZG9 |   2   | 0.469060574265 |
+| B00008VOQM |   1   | 3.14139797592  |
+| B00006IU73 |   1   |     0.776      |
+| B0007NFL18 |   1   |     3.224      |
+| B00137IJUM |   1   |     0.776      |
+| B000AV47XK |   1   |     0.776      |
+| B000001FT9 |   1   |     0.224      |
+| B0000AVBDS |   1   | 2.08028986359  |
+| B00000D9W1 |   1   | 1.69654237533  |
++------------+-------+----------------+
+[768 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_overall': 32.758303457928626}
+balibalibalibalibalibalibbalibbalibbalibalibali
+{'reviewerID': Columns:
+	reviewerID	str
+	linear_terms	float
+	factors	array
+
+Rows: 3877
+
+Data:
++----------------+--------------+-------------------------------+
+|   reviewerID   | linear_terms |            factors            |
++----------------+--------------+-------------------------------+
+| AFTN9ZLB22PSZ  |     0.0      | [8.84281635284, -1.4309573... |
+| A257KXBOBFRLCN |     0.0      | [-0.291450589895, -0.19068... |
+| A351JCJRF3ML1A |     0.0      | [-4.27448749542, -1.254341... |
+| A3W0POMI33YQXQ |     0.0      | [2.08912348747, 4.15221786... |
+| A2CZMI6QP7071R |     0.0      | [-0.242030113935, -0.17716... |
+| A3QWNQ2WA7QZYJ |     0.0      | [8.69698238373, -3.7305850... |
+| AFNCXMCX7VZWH  |     0.0      | [2.56810760498, 2.96247816... |
+| A3QDHY8XXAOV2U |     0.0      | [-0.903051018715, -0.83585... |
+| A29RWLP7IALT51 |     0.0      | [9.01131439209, -0.0011813... |
+| AZSN1TO0JI87B  |     0.0      | [0.55725812912, 6.12831592... |
++----------------+--------------+-------------------------------+
+[3877 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'asin': Columns:
+	asin	str
+	linear_terms	float
+	factors	array
+
+Rows: 2772
+
+Data:
++------------+--------------+-------------------------------+
+|    asin    | linear_terms |            factors            |
++------------+--------------+-------------------------------+
+| B000000WBB |     0.0      | [-0.00779950618744, -0.001... |
+| B0001XAMC2 |     0.0      | [1.65528821945, 0.93925899... |
+| B0000026WD |     0.0      | [-0.135749012232, -0.02138... |
+| B003597ORA |     0.0      | [0.0263571739197, -0.00581... |
+| B000Q3646A |     0.0      | [3.0278172493, 2.248926877... |
+| B000002MFQ |     0.0      | [-0.0382771752775, 0.04383... |
+| B000002MH5 |     0.0      | [-0.0238262228668, 0.02936... |
+| B000001EW3 |     0.0      | [-0.191364228725, -0.45081... |
+| B00000DCHG |     0.0      | [-0.0713923573494, 0.00149... |
+| B000B8QF6O |     0.0      | [-0.00228885072283, 0.0452... |
++------------+--------------+-------------------------------+
+[2772 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'intercept': 4.221111111111125}
+{'precision_recall_overall': Columns:
+	cutoff	int
+	precision	float
+	recall	float
+
+Rows: 18
+
+Data:
++--------+-------------------+------------------+
+| cutoff |     precision     |      recall      |
++--------+-------------------+------------------+
+|   1    |  0.0012077294686  | 0.0012077294686  |
+|   2    |  0.0012077294686  | 0.0024154589372  |
+|   3    |  0.00161030595813 | 0.00392512077295 |
+|   4    |  0.00150966183575 | 0.00452898550725 |
+|   5    |  0.0012077294686  | 0.00452898550725 |
+|   6    |  0.00100644122383 | 0.00452898550725 |
+|   7    | 0.000862663906142 | 0.00452898550725 |
+|   8    | 0.000754830917874 | 0.00452898550725 |
+|   9    | 0.000670960815888 | 0.00452898550725 |
+|   10   |  0.0006038647343  | 0.00452898550725 |
++--------+-------------------+------------------+
+[18 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'precision_recall_by_user': Columns:
+	reviewerID	str
+	cutoff	int
+	precision	float
+	recall	float
+	count	int
+
+Rows: 14904
+
+Data:
++----------------+--------+-----------+--------+-------+
+|   reviewerID   | cutoff | precision | recall | count |
++----------------+--------+-----------+--------+-------+
+| A1020L7BWW9RAX |   1    |    0.0    |  0.0   |   1   |
+| A1020L7BWW9RAX |   2    |    0.0    |  0.0   |   1   |
+| A1020L7BWW9RAX |   3    |    0.0    |  0.0   |   1   |
+| A1020L7BWW9RAX |   4    |    0.0    |  0.0   |   1   |
+| A1020L7BWW9RAX |   5    |    0.0    |  0.0   |   1   |
+| A1020L7BWW9RAX |   6    |    0.0    |  0.0   |   1   |
+| A1020L7BWW9RAX |   7    |    0.0    |  0.0   |   1   |
+| A1020L7BWW9RAX |   8    |    0.0    |  0.0   |   1   |
+| A1020L7BWW9RAX |   9    |    0.0    |  0.0   |   1   |
+| A1020L7BWW9RAX |   10   |    0.0    |  0.0   |   1   |
++----------------+--------+-----------+--------+-------+
+[14904 rows x 5 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns.}
+{'rmse_by_user': Columns:
+	reviewerID	str
+	count	int
+	rmse	float
+
+Rows: 828
+
+Data:
++----------------+-------+----------------+
+|   reviewerID   | count |      rmse      |
++----------------+-------+----------------+
+| A38ZU2KN1IM18A |   1   | 0.778888888889 |
+| AWCJ12KBO5VII  |   1   | 0.977951027685 |
+| A3MA61NPNHGY9Y |   1   | 0.778888888889 |
+| A25RUVV98LRKJ1 |   1   | 0.30540217436  |
+| A22STRR368B4S  |   1   | 0.778888888889 |
+| A2W3HLHIA9UP4D |   1   | 2.22111111111  |
+| A3CN9CCJUNIPKT |   1   | 0.198865987592 |
+| ADIDQRLLR4KBQ  |   1   | 0.509420521789 |
+| A22VYOT4RQ092Z |   1   | 1.05015008873  |
+| AFTN9ZLB22PSZ  |   2   | 0.842305206141 |
++----------------+-------+----------------+
+[828 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_item': Columns:
+	asin	str
+	count	int
+	rmse	float
+
+Rows: 774
+
+Data:
++------------+-------+----------------+
+|    asin    | count |      rmse      |
++------------+-------+----------------+
+| B00004KD2H |   1   | 0.221111111111 |
+| B000065625 |   1   | 0.784371600718 |
+| B000001FC0 |   1   | 0.222166884459 |
+| B00000HZG9 |   2   | 1.81964563599  |
+| B00008VOQM |   2   | 1.45150455236  |
+| B000002I8D |   1   | 0.866468765073 |
+| B00006IU73 |   1   | 31.3783151584  |
+| B0000C0FKA |   1   | 1.51207221323  |
+| B0047Z72IC |   1   | 0.49853885942  |
+| B000002KME |   1   | 3.22111111111  |
++------------+-------+----------------+
+[774 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_overall': 20.6544095787264}
+balibalibalibalibalibalibbalibbalibbalibalibali
+{'reviewerID': Columns:
+	reviewerID	str
+	linear_terms	float
+	factors	array
+
+Rows: 3867
+
+Data:
++----------------+--------------+-------------------------------+
+|   reviewerID   | linear_terms |            factors            |
++----------------+--------------+-------------------------------+
+| AFTN9ZLB22PSZ  |     0.0      | [8.13680267334, 0.84749490... |
+| A257KXBOBFRLCN |     0.0      | [-0.0145867876709, 0.00520... |
+| A351JCJRF3ML1A |     0.0      | [0.668659090996, 1.3815373... |
+| A3W0POMI33YQXQ |     0.0      | [-5.56319475174, -7.769910... |
+| A2CZMI6QP7071R |     0.0      | [-0.832116603851, -0.52967... |
+| A3QWNQ2WA7QZYJ |     0.0      | [2.23668074608, -3.8508861... |
+| AFNCXMCX7VZWH  |     0.0      | [1.30301249027, -8.0015144... |
+| A3QDHY8XXAOV2U |     0.0      | [-0.13712656498, 2.3934979... |
+| A29RWLP7IALT51 |     0.0      | [-5.35894823074, 3.9249525... |
+| AZSN1TO0JI87B  |     0.0      | [0.0573220849037, -5.40894... |
++----------------+--------------+-------------------------------+
+[3867 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'asin': Columns:
+	asin	str
+	linear_terms	float
+	factors	array
+
+Rows: 2767
+
+Data:
++------------+--------------+-------------------------------+
+|    asin    | linear_terms |            factors            |
++------------+--------------+-------------------------------+
+| B000000WBB |     0.0      | [-0.00426133582368, -0.000... |
+| B0001XAMC2 |     0.0      | [5.52548837662, -2.2333078... |
+| B0000026WD |     0.0      | [0.0227812230587, -0.00182... |
+| B003597ORA |     0.0      | [-0.302873402834, -0.93759... |
+| B000Q3646A |     0.0      | [0.292511582375, 0.0, 0.0,... |
+| B000002MFQ |     0.0      | [-0.0432180538774, -0.0417... |
+| B000002MH5 |     0.0      | [-0.0134719694033, -0.0327... |
+| B000001EW3 |     0.0      | [-9.59014129639, -2.342434... |
+| B00000DCHG |     0.0      | [0.0577108971775, -0.04021... |
+| B000B8QF6O |     0.0      | [-0.00241013290361, -0.054... |
++------------+--------------+-------------------------------+
+[2767 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'intercept': 4.218333333333318}
+{'precision_recall_overall': Columns:
+	cutoff	int
+	precision	float
+	recall	float
+
+Rows: 18
+
+Data:
++--------+-----------+--------+
+| cutoff | precision | recall |
++--------+-----------+--------+
+|   1    |    0.0    |  0.0   |
+|   2    |    0.0    |  0.0   |
+|   3    |    0.0    |  0.0   |
+|   4    |    0.0    |  0.0   |
+|   5    |    0.0    |  0.0   |
+|   6    |    0.0    |  0.0   |
+|   7    |    0.0    |  0.0   |
+|   8    |    0.0    |  0.0   |
+|   9    |    0.0    |  0.0   |
+|   10   |    0.0    |  0.0   |
++--------+-----------+--------+
+[18 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'precision_recall_by_user': Columns:
+	reviewerID	str
+	cutoff	int
+	precision	float
+	recall	float
+	count	int
+
+Rows: 14904
+
+Data:
++----------------+--------+-----------+--------+-------+
+|   reviewerID   | cutoff | precision | recall | count |
++----------------+--------+-----------+--------+-------+
+| A103W7ZPKGOCC9 |   1    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   2    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   3    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   4    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   5    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   6    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   7    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   8    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   9    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   10   |    0.0    |  0.0   |   1   |
++----------------+--------+-----------+--------+-------+
+[14904 rows x 5 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns.}
+{'rmse_by_user': Columns:
+	reviewerID	str
+	count	int
+	rmse	float
+
+Rows: 828
+
+Data:
++----------------+-------+------------------+
+|   reviewerID   | count |       rmse       |
++----------------+-------+------------------+
+| A201HVK6NWJJER |   1   |  0.51602566282   |
+| A2AKFJOWF71WGV |   1   |  0.602184623082  |
+| A3GMS5XLDOIAJF |   1   |  0.781666666667  |
+| A3V93PE68JKWVA |   1   |  3.21827896851   |
+| A2WMP3I884ZOB3 |   1   |  0.781666666667  |
+| A2NIQDDCSZD5GI |   1   |  0.209736630854  |
+| A1NDMIBMK5R2KG |   1   |  0.781666666667  |
+| A2237MU44T3GCR |   1   | 0.00684826036293 |
+| AFTN9ZLB22PSZ  |   1   |   79.080365092   |
+| A52N753NEIJK9  |   1   |  2.21833333333   |
++----------------+-------+------------------+
+[828 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_item': Columns:
+	asin	str
+	count	int
+	rmse	float
+
+Rows: 772
+
+Data:
++------------+-------+----------------+
+|    asin    | count |      rmse      |
++------------+-------+----------------+
+| B000001FC0 |   1   | 0.338482052485 |
+| B0000CBHQ1 |   1   | 1.37249927183  |
+| B00000HZG9 |   4   | 0.695098574025 |
+| B00008VOQM |   1   | 0.781666666667 |
+| B00006IU73 |   2   | 0.648244005971 |
+| B0007NFL18 |   3   | 2.19933517583  |
+| B0000C0FKA |   1   | 0.247565952664 |
+| B00004THL9 |   1   | 0.781666666667 |
+| B0000AVBDS |   1   | 13.5860432688  |
+| B00000DFS3 |   1   | 0.781666666667 |
++------------+-------+----------------+
+[772 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_overall': 32.29412827010532}
+balibalibalibalibalibalibbalibbalibbalibalibali
+{'reviewerID': Columns:
+	reviewerID	str
+	linear_terms	float
+	factors	array
+
+Rows: 3875
+
+Data:
++----------------+--------------+-------------------------------+
+|   reviewerID   | linear_terms |            factors            |
++----------------+--------------+-------------------------------+
+| AFTN9ZLB22PSZ  |     0.0      | [-2.8421933651, -3.6890664... |
+| A257KXBOBFRLCN |     0.0      | [-0.00198456458747, -0.034... |
+| A351JCJRF3ML1A |     0.0      | [-1.28957736492, 0.5097296... |
+| A3W0POMI33YQXQ |     0.0      | [-36.3665504456, 7.0372915... |
+| A2CZMI6QP7071R |     0.0      | [-0.381008833647, -2.12252... |
+| A3QWNQ2WA7QZYJ |     0.0      | [3.60594081879, -5.4812688... |
+| AFNCXMCX7VZWH  |     0.0      | [-0.994620621204, -5.97948... |
+| A3QDHY8XXAOV2U |     0.0      | [-2.88829350471, -0.314607... |
+| A29RWLP7IALT51 |     0.0      | [-0.216081500053, -6.91278... |
+| AZSN1TO0JI87B  |     0.0      | [-2.81399464607, 0.3693385... |
++----------------+--------------+-------------------------------+
+[3875 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'asin': Columns:
+	asin	str
+	linear_terms	float
+	factors	array
+
+Rows: 2751
+
+Data:
++------------+--------------+-------------------------------+
+|    asin    | linear_terms |            factors            |
++------------+--------------+-------------------------------+
+| B000000WBB |     0.0      | [0.00390382716432, 0.00128... |
+| B0001XAMC2 |     0.0      | [2.36733675003, 12.7983074... |
+| B0000026WD |     0.0      | [-0.0630644410849, 0.03129... |
+| B003597ORA |     0.0      | [-2.82079052925, 0.0, 0.0,... |
+| B000Q3646A |     0.0      | [0.077084928751, 0.4126937... |
+| B000002MFQ |     0.0      | [-0.0074688186869, 0.02764... |
+| B000002MH5 |     0.0      | [0.0131129501387, -0.05214... |
+| B000001EW3 |     0.0      | [5.19907474518, 5.43060207... |
+| B00000DCHG |     0.0      | [0.00146124220919, 0.05645... |
+| B000B8QF6O |     0.0      | [-0.00942370295525, 0.0045... |
++------------+--------------+-------------------------------+
+[2751 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'intercept': 4.2198888888888915}
+{'precision_recall_overall': Columns:
+	cutoff	int
+	precision	float
+	recall	float
+
+Rows: 18
+
+Data:
++--------+-------------------+------------------+
+| cutoff |     precision     |      recall      |
++--------+-------------------+------------------+
+|   1    |        0.0        |       0.0        |
+|   2    |        0.0        |       0.0        |
+|   3    |        0.0        |       0.0        |
+|   4    |        0.0        |       0.0        |
+|   5    | 0.000243605359318 | 0.00121802679659 |
+|   6    | 0.000203004466098 | 0.00121802679659 |
+|   7    | 0.000174003828084 | 0.00121802679659 |
+|   8    | 0.000152253349574 | 0.00121802679659 |
+|   9    | 0.000135336310732 | 0.00121802679659 |
+|   10   | 0.000121802679659 | 0.00121802679659 |
++--------+-------------------+------------------+
+[18 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'precision_recall_by_user': Columns:
+	reviewerID	str
+	cutoff	int
+	precision	float
+	recall	float
+	count	int
+
+Rows: 14778
+
+Data:
++----------------+--------+-----------+--------+-------+
+|   reviewerID   | cutoff | precision | recall | count |
++----------------+--------+-----------+--------+-------+
+| A103W7ZPKGOCC9 |   1    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   2    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   3    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   4    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   5    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   6    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   7    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   8    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   9    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   10   |    0.0    |  0.0   |   1   |
++----------------+--------+-----------+--------+-------+
+[14778 rows x 5 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns.}
+{'rmse_by_user': Columns:
+	reviewerID	str
+	count	int
+	rmse	float
+
+Rows: 821
+
+Data:
++----------------+-------+----------------+
+|   reviewerID   | count |      rmse      |
++----------------+-------+----------------+
+| A34D06JL7LC6MU |   1   | 0.700178607709 |
+| A15AFDBL95DA5V |   1   | 1.11038626044  |
+| A2AKFJOWF71WGV |   1   | 0.720751448876 |
+| A20OAPE0RCEJ9P |   1   | 0.780111111111 |
+| A1EZBZIMGK517C |   1   | 3.21988888889  |
+| AFTN9ZLB22PSZ  |   1   | 3.81100252957  |
+| ADTAINNCOFYYQ  |   1   | 0.127606190152 |
+| AQV142R2H69QK  |   1   | 0.961706853814 |
+| A1PJVW2GSF73E7 |   1   | 0.780111111111 |
+| A3RNC9BGR4J1ZF |   2   | 1.87288055405  |
++----------------+-------+----------------+
+[821 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_item': Columns:
+	asin	str
+	count	int
+	rmse	float
+
+Rows: 761
+
+Data:
++------------+-------+----------------+
+|    asin    | count |      rmse      |
++------------+-------+----------------+
+| B000065625 |   1   | 0.508620716042 |
+| B000001FC0 |   1   | 0.146440707737 |
+| B00009RXK3 |   1   | 0.780111111111 |
+| B00000HZG9 |   2   | 0.732392143146 |
+| B00008VOQM |   1   | 0.633467756801 |
+| B00006IU73 |   1   |  182.2800043   |
+| B0007NFL18 |   2   | 2.36169226833  |
+| B0000C0FKA |   3   | 3.54968643172  |
+| B000002IG4 |   2   | 1.66380287665  |
+| B000002OYB |   1   | 1.21988888889  |
++------------+-------+----------------+
+[761 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_overall': 11.371140175258791}
+balibalibalibalibalibalibbalibbalibbalibalibali
+{'reviewerID': Columns:
+	reviewerID	str
+	linear_terms	float
+	factors	array
+
+Rows: 3859
+
+Data:
++----------------+--------------+-------------------------------+
+|   reviewerID   | linear_terms |            factors            |
++----------------+--------------+-------------------------------+
+| AFTN9ZLB22PSZ  |     0.0      | [1.22489690781, 1.74520397... |
+| A257KXBOBFRLCN |     0.0      | [0.289141923189, 0.5213276... |
+| A351JCJRF3ML1A |     0.0      | [0.289264202118, 2.8683795... |
+| A3W0POMI33YQXQ |     0.0      | [11.8447952271, 11.2447099... |
+| A2CZMI6QP7071R |     0.0      | [0.322251260281, 0.0713227... |
+| A3QWNQ2WA7QZYJ |     0.0      | [-0.223145574331, -0.08287... |
+| AFNCXMCX7VZWH  |     0.0      | [-13.178068161, -4.8110756... |
+| A3QDHY8XXAOV2U |     0.0      | [-1.59492850304, -1.465704... |
+| A29RWLP7IALT51 |     0.0      | [-1.16323781013, 9.8003883... |
+| AZSN1TO0JI87B  |     0.0      | [-3.26863217354, -3.187146... |
++----------------+--------------+-------------------------------+
+[3859 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'asin': Columns:
+	asin	str
+	linear_terms	float
+	factors	array
+
+Rows: 2770
+
+Data:
++------------+--------------+-------------------------------+
+|    asin    | linear_terms |            factors            |
++------------+--------------+-------------------------------+
+| B000000WBB |     0.0      | [-0.00767367100343, -0.004... |
+| B0001XAMC2 |     0.0      | [-0.00576062081382, -0.012... |
+| B0000026WD |     0.0      | [-3.40880060196, -0.535117... |
+| B003597ORA |     0.0      | [-3.9173031837e-05, -2.124... |
+| B000Q3646A |     0.0      | [0.0, -1.21478199959, 1.84... |
+| B000002MFQ |     0.0      | [-0.040705755353, 0.034684... |
+| B000002MH5 |     0.0      | [0.00344318151474, -0.0182... |
+| B000001EW3 |     0.0      | [-0.0154343573377, -0.0655... |
+| B00000DCHG |     0.0      | [0.00983584485948, -0.0987... |
+| B000B8QF6O |     0.0      | [-0.0261171422899, 0.01830... |
++------------+--------------+-------------------------------+
+[2770 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'intercept': 4.2221111111111025}
+{'precision_recall_overall': Columns:
+	cutoff	int
+	precision	float
+	recall	float
+
+Rows: 18
+
+Data:
++--------+-------------------+-------------------+
+| cutoff |     precision     |       recall      |
++--------+-------------------+-------------------+
+|   1    |        0.0        |        0.0        |
+|   2    |        0.0        |        0.0        |
+|   3    | 0.000413564929694 | 9.54380606986e-05 |
+|   4    | 0.000620347394541 | 0.000509002990393 |
+|   5    | 0.000496277915633 | 0.000509002990393 |
+|   6    | 0.000413564929694 | 0.000509002990393 |
+|   7    | 0.000354484225452 | 0.000509002990393 |
+|   8    |  0.00031017369727 | 0.000509002990393 |
+|   9    | 0.000275709953129 | 0.000509002990393 |
+|   10   | 0.000372208436725 |  0.00174969777947 |
++--------+-------------------+-------------------+
+[18 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'precision_recall_by_user': Columns:
+	reviewerID	str
+	cutoff	int
+	precision	float
+	recall	float
+	count	int
+
+Rows: 14508
+
+Data:
++----------------+--------+-----------+--------+-------+
+|   reviewerID   | cutoff | precision | recall | count |
++----------------+--------+-----------+--------+-------+
+| A103W7ZPKGOCC9 |   1    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   2    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   3    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   4    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   5    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   6    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   7    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   8    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   9    |    0.0    |  0.0   |   1   |
+| A103W7ZPKGOCC9 |   10   |    0.0    |  0.0   |   1   |
++----------------+--------+-----------+--------+-------+
+[14508 rows x 5 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns.}
+{'rmse_by_user': Columns:
+	reviewerID	str
+	count	int
+	rmse	float
+
+Rows: 806
+
+Data:
++----------------+-------+----------------+
+|   reviewerID   | count |      rmse      |
++----------------+-------+----------------+
+| A15AFDBL95DA5V |   1   | 1.11718967331  |
+| A23T3HUK409QMD |   1   | 0.215018639877 |
+| AH24HR3A19LP5  |   2   | 0.777888888889 |
+| A3V93PE68JKWVA |   1   | 1.72810953336  |
+| A2NIQDDCSZD5GI |   1   | 0.757813660824 |
+| A2NJXOU4SZI8XG |   1   | 2.22211111111  |
+| AFTN9ZLB22PSZ  |   1   | 2.71162176651  |
+| A3EQ4YAZ5OEVK9 |   1   | 0.777888888889 |
+| A2OF0Z2L9STEQF |   1   | 57.0550922207  |
+| A1T3KS8URHQ20I |   1   | 0.707148554199 |
++----------------+-------+----------------+
+[806 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_item': Columns:
+	asin	str
+	count	int
+	rmse	float
+
+Rows: 780
+
+Data:
++------------+-------+-----------------+
+|    asin    | count |       rmse      |
++------------+-------+-----------------+
+| B000065625 |   1   |  0.777888888889 |
+| B0000CBHQ1 |   1   | 0.0218503825135 |
+| B0000024ZF |   1   |  0.621208215528 |
+| B00008VOQM |   1   |  1.22211111111  |
+| B000002I8D |   1   |  0.66248257684  |
+| B00006IU73 |   2   |  51.9133629123  |
+| B0007NFL18 |   6   |  1.87783544415  |
+| B0000C0FKA |   1   |  2.52963173909  |
+| B000009DZA |   1   |  0.192981527723 |
+| B000BGR0OM |   2   |  2.67516567393  |
++------------+-------+-----------------+
+[780 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_overall': 94.51679787854086}
+balibalibalibalibalibalibbalibbalibbalibalibali

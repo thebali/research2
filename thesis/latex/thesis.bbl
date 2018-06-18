@@ -290,6 +290,95 @@
       \verb http://www.aaai.org/Papers/ICML/2003/ICML03-065.pdf
       \endverb
     \endentry
+    \entry{Koren2010}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fce0a5d2aa4ba307f448e452e68fdbcb}{%
+           family={Koren},
+           familyi={K\bibinitperiod},
+           given={Yehuda},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{fce0a5d2aa4ba307f448e452e68fdbcb}
+      \strng{fullhash}{fce0a5d2aa4ba307f448e452e68fdbcb}
+      \strng{bibnamehash}{fce0a5d2aa4ba307f448e452e68fdbcb}
+      \strng{authorbibnamehash}{fce0a5d2aa4ba307f448e452e68fdbcb}
+      \strng{authornamehash}{fce0a5d2aa4ba307f448e452e68fdbcb}
+      \strng{authorfullhash}{fce0a5d2aa4ba307f448e452e68fdbcb}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recommender systems provide users with personalized suggestions for products or services. These systems often rely on collaborating filtering (CF), where past transactions are analyzed in order to establish connections between users and products. The most common approach to CF is based on neighborhood models, which originate from similarities between products or users. In this work we introduce a new neighborhood model with an improved prediction accuracy. Unlike previous approaches that are based on heuristic similarities,we model neighborhood relations by minimizing a global cost function. Further accuracy improvements are achieved by extending the model to exploit both explicit and implicit feedback by the users. Past models were limited by the need to compute all pairwise similarities between items or users, which grow quadratically with input size. In particular, this limitation vastly complicates adopting user similarity models, due to the typical large number of users. Our new model solves these limitations by factoring the neighborhood model, thus making both item-item and user-user implementations scale linearly with the size of the data. The methods are tested on the Netflix data, with encouraging results. {©} 2010 ACM.}
+      \field{eprinttype}{arXiv}
+      \field{isbn}{0027-8424}
+      \field{issn}{15564681}
+      \field{journaltitle}{ACM Transactions on Knowledge Discovery from Data}
+      \field{number}{1}
+      \field{title}{{Factor in the neighbors}}
+      \field{volume}{4}
+      \field{year}{2010}
+      \field{pages}{1\bibrangedash 24}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1145/1644873.1644874
+      \endverb
+      \verb{eprint}
+      \verb 1608.05878
+      \endverb
+      \verb{file}
+      \verb :E$\backslash$:/ACADEMICS/PEC---/ME 4 SEM/mendeley/2010/Factor in the neighbors - Koren.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://portal.acm.org/citation.cfm?doid=1644873.1644874
+      \endverb
+      \verb{url}
+      \verb http://portal.acm.org/citation.cfm?doid=1644873.1644874
+      \endverb
+    \endentry
+    \entry{Koren2008}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fce0a5d2aa4ba307f448e452e68fdbcb}{%
+           family={Koren},
+           familyi={K\bibinitperiod},
+           given={Yehuda},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{fce0a5d2aa4ba307f448e452e68fdbcb}
+      \strng{fullhash}{fce0a5d2aa4ba307f448e452e68fdbcb}
+      \strng{bibnamehash}{fce0a5d2aa4ba307f448e452e68fdbcb}
+      \strng{authorbibnamehash}{fce0a5d2aa4ba307f448e452e68fdbcb}
+      \strng{authornamehash}{fce0a5d2aa4ba307f448e452e68fdbcb}
+      \strng{authorfullhash}{fce0a5d2aa4ba307f448e452e68fdbcb}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recommender systems provide users with personalized suggestions for products or services. These systems often rely on Collaborating Filtering (CF), where past transactions are analyzed in order to establish connections between users and products. The two more successful approaches to CF are latent factor models, which directly profile both users and products, and neighborhood models, which analyze similarities between products or users. In this work we introduce some innovations to both approaches. The factor and neighborhood models can now be smoothly merged, thereby building a more accurate combined model. Further accuracy improvements are achieved by extending the models to exploit both explicit and implicit feedback by the users. The methods are tested on the Netflix data. Results are better than those previously published on that dataset. In addition, we suggest a new evaluation metric, which highlights the differences among methods, based on their performance at a top-K recommendation task.}
+      \field{eprinttype}{arXiv}
+      \field{isbn}{9781605581934}
+      \field{issn}{1605581933}
+      \field{journaltitle}{Proceeding of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining - KDD 08}
+      \field{title}{{Factorization meets the neighborhood}}
+      \field{year}{2008}
+      \field{pages}{426}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1145/1401890.1401944
+      \endverb
+      \verb{eprint}
+      \verb 62
+      \endverb
+      \verb{file}
+      \verb :E$\backslash$:/ACADEMICS/PEC---/ME 4 SEM/mendeley/2008/Factorization meets the neighborhood - Koren.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://dl.acm.org/citation.cfm?doid=1401890.1401944
+      \endverb
+      \verb{url}
+      \verb http://dl.acm.org/citation.cfm?doid=1401890.1401944
+      \endverb
+      \keyw{collaborative filtering,recommender systems}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

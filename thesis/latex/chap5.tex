@@ -3,6 +3,9 @@
 \section{Dataset}
 
 \subsection{Data Gathering}
+
+
+
 In order to get the required material to achieve this dissertation, files containing consumer reviews for diverse products derived from Amazon.com were used. These files were collected by Julian McAuley, researcher at the University of California, and were available on the following website: http://jmcauley.ucsd.edu/data/amazon/. The extracted files only represented a subset of the data in which all items and users had at least 5 reviews (5-core). Duplicates, accounting for less than 1 percent of reviews, were removed.
 
 This dataset contains product reviews and metadata from Amazon, including 142.8 million reviews spanning May 1996 - July 2014.
@@ -22,22 +25,19 @@ Each product review is provided with the following labels:
 \item reviewTime: time of the review in mm/dd/yyyy
 \end{itemize}
 
-Sample review:
+Sample review from the dataset:
 \begin{verbatim}
-{
-  "reviewerID": "A2SUAM1J3GNN3B",
-  "asin": "0000013714",
-  "reviewerName": "J. McDonald",
-  "helpful": [2, 3],
-  "reviewText": "I bought this for my husband who plays the piano. He is having a 
-  wonderful time playing these old hymns. The music is at times hard to read
-  because we think the book was published for singing from more than playing from. 
-  Great purchase though!",
-  "overall": 5.0,
-  "summary": "Heavenly Highway Hymns",
-  "unixReviewTime": 1252800000,
-  "reviewTime": "09 13, 2009"
-}
+  {
+    "reviewerID": "AWY3EPKEOUV1W", 
+    "asin": "5555991584", 
+    "reviewerName": "Heather", 
+    "helpful": [2, 3], 
+    "reviewText": "I just recently purchased her ''Paint The Sky With Stars'' CD and was so impressed that I bought 3 of her previously released CD's and plan to buy all her music.  She is truely talented and her music is very unique with a combination of modern classical and pop with a hint of an Angelic tone. I still recommend you buy this CD. Anybody who has an appreciation for music will certainly enjoy her music.",
+    "overall": 5.0, 
+    "summary": "New Enya Fan.  Simply beautiful.", 
+    "unixReviewTime": 978393600, 
+    "reviewTime": "01 2, 2001"
+  }
 \end{verbatim}
 
 From these labels, we extracted the following columns for analysis:
@@ -50,7 +50,7 @@ From these labels, we extracted the following columns for analysis:
 
 The remaining elements were considered irrelevant in the scope of this thesis work, as our work mostly focuses on creating Rating Matrix, Document-term Matrix, and other matrices. This data was retrieved from the json files with the help of Python programming language.
 
-The amazon dataset contains the product reviews that are categorised in the many categories. In the framework of this thesis, we have decided to analyse two specific dataset categories: Digital Music and Health \& Personal Care. These categories were chosen to justify the two yet broad themes in the recommender systems: Experience products and Search Products. 
+The amazon dataset contains the product reviews that are categorized in the many categories. In the framework of this thesis, we have decided to analyse two specific dataset categories: Digital Music and Health \& Personal Care. These categories were chosen to justify the two yet broad themes in the recommender systems: Experience products and Search Products. 
 
 Experience products can be defined as products whose quality is difficult to evaluate as it largely depends upon the taste of the different customers. With these kinds of products the user has to buy the product, test it, to form an opinion of the product and thereby evaluating the product to write a review about it. Digital Music was the appropriate fit for this category.
 
@@ -62,6 +62,8 @@ To end, the size of both the datasets was large with upto 230,000 reviews for th
 \subsection{Choice of Hyperparameters/Variables Explained}
 
 Use of RMSE value is justified by the previous findings in the study by Koren \cite{Koren2010} \cite{Koren2008} that small improvements in RMSE terms can have significant impact on the quality of some of the top recommendations.
+
+
 
 
 \section{Implementation}

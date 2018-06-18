@@ -1979,6 +1979,8 @@
     <bcf:citekey order="4">Bobadilla2013</bcf:citekey>
     <bcf:citekey order="5">Salakhutdinov2007</bcf:citekey>
     <bcf:citekey order="6">Liu2003</bcf:citekey>
+    <bcf:citekey order="7">Koren2010</bcf:citekey>
+    <bcf:citekey order="8">Koren2008</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

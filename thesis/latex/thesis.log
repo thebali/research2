@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6670 64-bit) (preloaded format=xelatex 2018.4.18)  14 JUN 2018 02:17
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6670 64-bit) (preloaded format=xelatex 2018.4.18)  18 JUN 2018 08:31
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1478,64 +1478,64 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ]
 Missing character: There is no ’ in font futr8t!
  [13]
+Missing character: There is no ∑ in font futr8t!
+
+Underfull \vbox (badness 2426) has occurred while \output is active []
+
+ [14]
 Missing character: There is no ’ in font futr8t!
 Missing character: There is no ’ in font futr8t!
 
-Overfull \hbox (3.30571pt too wide) in paragraph at lines 18--19
+Overfull \hbox (3.30571pt too wide) in paragraph at lines 21--22
 []\T1/futs/m/n/12 See 2.2 for more in-for-ma-tion re-gard-ing Sim-i-lar-ity Com
 -pu-ta-tion and Pre-dic-tion Genera-
  []
 
-[14]
+[15]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 34.
-
-Overfull \hbox (3.41371pt too wide) in paragraph at lines 70--72
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 37.
+ [16]
+Overfull \hbox (3.41371pt too wide) in paragraph at lines 73--75
 \T1/futs/m/n/12 Similarity and pre-dic-tion com-pu-ta-tions com-pose vi-tal par
 ts of col-lab-o-ra-tive fil-ter-ing based
  []
 
-
-Underfull \vbox (badness 2698) has occurred while \output is active []
-
- [15]
 Missing character: There is no ’ in font futr8t!
 
-Overfull \hbox (0.28188pt too wide) in paragraph at lines 74--75
+Overfull \hbox (0.28188pt too wide) in paragraph at lines 77--78
 \T1/futs/m/n/12 Another well known method when im-ple-ment-ing rec-om-mender sy
 s-tems is content-based
  []
 
 
-Overfull \hbox (8.20572pt too wide) in paragraph at lines 76--77
+Overfull \hbox (8.20572pt too wide) in paragraph at lines 79--80
 \T1/futs/m/n/12 tor-i-cal data of users to learn their pref-er-ences. The in-te
 n-tion is that, af-ter suf-fi-cient amounts
  []
 
 Missing character: There is no ’ in font futr8t!
-[16]
-Overfull \hbox (0.76175pt too wide) in paragraph at lines 85--86
-\T1/futs/m/n/12 Recommender sys-tems built around the con-cept of de-mo-graphic
- fil-ter-ing work very much
- []
-
 
 Underfull \vbox (badness 1325) has occurred while \output is active []
 
  [17]
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 96.
+Overfull \hbox (0.76175pt too wide) in paragraph at lines 88--89
+\T1/futs/m/n/12 Recommender sys-tems built around the con-cept of de-mo-graphic
+ fil-ter-ing work very much
+ []
 
+[18]
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 99.
 
-("C:\MiKTeX 2.9\tex\latex\fourier\ts1futs.fd"
+ ("C:\MiKTeX 2.9\tex\latex\fourier\ts1futs.fd"
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 )
-Overfull \hbox (4.1097pt too wide) in paragraph at lines 96--97
+Overfull \hbox (4.1097pt too wide) in paragraph at lines 99--100
 []\T1/futs/m/it/12 Collaborative Fil-ter-ing\T1/futs/m/n/12 : Ob-serv-ing the w
 atch-ing and brows-ing habits of sim-i-lar users. 
  []
 
 
-Overfull \hbox (1.38577pt too wide) in paragraph at lines 97--98
+Overfull \hbox (1.38577pt too wide) in paragraph at lines 100--101
 []\T1/futs/m/it/12 Content-Based Fil-ter-ing\T1/futs/m/n/12 : Ob-serv-ing users
  with equal pref-er-ences and how they rated
  []
@@ -1544,16 +1544,20 @@ Missing character: There is no ” in font futr8t!
 Missing character: There is no ” in font futr8t!
 Missing character: There is no ” in font futr8t!
 Missing character: There is no ” in font futr8t!
-[18]
-Overfull \hbox (1.1452pt too wide) in paragraph at lines 117--118
+[19]
+Overfull \hbox (1.1452pt too wide) in paragraph at lines 120--121
 \T1/futs/m/n/12 A com-mon chal-lenge when im-ple-ment-ing al-go-rithms for col-
 lab-o-ra-tive filtering-based rec-
  []
 
-[19]) [20]
+[20]) [21]
 \openout2 = `chap3.aux'.
 
- (chap3.tex
+ (chap3.tex [22
+
+
+
+]
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <17.28> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 6.
 Missing character: There is no ∈ in font futr8t!
@@ -1562,14 +1566,10 @@ File: img/kNNtrain.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21
-
-
-
-]
+ [23]
 Missing character: There is no − in font futr8t!
 
-[22]
+[24]
 File: img/SVD.png Graphic file (type bmp)
 <img/SVD.png>
 Missing character: There is no Σ in font futr8t!
@@ -1581,15 +1581,15 @@ Missing character: There is no Σ in font futr8t!
 Missing character: There is no Σ in font futr8t!
 Missing character: There is no “ in font futr8t!
 Missing character: There is no ” in font futr8t!
- [23]
+ [25]
 Missing character: There is no “ in font futr8t!
 Missing character: There is no ” in font futr8t!
- [24] [25]
+ [26] [27]
 Missing character: There is no Φ in font futr8t!
 Missing character: There is no β in font futr8t!
 Missing character: There is no θ in font futr8t!
 Missing character: There is no α in font futr8t!
- [26]
+ [28]
 Missing character: There is no Σ in font futr8t!
 Missing character: There is no α in font futr8t!
 
@@ -1598,21 +1598,21 @@ Overfull \hbox (3.92169pt too wide) in paragraph at lines 99--101
 f the Dirich-let pri-ors strongly
  []
 
-[27]) [28]
+[29]) [30]
 \openout2 = `chap4.aux'.
 
  (chap4.tex
 Missing character: There is no ’ in font futr8t!
- [29
+ [31
 
 
 
-] [30]
+] [32]
 Missing character: There is no ’ in font futr8t!
 Missing character: There is no ’ in font futr8t!
 Missing character: There is no ’ in font futr8t!
 Missing character: There is no ’ in font futr8t!
-) [31] [32]
+) [33] [34]
 \openout2 = `chap5.aux'.
 
  (chap5.tex
@@ -1621,43 +1621,63 @@ Overfull \hbox (23.82574pt too wide) in paragraph at lines 10--11
 e fea-tures), and links (also viewed/also
  []
 
-[33
+[35
 
 
 
 ]
-Overfull \hbox (59.15752pt too wide) in paragraph at lines 33--33
+Overfull \hbox (59.15752pt too wide) in paragraph at lines 32--32
 []  \T1/lmtt/m/n/12 "reviewText": "I bought this for my husband who plays the p
 iano. He is having a[] 
  []
 
 
-Overfull \hbox (28.2825pt too wide) in paragraph at lines 34--34
+Overfull \hbox (28.2825pt too wide) in paragraph at lines 33--33
 []  \T1/lmtt/m/n/12 wonderful time playing these old hymns. The music is at tim
 es hard to read[] 
  []
 
 
-Overfull \hbox (65.33252pt too wide) in paragraph at lines 35--35
+Overfull \hbox (65.33252pt too wide) in paragraph at lines 34--34
 []  \T1/lmtt/m/n/12 because we think the book was published for singing from mo
 re than playing from.[] 
  []
 
-[34]
-Missing character: There is no • in font futr8t!
-Missing character: There is no • in font futr8t!
-Missing character: There is no • in font futr8t!
-) [35]
+[36]
+Missing character: There is no “ in font ec-lmtt12!
+
+Overfull \hbox (120.90054pt too wide) in paragraph at lines 71--71
+[]\T1/lmtt/m/n/12 16. Koren, Y., Factorization Meets the Neighborhood: a Multif
+aceted Collaborative Filtering[] 
+ []
+
+Missing character: There is no ” in font ec-lmtt12!
+
+Overfull \hbox (52.98251pt too wide) in paragraph at lines 72--72
+[]\T1/lmtt/m/n/12 Model, Proc. 14th ACM SIGKDD International Conference on Know
+ledge Discovery and[] 
+ []
+
+Missing character: There is no “ in font ec-lmtt12!
+Missing character: There is no ” in font ec-lmtt12!
+
+Overfull \hbox (120.90755pt too wide) in paragraph at lines 74--74
+[]\T1/lmtt/m/n/12 17. Koren, Y., Factor in the Neighbors: Scalable and Accurate
+ Collaborative Filtering , ACM[] 
+ []
+
+Missing character: There is no – in font ec-lmtt12!
+[37]) [38]
 \openout2 = `results.aux'.
 
- (results.tex [36
+ (results.tex) [39
 
 
 
-]) [37]
+]
 \openout2 = `discuss.aux'.
 
- (discuss.tex [38
+ (discuss.tex [40
 
 
 
@@ -1675,14 +1695,14 @@ Overfull \hbox (0.37778pt too wide) in paragraph at lines 5--17
 -ment-ing rec-om-mender sys-tems?
  []
 
-) [39]
+) [41]
 \openout2 = `conclusion.aux'.
 
- (conclusion.tex [40
+ (conclusion.tex [42
 
 
 
-]) [41] [42
+]) [43] [44
 
 
 
@@ -1693,7 +1713,7 @@ Overfull \hbox (6.2452pt too wide) in paragraph at lines 233--233
 81107415324 . 004$[][]\T1/futs/m/n/12 . arXiv: [][]$\T1/lmtt/m/n/12 arXiv :
  []
 
-[43]
+[45]
 \tf@toc=\write7
 \openout7 = `thesis.toc'.
 
@@ -1712,12 +1732,12 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25558 strings out of 427799
- 396998 string characters out of 3147465
- 1008730 words of memory out of 3000000
- 29201 multiletter control sequences out of 15000+200000
+ 25564 strings out of 427799
+ 397230 string characters out of 3147465
+ 1008826 words of memory out of 3000000
+ 29207 multiletter control sequences out of 15000+200000
  143249 words of font info for 87 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  58i,12n,48p,2134b,4568s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on thesis.pdf (43 pages).
+Output written on thesis.pdf (45 pages).
