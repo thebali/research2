@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6670 64-bit) (preloaded format=xelatex 2018.4.18)  18 JUN 2018 08:31
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6670 64-bit) (preloaded format=xelatex 2018.4.18)  18 JUN 2018 23:53
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1616,7 +1616,7 @@ Missing character: There is no ’ in font futr8t!
 \openout2 = `chap5.aux'.
 
  (chap5.tex
-Overfull \hbox (23.82574pt too wide) in paragraph at lines 10--11
+Overfull \hbox (23.82574pt too wide) in paragraph at lines 15--16
 \T1/futs/m/n/12 scrip-tions, cat-e-gory in-for-ma-tion, price, brand, and im-ag
 e fea-tures), and links (also viewed/also
  []
@@ -1626,48 +1626,16 @@ e fea-tures), and links (also viewed/also
 
 
 ]
-Overfull \hbox (59.15752pt too wide) in paragraph at lines 32--32
-[]  \T1/lmtt/m/n/12 "reviewText": "I bought this for my husband who plays the p
-iano. He is having a[] 
+Overfull \hbox (2171.00856pt too wide) in paragraph at lines 37--37
+[]    \T1/lmtt/m/n/12 "reviewText": "I just recently purchased her ''Paint The 
+Sky With Stars'' CD and was so impressed that I bought 3 of her previously rele
+ased CD's and plan to buy all her music.  She is truely talented and her music 
+is very unique with a combination of modern classical and pop with a hint of an
+ Angelic tone. I still recommend you buy this CD. Anybody who has an appreciati
+on for music will certainly enjoy her music.",[] 
  []
 
-
-Overfull \hbox (28.2825pt too wide) in paragraph at lines 33--33
-[]  \T1/lmtt/m/n/12 wonderful time playing these old hymns. The music is at tim
-es hard to read[] 
- []
-
-
-Overfull \hbox (65.33252pt too wide) in paragraph at lines 34--34
-[]  \T1/lmtt/m/n/12 because we think the book was published for singing from mo
-re than playing from.[] 
- []
-
-[36]
-Missing character: There is no “ in font ec-lmtt12!
-
-Overfull \hbox (120.90054pt too wide) in paragraph at lines 71--71
-[]\T1/lmtt/m/n/12 16. Koren, Y., Factorization Meets the Neighborhood: a Multif
-aceted Collaborative Filtering[] 
- []
-
-Missing character: There is no ” in font ec-lmtt12!
-
-Overfull \hbox (52.98251pt too wide) in paragraph at lines 72--72
-[]\T1/lmtt/m/n/12 Model, Proc. 14th ACM SIGKDD International Conference on Know
-ledge Discovery and[] 
- []
-
-Missing character: There is no “ in font ec-lmtt12!
-Missing character: There is no ” in font ec-lmtt12!
-
-Overfull \hbox (120.90755pt too wide) in paragraph at lines 74--74
-[]\T1/lmtt/m/n/12 17. Koren, Y., Factor in the Neighbors: Scalable and Accurate
- Collaborative Filtering , ACM[] 
- []
-
-Missing character: There is no – in font ec-lmtt12!
-[37]) [38]
+[36] [37]) [38]
 \openout2 = `results.aux'.
 
  (results.tex) [39

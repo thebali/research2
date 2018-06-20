@@ -4,23 +4,21 @@
 
 \subsection{Data Gathering}
 
+re writing the below thing ...
 
+In respect with this thesis, material is required for achieving, files with customer data for reviews is derived products from the Amazon.com are being used. Files mentioned above are collected by Julian McAuley, Researcher, University of California, and is available on website: http://jmcauley.ucsd.edu/data/amazon/.
 
-In order to get the required material to achieve this dissertation, files containing consumer reviews for diverse products derived from Amazon.com were used. These files were collected by Julian McAuley, researcher at the University of California, and were available on the following website: http://jmcauley.ucsd.edu/data/amazon/. The extracted files only represented a subset of the data in which all items and users had at least 5 reviews (5-core). Duplicates, accounting for less than 1 percent of reviews, were removed.
+The files were extracted from the compressed json format into json files which had users with atleast 5 reviews each (5-core). The duplicates found in the dataset were removed, less than 1 percent of reviews.
 
-This dataset contains product reviews and metadata from Amazon, including 142.8 million reviews spanning May 1996 - July 2014.
-
-This dataset includes reviews (ratings, text, helpfulness votes), product metadata (descriptions, category information, price, brand, and image features), and links (also viewed/also bought graphs). 
-
-Each product review is provided with the following labels:
+The dataset contained product reviews spanning May 1996 - July 2014. Each product review is provided with the following labels:
 \begin{itemize}
 \item reviewerID: the ID of the reviewer
-\item asin (Amazon Standard Identification Number): the product ID of the item being reviewed
+\item asin: \textit{Amazon Standard Identification Number} given to specific amazon listed item being reviewed
 \item reviewerName: the name of the reviewer
-\item helpful: helpfulness rating of the review (fraction of users who found the review helpful)
-\item reviewText: the text of the review corresponding to the comment of the reviewer
-\item overall: the rating of the product, out of five stars
-\item summary: the summary of the review
+\item helpful: how useful the rating \& the review were to some fraction to users
+\item reviewText: the textual review left by the reviewer on a specific product
+\item overall: product rating by specific reviewer on the item
+\item summary: the review summary
 \item unixReviewTime: time of the review (unix time)
 \item reviewTime: time of the review in mm/dd/yyyy
 \end{itemize}
@@ -71,7 +69,7 @@ In the course of this thesis, many methods were tried and tested for the recomme
 
 
 \subsection{Approach}
-In order to comprehensively describe the experiments made for thesis, a small application of the whole datasets has been implemented which will be fitting the models on the described datasets and evaluate each model on the accuracy basis, and thereafter write the results to the file for the record. The fitting is done using a \textit{4-fold cross validation} mechanism to balance the bad areas of the dataset with longer execution time. Moreover, various values are tried and tested to find the values that are suited best for the better results.
+In order to comprehensively describe the experiments made for thesis, a small application of the whole datasets has been implemented which will be fitting the models on the described datasets and evaluate each model on the accuracy basis, and thereafter write the results to the file for the record. The fitting is done using a \textit{4-fold cross validation} mechanism to balance the bad areas of the dataset with longer execution time. Moreover, various values are tried and tested to find the values that are suited best for the better results. 
 
 \subsection{Models}
 Using GraphLab python API, we applied SVD on the recommender factorization model and Topic Model classes on two datasets separately. This yielded us with thorough details about the model fitted and evaluted. Models were trained with much of their default settings and some manually optimized hyperparameters and a variable rank. The results generated from the models are then written to the text file and later visualized through plotting.
