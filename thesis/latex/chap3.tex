@@ -1,13 +1,12 @@
 \chapter{Literature Review and Background}
-
 In this thesis, I have presented two way approach to improving the existing systems of recommender systems.
 First, I have utilized the ratings present in the dataset corresponding to each purchase made by some user x of some product i to predict and recommend the items for some other user y using item-item based collaborative filtering. Secondly, LDA was used to extract topic modelling based words and features from the reviews left by the users on the products.
 
 \section{\textit{k} Nearest Neighbour}
-$k$ nearest neighbor or kNN classification determines the decision boundary locally. For 1NN we assign each document to the class of its closest neighbour. For kNN we assign each document to the majority class of its k closest neighbors where k is a parameter. The rationale of kNN classification is that, based on the contiguity hypothesis, we expect a test document $d$ to have the same label as the training documents located in the local region
+\textit{k} nearest neighbor or kNN classification determines the decision boundary locally. For 1NN we assign each document to the class of its closest neighbour. For kNN we assign each document to the majority class of its k closest neighbors where k is a parameter. The rationale of kNN classification is that, based on the contiguity hypothesis, we expect a test document $d$ to have the same label as the training documents located in the local region
 surrounding $d$.
 
-For general, k ∈ N in kNN, consider the region in the space for which the set of k nearest neighbors is the same. This again is a convex polygon and the space is partitioned into convex polygons, within each of which the set of k nearest neighbours is invariant.
+For general, k \in N in kNN, consider the region in the space for which the set of k nearest neighbors is the same. This again is a convex polygon and the space is partitioned into convex polygons, within each of which the set of k nearest neighbours is invariant.
 The parameter k in kNN is often chosen based on experience or knowledge about the classification problem at hand.  It is desirable for k to be odd to make ties less likely. k = 3 and k = 5 are common choices, but much larger values between 50 and 100 are also used.  An alternative way of setting the parameter is to select the k that gives best results on a held-out portion of the training set.
 \begin{figure}[H]
     {\centering {\includegraphics[width = 0.7 \textwidth]{img/kNNtrain}}\par}
