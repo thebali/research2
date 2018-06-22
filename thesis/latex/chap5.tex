@@ -114,9 +114,9 @@ In order to actually infer the topics in a corpus, we imagine a generative proce
 
 1. Choose {\displaystyle \theta _{i}\sim \operatorname {Dir} (\alpha )} {\displaystyle \theta _{i}\sim \operatorname {Dir} (\alpha )}, where {\displaystyle i\in \{1,\dots ,M\}} i\in \{1,\dots ,M\} and {\displaystyle \mathrm {Dir} (\alpha )} \mathrm {Dir} (\alpha ) is a Dirichlet distribution with a symmetric parameter {\displaystyle \alpha } \alpha  which typically is sparse ( {\displaystyle \alpha <1} \alpha < 1)
 
-2. Choose {\displaystyle \varphi _{k}\sim \operatorname {Dir} (\beta )} {\displaystyle \varphi _{k}\sim \operatorname {Dir} (\beta )}, where {\displaystyle k\in \{1,\dots ,K\}} k\in \{1,\dots ,K\} and {\displaystyle \beta } \beta  typically is sparse
+2. Choose {\displaystyle $\varphi _{k}$\sim \operatorname {Dir} ($\beta$ )} {\displaystyle \varphi _{k}\sim \operatorname {Dir} (\beta )}, where $k\in \{1,\dots ,K\}$ and $\beta$  typically is sparse
 
-3. For each of the word positions {\displaystyle i,j} i,j, where {\displaystyle i\in \{1,\dots ,M\}} i\in \{1,\dots ,M\}, and {\displaystyle j\in \{1,\dots ,N_{i}\}} j\in \{1,\dots ,N_{i}\}
+3. For each of the word positions $i,j$, where $i\in \{1,\dots ,M\}$, and $j\in \{1,\dots ,N_{i}\}$
 
 (a) Choose a topic {\displaystyle z_{i,j}\sim \operatorname {Multinomial} (\theta _{i}).} {\displaystyle z_{i,j}\sim \operatorname {Multinomial} (\theta _{i}).}
 (b) Choose a word {\displaystyle w_{i,j}\sim \operatorname {Multinomial} (\varphi _{z_{i,j}}).} {\displaystyle w_{i,j}\sim \operatorname {Multinomial} (\varphi _{z_{i,j}}).}
