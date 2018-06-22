@@ -105,9 +105,9 @@ With plate notation, which is often used to represent probabilistic graphical mo
 $\alpha$ is the parameter of the Dirichlet prior on the per-document topic distributions,
 $\beta$ is the parameter of the Dirichlet prior on the per-topic word distribution,
 \[{\theta_{m}}\] is the topic distribution for document m,
-{\displaystyle \varphi _{k}} \varphi _{k} is the word distribution for topic k,
-{\displaystyle z_{mn}} {\displaystyle z_{mn}} is the topic for the n-th word in document m, and
-{\displaystyle w_{mn}} {\displaystyle w_{mn}} is the specific word.
+$\varphi_{k}$ is the word distribution for topic k,
+$z_{mn}$ is the topic for the n-th word in documenxt m, and
+$w_{mn}$ is the specific word.
 
 
 In order to actually infer the topics in a corpus, we imagine a generative process whereby the documents are created, so that we may infer, or reverse engineer, it. We imagine the generative process as follows. Documents are represented as random mixtures over latent topics, where each topic is characterized by a distribution over all the words. LDA assumes the following generative process for a corpus {\displaystyle D} D consisting of {\displaystyle M} M documents each of length {\displaystyle N_{i}} N_{i}:
