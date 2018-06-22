@@ -1,11 +1,6 @@
 \chapter{Methodology}
 
 \section{Dataset}
-
-\subsection{Data Gathering}
-
-re writing the below thing ...
-
 In respect with this thesis, material is required for achieving, files with customer data for reviews is derived products from the Amazon.com are being used. Files mentioned above are collected by Julian McAuley, Researcher, University of California, and is available on website: http://jmcauley.ucsd.edu/data/amazon/.
 
 The files were extracted from the compressed json format into json files which had users with atleast 5 reviews each (5-core). The duplicates found in the dataset were removed, less than 1 percent of reviews.
@@ -23,14 +18,19 @@ The dataset contained product reviews spanning May 1996 - July 2014. Each produc
 \item reviewTime: time of the review in mm/dd/yyyy
 \end{itemize}
 
-Sample review from the dataset:
+\textbf{Sample review} from the dataset:
 \begin{verbatim}
   {
     "reviewerID": "AWY3EPKEOUV1W", 
     "asin": "5555991584", 
     "reviewerName": "Heather", 
     "helpful": [2, 3], 
-    "reviewText": "I just recently purchased her ''Paint The Sky With Stars'' CD and was so impressed that I bought 3 of her previously released CD's and plan to buy all her music.  She is truely talented and her music is very unique with a combination of modern classical and pop with a hint of an Angelic tone. I still recommend you buy this CD. Anybody who has an appreciation for music will certainly enjoy her music.",
+    "reviewText": "I just recently purchased her ''Paint The Sky With Stars''
+    CD and was so impressed that I bought 3 of her previously released CD's and
+    plan to buy all her music.  She is truely talented and her music is very
+    unique with a combination of modern classical and pop with a hint of an
+    Angelic tone. I still recommend you buy this CD. Anybody who has an
+    appreciation for music will certainly enjoy her music.",
     "overall": 5.0, 
     "summary": "New Enya Fan.  Simply beautiful.", 
     "unixReviewTime": 978393600, 
@@ -57,6 +57,8 @@ While, search products are products that can be objectively evaluated through ke
 To end, the size of both the datasets was large with upto 230,000 reviews for the largest one. An additional step was performed to \textbf{manage the dataset} to a resonable size. The dataset was reduced to 10,000 product reviews that have been randomly sampled from the original dataset. This was essentially done to perform the experiments and test the hypothesis efficiently.
 
 
+
+
 \subsection{Choice of Hyperparameters/Variables Explained}
 
 Use of RMSE value is justified by the previous findings in the study by Koren \cite{Koren2010} \cite{Koren2008} that small improvements in RMSE terms can have significant impact on the quality of some of the top recommendations.
@@ -69,8 +71,15 @@ In order to comprehensively describe the experiments made for thesis, a small ap
 
 
 \begin{figure}
-  {\centering {\includegraphics[width = .85 \textwidth]{img/dataset/UserPerItem100.png}}\par}
+  {\centering {\includegraphics[width = \textwidth]{img/dataset/ItemPerUser50.png}}\par}
 \end{figure}
+
+
+
+\begin{figure}
+  {\centering {\includegraphics[width = \textwidth]{img/dataset/UserPerItem50.png}}\par}
+\end{figure}
+
 
 \subsection{Implemention}
 For implementing the Probabilistic Matrix Factorization and Topic Modelling using Latent Dirichlet Allocation, we used GraphLab - Scientific Library for Python, and also implemented Gibbs Sampling technique.
@@ -88,11 +97,8 @@ In the two factorization models, users and items are represented by weights and 
 The factor terms model interactions between users and items. For example, if a user tends to love romance movies and hate action movies, the factor terms attempt to capture that, causing the model to predict lower scores for action movies and higher scores for romance movies. Learning good weights and factors is controlled by several options outlined below.
 
 \[
-  \operatorname{score}(i, j) =
-   \mu + w_i + w_j
-   + \mathbf{a}^T \mathbf{x}_i + \mathbf{b}^T \mathbf{y}_j
-   + {\mathbf u}_i^T {\mathbf v}_j,
-\]
+  \operatorname{score}(i, j) = \mu + w_i + w_j + \mathbf{a}^T \mathbf{x}_i + \mathbf{b}^T \mathbf{y}_j + {\mathbf u}_i^T {\mathbf v}_j
+  \]
 
 where μ is a global bias term, wi is the weight term for user i, wj is the weight term for item j, xi and yj are respectively the user and item side feature vectors, and a and b are respectively the weight vectors for those side features. The latent factors, which are vectors of length numfactors, are given by ui and vj.
 
@@ -102,38 +108,26 @@ A topic model assumes each document is a mixture of a set of topics, where for e
 
 With plate notation, which is often used to represent probabilistic graphical models (PGMs), the dependencies among the many variables can be captured concisely. The boxes are "plates" representing replicates, which are repeated entities. The outer plate represents documents, while the inner plate represents the repeated word positions in a given document, each of which position is associated with a choice of topic and word. M denotes the number of documents, N the number of words in a document. The variable names are defined as follows:
 
-$\alpha$ is the parameter of the Dirichlet prior on the per-document topic distributions,
-$\beta$ is the parameter of the Dirichlet prior on the per-topic word distribution,
-\[{\theta_{m}}\] is the topic distribution for document m,
-$\varphi_{k}$ is the word distribution for topic k,
-$z_{mn}$ is the topic for the n-th word in documenxt m, and
+$\alpha$ is the parameter of the Dirichlet prior on the per-document topic distributions,\\
+$\beta$ is the parameter of the Dirichlet prior on the per-topic word distribution,\\
+\[{\theta_{m}}\] is the topic distribution for document m,\\
+$\varphi_{k}$ is the word distribution for topic k,\\
+$z_{mn}$ is the topic for the n-th word in documenxt m, and \\
 $w_{mn}$ is the specific word.
 
 
-In order to actually infer the topics in a corpus, we imagine a generative process whereby the documents are created, so that we may infer, or reverse engineer, it. We imagine the generative process as follows. Documents are represented as random mixtures over latent topics, where each topic is characterized by a distribution over all the words. LDA assumes the following generative process for a corpus {\displaystyle D} D consisting of {\displaystyle M} M documents each of length {\displaystyle N_{i}} N_{i}:
+In order to actually infer the topics in a corpus, we imagine a generative process whereby the documents are created, so that we may infer, or reverse engineer, it. We imagine the generative process as follows. Documents are represented as random mixtures over latent topics, where each topic is characterized by a distribution over all the words. LDA assumes the following generative process for a corpus $D$ consisting of $M$ documents each of length $N_{i}$:
 
-1. Choose {\displaystyle \theta _{i}\sim \operatorname {Dir} (\alpha )} {\displaystyle \theta _{i}\sim \operatorname {Dir} (\alpha )}, where {\displaystyle i\in \{1,\dots ,M\}} i\in \{1,\dots ,M\} and {\displaystyle \mathrm {Dir} (\alpha )} \mathrm {Dir} (\alpha ) is a Dirichlet distribution with a symmetric parameter {\displaystyle \alpha } \alpha  which typically is sparse ( {\displaystyle \alpha <1} \alpha < 1)
+1. Choose $\theta _{i}(\alpha ) \theta _{i} (\alpha)$, where $i\in \{1,\dots ,M\}$ and ($\alpha$ ) is a Dirichlet distribution with a symmetric parameter $\alpha$ which typically is sparse $\alpha$ < 1.
 
-2. Choose {\displaystyle $\varphi _{k}$\sim \operatorname {Dir} ($\beta$ )} {\displaystyle \varphi _{k}\sim \operatorname {Dir} (\beta )}, where $k\in \{1,\dots ,K\}$ and $\beta$  typically is sparse
+2. Choose $\varphi _{k}$ {Dir} ($\beta$) $\varphi _{k} \beta$, where $k\in \{1,\dots ,K\}$ and $\beta$ typically is sparse
 
-3. For each of the word positions $i,j$, where $i\in \{1,\dots ,M\}$, and $j\in \{1,\dots ,N_{i}\}$
+3. For each of the word positions $i,j$, where $i\in \{1,\dots ,M\}$, and $j\in \{1,\dots ,N_{i}\}$. \\
 
-(a) Choose a topic {\displaystyle z_{i,j}\sim \operatorname {Multinomial} (\theta _{i}).} {\displaystyle z_{i,j}\sim \operatorname {Multinomial} (\theta _{i}).}
-(b) Choose a word {\displaystyle w_{i,j}\sim \operatorname {Multinomial} (\varphi _{z_{i,j}}).} {\displaystyle w_{i,j}\sim \operatorname {Multinomial} (\varphi _{z_{i,j}}).}
+(a) Choose a topic $z_{i,j}$ $\theta_{i}$.\\
+(b) Choose a word $w_i,j$ $\varphi_{z_{i,j}} w_{i,j}$ $varphi _{z_{i,j}}$.
 (Note that multinomial distribution here refers to the multinomial with only one trial, which is also known as the categorical distribution.)
 
-The lengths {\displaystyle N_{i}} N_{i} are treated as independent of all the other data generating variables ( {\displaystyle w} w and {\displaystyle z} z). The subscript is often dropped, as in the plate diagrams shown here.
+The lengths $N_{i}$ are treated as independent of all the other data generating variables ($w$ and $z$). The subscript is often dropped, as in the plate diagrams shown here.
 
-
-
-
-
-
-\begin{itemize}
-\item Always recommend items based on gender. (Men and women always buy the same items as other men and women, respectively)
-\item Always recommend items based on age. (People at a certain age always buy same items as other people in the same age)
-\item Always recommend items based on domicile. (People from city X always buy the same items as other people from city X)
-\item Baselines have been used before any other extensive evaluation method, something that has been of great help when implementing the application, as these baselines can be seen as evaluation in its most basic form.
-
-\end{itemize}
 
