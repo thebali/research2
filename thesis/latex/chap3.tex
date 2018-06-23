@@ -21,7 +21,7 @@ In LSI, we use SVD to construct a low-rank approximation matrix C, to the term-d
 \subsection{Term-document matrices and Singular value Decomposition}
 However, the matrix we are interested in is the M × N term-document matrix C where (barring a rare coincidence) M 6 = N ;furthermore, C is very unlikely to be symmetric. To this end, we first describe an extension of the symmetric diagonal decomposition known as the singular value decomposition.
 
-Given an M × N matrix C and  a positive  integer k ,  we  wish  to  find  an M × N matrix C k of rank at most k , so as to minimize the Frobenius norm of the matrix difference X = C − C k , defined to be
+Given an M × N matrix C and  a positive  integer k ,  we  wish  to  find  an M × N matrix C k of rank at most k , so as to minimize the Frobenius norm of the matrix difference X = C − C k , defined to be:
 
 \[
     \| X_{F} \| = \sqrt{\sum_{i=1}^{M} \sum_{j=1}^{N} X_{ij}^2}
@@ -29,7 +29,7 @@ Given an M × N matrix C and  a positive  integer k ,  we  wish  to  find  an M 
 
 Thus, the Frobenius norm of X measures the discrepancy between C k and C ; our goal is to find a matrix C k that minimizes this discrepancy, while con- straining C k to have rank at most k. If r is the  rank of C, clearly C r = C and the Frobenius norm of the discrepancy is zero in this case . When k is far smaller than r , we refer to C k as a low-rank approximation. The singular value decomposition can be used to solve the low -rank ma- trix approximation problem.   We then derive from it an applic ation to ap- proximating term-document matrices.
 
-The singular value decomposition can be used to solve the low -rank ma- trix approximation problem.   We then derive from it an applic ation to ap- proximating term-document matrices.   We invoke the followi ng three-step procedure to this end:
+The singular value decomposition can be used to solve the low-rank matrix approximation problem. We then derive from it an applic ation to approximating term-document matrices. We invoke the following three-step procedure to this end:
 
 \begin{figure}[H]
     {\centering {\includegraphics[width = 0.9 \textwidth]{img/SVD}}\par}
@@ -37,7 +37,9 @@ The singular value decomposition can be used to solve the low -rank ma- trix app
 \end{figure}
 
 
-1. Given C , construct its SVD in the form shown in ( 18.9 ); thus, C = U Σ V T . 2. Derive from Σ the matrix Σ k formed by replacing by zeros the r − k small- est singular values on the diagonal of Σ . 3. Compute and output C k = U Σ k V T as the rank- k approximation to C . The rank of C k is at most k :  this follows from the fact that Σ k has at most k non-zero values.  Next, we recall the intuition of Example 18.1 :  the effect of small eigenvalues on matrix products is small.  Thus, it se ems plausible that replacing these small eigenvalues by zero will not subs tantially alter the product, leaving it “close” to C .  The following theorem due to Eckart and Young tells us that, in fact, this procedure yields the matri x of rank k with the lowest possible Frobenius error.
+1. Given C , construct its SVD in the form shown in ( 18.9 ); thus, C = U Σ V T . 
+2. Derive from Σ the matrix Σ k formed by replacing by zeros the r − k smallest singular values on the diagonal of Σ .
+3. Compute and output C k = U Σ k V T as the rank- k approximation to C . The rank of C k is at most k :  this follows from the fact that Σ k has at most k non-zero values.  Next, we recall the intuition of Example 18.1 :  the effect of small eigenvalues on matrix products is small.  Thus, it se ems plausible that replacing these small eigenvalues by zero will not subs tantially alter the product, leaving it “close” to C .  The following theorem due to Eckart and Young tells us that, in fact, this procedure yields the matri x of rank k with the lowest possible Frobenius error.
 
 \section{Latent Factor Topic Modelling | Text Clustering}
 
