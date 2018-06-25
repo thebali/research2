@@ -28,7 +28,16 @@ Most Collaborative Filtering techniques can be expressed by the two general step
 \subsection{User based collaborative filtering}
 The main idea of recommender systems built on user-based collaborative filtering consists in computing the similarity between users’ {u,j} profiles, s u\textsubscript{j} . That is, computing a prediction for the probability of the user u liking a specific item i, consists in computing a rating based on all ratings made by users with similar profiles. All similar profiles contribute to this prediction depending on the similarity factor, s uj [34, 35, 36]. 
 
+\begin{figure}[H]
+    {\centering {\includegraphics[width = 0.7 \textwidth]{img/PearsonEqn.png}}\par}
+    \caption{}
+\end{figure}
 
+
+\begin{figure}[H]
+    {\centering {\includegraphics[width = 0.7 \textwidth]{img/PredUserEqn.png}}\par}
+    \caption{}
+\end{figure}
 
 Typically this can be reduced to the two general steps. 
 1. While observing a user’s actions in a system, look for similar users with equal behaviour- and activity-patterns. 
@@ -41,6 +50,12 @@ The concept of item-based collaborative filtering applies the same idea as its U
 
 \begin{figure}[H]
     {\centering {\includegraphics[width = 0.7 \textwidth]{img/ItemSimEqn.png}}\par}
+    \caption{}
+\end{figure}
+
+
+\begin{figure}[H]
+    {\centering {\includegraphics[width = 0.7 \textwidth]{img/PredItemEqn.png}}\par}
     \caption{}
 \end{figure}
 
