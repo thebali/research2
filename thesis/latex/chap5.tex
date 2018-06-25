@@ -113,10 +113,15 @@ A topic model assumes each document is a mixture of a set of topics, where for e
 With plate notation, which is often used to represent probabilistic graphical models (PGMs), the dependencies among the many variables can be captured concisely. The boxes are "plates" representing replicates, which are repeated entities. The outer plate represents documents, while the inner plate represents the repeated word positions in a given document, each of which position is associated with a choice of topic and word. M denotes the number of documents, N the number of words in a document. The variable names are defined as follows:
 
 $\alpha$ is the parameter of the Dirichlet prior on the per-document topic distributions,\\
+
 $\beta$ is the parameter of the Dirichlet prior on the per-topic word distribution,\\
+
 \[{\theta_{m}}\] is the topic distribution for document m,\\
+
 $\varphi_{k}$ is the word distribution for topic k,\\
+
 $z_{mn}$ is the topic for the n-th word in documenxt m, and \\
+
 $w_{mn}$ is the specific word.
 
 
