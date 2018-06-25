@@ -7,14 +7,14 @@
 \usepackage{amsmath}
 % \usepackage[LGRgreek]{mathastext}
 % incompatible \usepackage{cite}
-\usepackage[sorting=none, 
-%style=verbose, citestyle=alphabetic
-]{biblatex}
+% \usepackage[sorting=none, 
+% style=verbose, citestyle=alphabetic
+% ]{biblatex}
 \usepackage{algorithmicx}
 \usepackage{float}
 \usepackage{setspace}
 %\bibliography{MyCollection}
-\addbibresource{MyCollection.bib} %Imports bibliography file
+% \addbibresource{MyCollection.bib} %Imports bibliography file
 % \usepackage{blindtext}
 \usepackage{ragged2e}
 
@@ -226,12 +226,13 @@ heightrounded,}
 
 \nocite{*}
 
+\bibliography{MyCollection}
 %% special package for bibliography
 %\bibliographystyle{plainnat}
 %\bibliographystyle{plain}
 %\bibliographystyle{unsrt}
-\printbibliography
-
+\bibliographystyle{apalike}
+% \printbibliography
 
 \end{document}
 
