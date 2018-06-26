@@ -107,6 +107,12 @@ z_{dn} \sim M(theta_d); \qquad p ( z _ { d n } = i | \theta _ { d } ) = \theta _
 
 Choose each token. Each token w at each index is chosen from the multinomial distribution associated with the selected topic.
 
+\[
+
+w
+
+\]
+
 
 \subsubsection{Mechanism} LDA provides the mechanism for finding patterns of term co-occurrence and using those patterns to identify coherent topics. Suppose that we have used LDA to learn a topic i and that for term v, p(w = v|z = i) is high. As a result of the LDA generative process, any document d that contains term v has an elevated probability for topic i, that is, p(z dn ? = i|w dn = v) > p(z dn ? = i). This in turn means that all terms that co-occur with term v are more likely to have been gen- erated by topic i, especially as the number of co-occurrences increases. Thus, LDA results in topics in which the terms that are most probable frequently co-occur with each other in documents. Moreover, LDA also helps with polysemy. Consider a term v with two distinct meanings in topics i and i ? . Considering only this term, the model places equal probability on topics i and i ? . However, if the other words in the context place a 90\% probability on i and only a 9\% probability on i ? , then LDA will be able to use the context to disambiguate the topic: it is topic i with 90\% probability.
 
