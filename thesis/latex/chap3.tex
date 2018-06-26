@@ -89,7 +89,13 @@ The distribution of terms for each topic $i$ is represented as a multinomial dis
 
 Choose the topics of the document. The topic distribution for document d is represented as a multinomial distribution θ d , which is drawn from a Dirichlet distribution with parameters α. The Dirichlet distribution captures the document-independent popularity and the within-document burstiness of each topic.
 
-\textbf{refer LDA in text mining book}
+\[
+
+
+; \qquad p ( \theta _ { d } | \alpha ) = \frac { \Gamma ( \sum _ { i = 1 } ^ { K } \alpha _ { i } ) } { \prod _ { i = 1 } ^ { K } \Gamma ( \alpha _ { i } ) } \prod _ { i = 1 } ^ { K } \theta _ { d i } ^ { \alpha _ { i } - 1 }
+
+\]
+
 
 Choose the topic of each token. The topic z dn for each token index n is chosen from the document topic distribution.
 
