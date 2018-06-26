@@ -37,8 +37,7 @@ The singular value decomposition can be used to solve the low-rank matrix approx
 \end{figure}
 
 
-1. Given C , construct its SVD in the form shown in ( 18.9 ); thus, C = U Σ V T . 
-2. Derive from Σ the matrix Σ k formed by replacing by zeros the r − k smallest singular values on the diagonal of Σ .
+1. Given C , construct its SVD in the form shown in ( 18.9 ); thus, C = U Σ V T .2. Derive from Σ the matrix Σ k formed by replacing by zeros the r − k smallest singular values on the diagonal of Σ .
 3. Compute and output C k = U Σ k V T as the rank- k approximation to C . The rank of C k is at most k :  this follows from the fact that Σ k has at most k non-zero values.  Next, we recall the intuition of Example 18.1 :  the effect of small eigenvalues on matrix products is small.  Thus, it se ems plausible that replacing these small eigenvalues by zero will not substantially alter the product, leaving it "close" to C .  The following theorem due to Eckart and Young tells us that, in fact, this procedure yields the matri x of rank k with the lowest possible Frobenius error.
 
 \section{Latent Factor Topic Modelling | Text Clustering}
