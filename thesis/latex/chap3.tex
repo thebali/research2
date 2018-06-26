@@ -82,35 +82,26 @@ Like PLSI, LDA is based on a hypothetical generative process for a corpus. A dia
 The distribution of terms for each topic $i$ is represented as a multinomial distribution $\Phi_i$ , which is drawn from a symmetric Dirichlet distribution with parameter $\beta$.
 
 \[
-
 \Phi_i \sim D(\beta) ; \qquad p ( \Phi _ { i } | \beta ) = \frac { \Gamma ( W \beta ) } { [ \Gamma ( \beta ) ] W } \prod _ { v = 1 } ^ { W } \phi _ { i v } ^ { \beta - 1 }
-
 \]
 
 Choose the topics of the document. The topic distribution for document d is represented as a multinomial distribution θ d , which is drawn from a Dirichlet distribution with parameters α. The Dirichlet distribution captures the document-independent popularity and the within-document burstiness of each topic.
 
 \[
-
-
 \theta_{d} \sim D(\alpha); \qquad p ( \theta _ { d } | \alpha ) = \frac { \Gamma ( \sum _ { i = 1 } ^ { K } \alpha _ { i } ) } { \prod _ { i = 1 } ^ { K } \Gamma ( \alpha _ { i } ) } \prod _ { i = 1 } ^ { K } \theta _ { d i } ^ { \alpha _ { i } - 1 }
-
 \]
 
 
 Choose the topic of each token. The topic z dn for each token index n is chosen from the document topic distribution.
 
 \[
-
 z_{dn} \sim M(theta_d); \qquad p ( z _ { d n } = i | \theta _ { d } ) = \theta _ { d i }
-
 \]
 
 Choose each token. Each token w at each index is chosen from the multinomial distribution associated with the selected topic.
 
 \[
-
 w{dn} \sim M(\phi_{z_{dn}}}); \qquad p ( w _ { d n } = v | z _ { d n } = i , \phi _ { i } ) = \phi _ { i v }
-
 \]
 
 
