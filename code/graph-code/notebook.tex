@@ -1,0 +1,838 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{latentmodels-health}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{import} \PY{n+nn}{graphlab} \PY{k+kn}{as} \PY{n+nn}{gl}
+        
+        \PY{k+kn}{from} \PY{n+nn}{sklearn.model\PYZus{}selection} \PY{k+kn}{import} \PY{n}{train\PYZus{}test\PYZus{}split}
+        \PY{k+kn}{from} \PY{n+nn}{scipy.sparse} \PY{k+kn}{import} \PY{n}{csr\PYZus{}matrix}
+        
+        \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k+kn}{as} \PY{n+nn}{pd}
+        \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k+kn}{as} \PY{n+nn}{np}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{n}{musicdata} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{./dataset/amazon5core/digitalmusic/10ksample.csv}\PY{l+s+s2}{\PYZdq{}}
+        \PY{n}{healthdata} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{./dataset/amazon5core/healthcare/10ksample.csv}\PY{l+s+s2}{\PYZdq{}}
+        
+        \PY{c+c1}{\PYZsh{} loading data using gl}
+        \PY{c+c1}{\PYZsh{} musicsf = gl.SFrame.read\PYZus{}csv(musicdata, delimiter=\PYZdq{},\PYZdq{},}
+        \PY{c+c1}{\PYZsh{}                              usecols=[\PYZdq{}asin\PYZdq{},\PYZdq{}reviewerID\PYZdq{},\PYZdq{}overall\PYZdq{},\PYZdq{}reviewText\PYZdq{}],}
+        \PY{c+c1}{\PYZsh{}                              column\PYZus{}type\PYZus{}hints=[str, str, int, str])}
+        
+        \PY{n}{healthsf} \PY{o}{=} \PY{n}{gl}\PY{o}{.}\PY{n}{SFrame}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{n}{healthdata}\PY{p}{,} \PY{n}{delimiter}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{,}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}
+                                      \PY{n}{usecols}\PY{o}{=}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{asin}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{reviewerID}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{overall}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{reviewText}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{,}
+                                      \PY{n}{column\PYZus{}type\PYZus{}hints}\PY{o}{=}\PY{p}{[}\PY{n+nb}{str}\PY{p}{,} \PY{n+nb}{str}\PY{p}{,} \PY{n+nb}{int}\PY{p}{,} \PY{n+nb}{str}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+This non-commercial license of GraphLab Create for academic use is assigned to rahulbali.mecse16@pec.edu.in and will expire on November 23, 2018.
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+[INFO] graphlab.cython.cy\_server: GraphLab Create v2.1 started. Logging: C:\textbackslash{}Users\textbackslash{}cramdog\textbackslash{}AppData\textbackslash{}Local\textbackslash{}Temp\textbackslash{}graphlab\_server\_1530133342.log.0
+
+    \end{Verbatim}
+
+    
+    \begin{verbatim}
+Finished parsing file E:\ACADEMICS\PEC---\ME 4 SEM\code\graph-code\dataset\amazon5core\healthcare\10ksample.csv
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+Parsing completed. Parsed 10000 lines in 0.148133 secs.
+    \end{verbatim}
+
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}3}]:} \PY{c+c1}{\PYZsh{} divide the review and rating data}
+        \PY{c+c1}{\PYZsh{} ratings = musicsf[[\PYZdq{}asin\PYZdq{}, \PYZdq{}reviewerID\PYZdq{}, \PYZdq{}overall\PYZdq{}]]}
+        \PY{c+c1}{\PYZsh{} reviews = musicsf[[\PYZdq{}asin\PYZdq{}, \PYZdq{}reviewerID\PYZdq{}, \PYZdq{}reviewText\PYZdq{}]]}
+        
+        
+        \PY{n}{ratings} \PY{o}{=} \PY{n}{healthsf}\PY{p}{[}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{asin}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{reviewerID}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{overall}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{]}
+        \PY{n}{reviews} \PY{o}{=} \PY{n}{healthsf}\PY{p}{[}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{asin}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{reviewerID}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{reviewText}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{]}
+        
+        \PY{c+c1}{\PYZsh{} train, test = gl.recommender.util.random\PYZus{}split\PYZus{}by\PYZus{}user(dataset=ratings,}
+        \PY{c+c1}{\PYZsh{}                                                        item\PYZus{}id=\PYZdq{}asin\PYZdq{},}
+        \PY{c+c1}{\PYZsh{}                                                        user\PYZus{}id=\PYZdq{}reviewerID\PYZdq{},}
+        \PY{c+c1}{\PYZsh{}                                                        max\PYZus{}num\PYZus{}users=100)}
+        
+        
+        
+        \PY{c+c1}{\PYZsh{}\PYZsh{} cross validation structure}
+        \PY{n}{folds} \PY{o}{=} \PY{n}{gl}\PY{o}{.}\PY{n}{cross\PYZus{}validation}\PY{o}{.}\PY{n}{KFold}\PY{p}{(}\PY{n}{ratings}\PY{p}{,} \PY{l+m+mi}{10}\PY{p}{)}
+        \PY{n}{train}\PY{p}{,} \PY{n}{test} \PY{o}{=} \PY{n}{folds}\PY{p}{[}\PY{l+m+mi}{3}\PY{p}{]}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}4}]:} \PY{c+c1}{\PYZsh{}\PYZsh{} using recommender system lsa or svd}
+        
+        
+        \PY{c+c1}{\PYZsh{}\PYZsh{} random seed 22 is good.}
+        \PY{n}{shuffletrain} \PY{o}{=} \PY{n}{gl}\PY{o}{.}\PY{n}{cross\PYZus{}validation}\PY{o}{.}\PY{n}{shuffle}\PY{p}{(}\PY{n}{train}\PY{p}{,} \PY{n}{random\PYZus{}seed}\PY{o}{=}\PY{l+m+mi}{22}\PY{p}{)}
+        
+        \PY{c+c1}{\PYZsh{} for train, valid in folds:}
+        \PY{n}{model} \PY{o}{=} \PY{n}{gl}\PY{o}{.}\PY{n}{recommender}\PY{o}{.}\PY{n}{factorization\PYZus{}recommender}\PY{o}{.}\PY{n}{create}\PY{p}{(}\PY{n}{observation\PYZus{}data}\PY{o}{=}\PY{n}{train}\PY{p}{,}
+                                                                \PY{n}{user\PYZus{}id}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{reviewerID}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}
+                                                                \PY{n}{item\PYZus{}id}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{asin}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}
+                                                                \PY{n}{target}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{overall}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}
+                                                                \PY{n}{num\PYZus{}factors}\PY{o}{=}\PY{l+m+mi}{50}\PY{p}{,} 
+                                                                \PY{n}{nmf}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{max\PYZus{}iterations}\PY{o}{=}\PY{l+m+mi}{500}\PY{p}{,}
+                                                                \PY{n}{solver}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sgd}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}
+                                                                \PY{n}{verbose}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{)}
+            
+        \PY{c+c1}{\PYZsh{} print \PYZgt{}\PYZgt{} outF, model[\PYZsq{}coefficients\PYZsq{}]}
+        \PY{c+c1}{\PYZsh{} \PYZsh{} view = model.views.overview(validation\PYZus{}set=)}
+        \PY{c+c1}{\PYZsh{} print \PYZgt{}\PYZgt{} outF, model.evaluate\PYZus{}precision\PYZus{}recall(dataset=valid)}
+        \PY{c+c1}{\PYZsh{} print \PYZgt{}\PYZgt{} outF, model.evaluate\PYZus{}rmse(valid, target=\PYZsq{}overall\PYZsq{})}
+        \PY{c+c1}{\PYZsh{} print \PYZgt{}\PYZgt{} outF, \PYZdq{}balibalibalibalibalibalibbalibbalibbalibalibali\PYZdq{}}
+\end{Verbatim}
+
+
+    
+    \begin{verbatim}
+Recsys training: model = factorization_recommender
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+Preparing data set.
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+    Data has 9000 observations with 7533 users and 5756 items.
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+    Data prepared in: 0.076069s
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+Training factorization_recommender for recommendations.
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
++--------------------------------+--------------------------------------------------+----------+
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| Parameter                      | Description                                      | Value    |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
++--------------------------------+--------------------------------------------------+----------+
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| num_factors                    | Factor Dimension                                 | 50       |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| regularization                 | L2 Regularization on Factors                     | 1e-008   |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| solver                         | Solver used for training                         | sgd      |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| linear_regularization          | L2 Regularization on Linear Coefficients         | 1e-010   |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| max_iterations                 | Maximum Number of Iterations                     | 500      |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
++--------------------------------+--------------------------------------------------+----------+
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+  Optimizing model using SGD; tuning step size.
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+  Using 9000 / 9000 points for tuning the step size.
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
++---------+-------------------+------------------------------------------+
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| Attempt | Initial Step Size | Estimated Objective Value                |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
++---------+-------------------+------------------------------------------+
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 0       | 25                | Not Viable                               |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 1       | 6.25              | Not Viable                               |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 2       | 1.5625            | Not Viable                               |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 3       | 0.390625          | 0.0289748                                |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 4       | 0.195312          | 0.0665161                                |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
++---------+-------------------+------------------------------------------+
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| Final   | 0.390625          | 0.0289748                                |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
++---------+-------------------+------------------------------------------+
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+Starting Optimization.
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
++---------+--------------+-------------------+-----------------------+-------------+
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| Iter.   | Elapsed Time | Approx. Objective | Approx. Training RMSE | Step Size   |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
++---------+--------------+-------------------+-----------------------+-------------+
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| Initial | 1.001ms      | 1.21951           | 1.10432               |             |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
++---------+--------------+-------------------+-----------------------+-------------+
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 1       | 71.066ms     | 1.34444           | 1.15948               | 0.390625    |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 2       | 87.082ms     | 0.433772          | 0.658601              | 0.232267    |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 3       | 122.112ms    | 0.121509          | 0.348574              | 0.171364    |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 4       | 234.213ms    | 0.0635301         | 0.252048              | 0.116134    |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 5       | 273.247ms    | 0.0477363         | 0.218485              | 0.098237    |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 6       | 303.277ms    | 0.0395797         | 0.198945              | 0.0856819   |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 11      | 475.432ms    | 0.0246634         | 0.157044              | 0.0543824   |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 25      | 754.685ms    | 0.0153166         | 0.123757              | 0.0293797   |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 50      | 1.31s        | 0.0083532         | 0.0913901             | 0.0174693   |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 51      | 1.32s        | 0.00818905        | 0.0904876             | 0.0172117   |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 75      | 1.86s        | 0.00547547        | 0.0739878             | 0.0128886   |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 100     | 2.46s        | 0.00408135        | 0.0638743             | 0.0103873   |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 101     | 2.53s        | 0.00404067        | 0.0635551             | 0.0103101   |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 125     | 3.08s        | 0.00324231        | 0.0569279             | 0.00878658  |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 150     | 3.54s        | 0.00264979        | 0.0514606             | 0.00766362  |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 175     | 4.06s        | 0.00220681        | 0.046959              | 0.00682691  |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 200     | 4.64s        | 0.00187047        | 0.0432291             | 0.00617632  |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 225     | 5.24s        | 0.00161019        | 0.0401052             | 0.00565413  |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 250     | 5.74s        | 0.00140405        | 0.0374466             | 0.00522453  |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 275     | 6.35s        | 0.00123818        | 0.0351617             | 0.00486411  |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 300     | 7.08s        | 0.00110336        | 0.0331888             | 0.00455682  |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 325     | 7.62s        | 0.000992857       | 0.0314797             | 0.00429131  |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+| 350     | 8.31s        | 0.000901391       | 0.0299914             | 0.0040593   |
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
++---------+--------------+-------------------+-----------------------+-------------+
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+Optimization Complete: Convergence on objective within bounds.
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+Computing final objective value and training RMSE.
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+       Final objective value: 0.000878216
+    \end{verbatim}
+
+    
+    
+    \begin{verbatim}
+       Final training RMSE: 0.0296025
+    \end{verbatim}
+
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}5}]:} \PY{n}{out\PYZus{}rmse} \PY{o}{=} \PY{n}{model}\PY{o}{.}\PY{n}{evaluate\PYZus{}rmse}\PY{p}{(}\PY{n}{dataset}\PY{o}{=}\PY{n}{test}\PY{p}{,} \PY{n}{target}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{overall}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{c+c1}{\PYZsh{} out\PYZus{}pr = model.evaluate\PYZus{}precision\PYZus{}recall(dataset=test, verbose=1)}
+        \PY{k}{print}\PY{p}{(}\PY{n}{out\PYZus{}rmse}\PY{o}{.}\PY{n}{viewkeys}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+        \PY{k}{print}\PY{p}{(}\PY{n}{out\PYZus{}rmse}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{rmse\PYZus{}overall}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+dict\_keys(['rmse\_by\_user', 'rmse\_by\_item', 'rmse\_overall'])
+1.1942956191
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}6}]:} \PY{c+c1}{\PYZsh{} python method list}
+        \PY{n}{methods} \PY{o}{=} \PY{p}{[}\PY{n}{method\PYZus{}name} \PY{k}{for} \PY{n}{method\PYZus{}name} \PY{o+ow}{in} \PY{n+nb}{dir}\PY{p}{(}\PY{n}{model}\PY{p}{)} \PY{k}{if} \PY{n+nb}{callable}\PY{p}{(}\PY{n+nb}{getattr}\PY{p}{(}\PY{n}{model}\PY{p}{,} \PY{n}{method\PYZus{}name}\PY{p}{)}\PY{p}{)}\PY{p}{]}
+        \PY{k}{print}\PY{p}{(}\PY{n}{methods}\PY{p}{)}
+        
+        \PY{k}{print}\PY{p}{(}\PY{n}{model}\PY{o}{.}\PY{n}{list\PYZus{}fields}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+        
+        \PY{c+c1}{\PYZsh{} print(out\PYZus{}pr[\PYZsq{}precision\PYZus{}recall\PYZus{}by\PYZus{}user\PYZsq{}])}
+        \PY{c+c1}{\PYZsh{} print(out\PYZus{}pr[\PYZsq{}precision\PYZus{}recall\PYZus{}overall\PYZsq{}][\PYZsq{}recall\PYZsq{}].sum())}
+        \PY{c+c1}{\PYZsh{} model.show()}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+['\_Recommender\_\_prepare\_dataset\_parameter', '\_\_class\_\_', '\_\_delattr\_\_', '\_\_dir\_\_', '\_\_format\_\_', '\_\_getattribute\_\_', '\_\_getitem\_\_', '\_\_hash\_\_', '\_\_init\_\_', '\_\_new\_\_', '\_\_reduce\_\_', '\_\_reduce\_ex\_\_', '\_\_repr\_\_', '\_\_setattr\_\_', '\_\_sizeof\_\_', '\_\_str\_\_', '\_\_subclasshook\_\_', '\_get\_data\_schema', '\_get\_item\_intersection\_info', '\_get\_ml\_metric\_config', '\_get\_popularity\_baseline', '\_get\_queryable\_methods', '\_get\_summary\_struct', '\_get\_version', '\_get\_workflow', '\_get\_wrapper', '\_is\_gl\_pickle\_safe', '\_load\_version', '\_save\_impl', '\_save\_to\_pickle', '\_set\_current\_options', '\_training\_stats', 'evaluate', 'evaluate\_precision\_recall', 'evaluate\_rmse', 'get', 'get\_current\_options', 'get\_num\_items\_per\_user', 'get\_num\_users\_per\_item', 'get\_similar\_items', 'get\_similar\_users', 'list\_fields', 'list\_fields', 'name', 'predict', 'recommend', 'recommend\_from\_interactions', 'save', 'show', 'summary']
+['adagrad\_momentum\_weighting', 'additional\_iterations\_if\_unhealthy', 'binary\_target', 'coefficients', 'data\_load\_time', 'init\_random\_sigma', 'item\_id', 'item\_side\_data\_column\_names', 'item\_side\_data\_column\_types', 'linear\_regularization', 'max\_iterations', 'model\_name', 'nmf', 'num\_factors', 'num\_features', 'num\_item\_side\_features', 'num\_items', 'num\_observations', 'num\_tempering\_iterations', 'num\_user\_side\_features', 'num\_users', 'observation\_data\_column\_names', 'random\_seed', 'regularization', 'regularization\_type', 'sgd\_convergence\_interval', 'sgd\_convergence\_threshold', 'sgd\_max\_trial\_iterations', 'sgd\_sampling\_block\_size', 'sgd\_step\_adjustment\_interval', 'sgd\_step\_size', 'sgd\_trial\_sample\_minimum\_size', 'sgd\_trial\_sample\_proportion', 'side\_data\_factorization', 'solver', 'step\_size\_decrease\_rate', 'target', 'tempering\_regularization\_start\_value', 'track\_exact\_loss', 'training\_rmse', 'training\_stats', 'training\_time', 'user\_id', 'user\_side\_data\_column\_names', 'user\_side\_data\_column\_types']
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}7}]:} \PY{n}{model}\PY{o}{.}\PY{n}{\PYZus{}get\PYZus{}queryable\PYZus{}methods}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}7}]:} \{'predict': \{'dataset': 'sframe',
+          'new\_item\_data': 'sframe',
+          'new\_observation\_data': 'sframe',
+          'new\_user\_data': 'sframe'\},
+         'recommend': \{'exclude': 'sframe',
+          'items': ['sframe', 'sarray'],
+          'new\_item\_data': 'sframe',
+          'new\_observation\_data': 'sframe',
+          'new\_user\_data': 'sframe',
+          'users': ['sframe', 'sarray']\}\}
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}8}]:} \PY{n}{factors\PYZus{}asin} \PY{o}{=} \PY{n}{model}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{coefficients}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{asin}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{factors}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{asin}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+        \PY{n}{factors\PYZus{}reviewerID} \PY{o}{=} \PY{n}{model}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{coefficients}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{reviewerID}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{factors}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{reviewerID}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}9}]:} \PY{c+c1}{\PYZsh{} factors\PYZus{}reviewerID}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}10}]:} \PY{n}{recs} \PY{o}{=} \PY{n}{model}\PY{o}{.}\PY{n}{recommend}\PY{p}{(}\PY{n}{users}\PY{o}{=}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{AFNCXMCX7VZWH}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} \PY{c+c1}{\PYZsh{}\PYZsh{} using topic modelling}
+        
+        \PY{c+c1}{\PYZsh{} print(reviews)}
+        
+        \PY{n}{one\PYZus{}item\PYZus{}reviews} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+        
+        \PY{k}{for} \PY{n}{item} \PY{o+ow}{in} \PY{n}{reviews}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{asin}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{unique}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{sort}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+            \PY{n}{one\PYZus{}item\PYZus{}reviews}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{p}{[}\PY{n}{item}\PY{p}{,} \PY{n}{reviews}\PY{o}{.}\PY{n}{filter\PYZus{}by}\PY{p}{(}\PY{n}{item}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{asin}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{reviewText}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]}\PY{p}{)}
+        
+        \PY{c+c1}{\PYZsh{} print(reviews.filter\PYZus{}by(\PYZsq{}B00004OCLJ\PYZsq{}, \PYZsq{}asin\PYZsq{})[\PYZsq{}reviewText\PYZsq{}])}
+        
+        
+        \PY{c+c1}{\PYZsh{} lda = gl.topic\PYZus{}model.create(dataset=texttrain, validation\PYZus{}set=texttest, num\PYZus{}topics=100, num\PYZus{}iterations=200, verbose=1)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} \PY{n}{one\PYZus{}item\PYZus{}reviews}
+\end{Verbatim}
+
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}

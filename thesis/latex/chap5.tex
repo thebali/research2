@@ -58,9 +58,77 @@ To end, the size of both the datasets was large with upto 230,000 reviews for th
 
 
 \begin{figure}[H]
-  {\centering {\includegraphics[width = 0.7 \textwidth]{img/lda-formula.png}}\par}
+  {\centering {\includegraphics[width = \textwidth]{img/lda-formula.png}}\par}
   \caption{LDA algorithm}
 \end{figure}
+
+
+
+\section{Proposed Methodology}
+\tikzset{
+desicion/.style={
+    diamond,
+    draw,
+    text width=4em,
+    text badly centered,
+    inner sep=0pt
+},
+block/.style={
+    rectangle,
+    draw,
+    text width=10em,
+    text centered,
+    rounded corners
+},
+cloud/.style={
+    draw,
+    ellipse,
+    minimum height=2em
+},
+descr/.style={
+    fill=white,
+    inner sep=2.5pt
+},
+connector/.style={
+    -latex,
+    font=\scriptsize
+},
+rectangle connector/.style={
+    connector,
+    to path={(\tikztostart) -- ++(#1,0pt) \tikztonodes |- (\tikztotarget) },
+    pos=0.5
+},
+rectangle connector/.default=-2cm,
+straight connector/.style={
+    connector,
+    to path=--(\tikztotarget) \tikztonodes
+}
+}
+
+\begin{tikzpicture}
+\matrix (m)[matrix of nodes, column  sep=2cm,row  sep=8mm, align=center, nodes={rectangle,draw, anchor=center} ]{
+    |[block]| {Start}              &  \\
+    |[block]| {Assume that $a=c$ the optimilalty cretierin given by }               &                                            \\
+    |[desicion]| {Locally optimal}          &                                             \\
+   |[block]| {Assume that $a=d$ the optimilalty cretierin given by}    &                                             \\
+    |[desicion]| {Locally optimal}         &           |[block]| {Stop}                                   \\
+         |[block]| {Assume that $a=e$ the optimilalty cretierin given by}    &    |[desicion]| {Locally optimal}                                          \\
+            |[desicion]| {Locally optimal}         &       |[block]| {Assume that $a=k$ the optimilalty cretierin given by}                                      \\
+                 |[block]| {Assume that $a=f$ the optimilalty cretierin given by}    &   |[desicion]| {Locally optimal}                                         \\
+}
+\path [>=latex,->] (m-1-1) edge (m-2-1);
+\path [>=latex,->] (m-2-1) edge (m-3-1);
+\path [>=latex,->] (m-3-1) edge (m-4-1);
+\path [>=latex,->] (m-4-1) edge (m-5-1);
+\path [>=latex,->] (m-5-1) edge (m-6-1);
+\path [>=latex,->] (m-6-1) edge (m-7-1);
+\path [>=latex,->] (m-7-1) edge (m-8-1);
+\path [>=latex,->] (m-8-1) edge (m-8-2);
+\path [>=latex,->] (m-8-2) edge (m-7-2);
+\path [>=latex,->] (m-7-2) edge (m-6-2);
+\path [>=latex,->] (m-6-2) edge (m-5-2);
+
+\end{tikzpicture}
 
 
 \subsection{Choice of Hyperparameters/Variables Explained}
@@ -74,14 +142,16 @@ In the course of this thesis, many methods were tried and tested for the recomme
 In order to comprehensively describe the experiments made for thesis, a small application of the whole datasets has been implemented which will be fitting the models on the described datasets and evaluate each model on the accuracy basis, and thereafter write the results to the file for the record. The fitting is done using a \textit{4-fold cross validation} mechanism to balance the bad areas of the dataset with longer execution time. Moreover, various values are tried and tested to find the values that are suited best for the better results. 
 
 
-\begin{figure}
+\begin{figure}[H]
   {\centering {\includegraphics[width = \textwidth]{img/dataset/ItemPerUser50.png}}\par}
+  \caption{Items rated by per User}
 \end{figure}
 
 
 
-\begin{figure}
+\begin{figure}[H]
   {\centering {\includegraphics[width = \textwidth]{img/dataset/UserPerItem50.png}}\par}
+  \caption{Users who rated per Item Reviews}
 \end{figure}
 
 
@@ -98,10 +168,17 @@ FactorizationRecommender trains a model capable of predicting a score for each p
 
 In the two factorization models, users and items are represented by weights and factors. These model coefficients are learned during training. Roughly speaking, the weights, or bias terms, account for a user or item’s bias towards higher or lower ratings. For example, an item that is consistently rated highly would have a higher weight coefficient associated with them. Similarly, an item that consistently receives below average ratings would have a lower weight coefficient to account for this bias.
 
+
+\begin{figure}[H]
+  {\includegraphics[width = 1.05 \textwidth]{img/result-train.png}}
+  \caption{Training RMSE curve}
+\end{figure}
+
 The factor terms model interactions between users and items. For example, if a user tends to love romance movies and hate action movies, the factor terms attempt to capture that, causing the model to predict lower scores for action movies and higher scores for romance movies. Learning good weights and factors is controlled by several options outlined below.
 
 \[
   \operatorname{score}(i, j) = \mu + w_i + w_j + \mathbf{a}^T \mathbf{x}_i + \mathbf{b}^T \mathbf{y}_j + {\mathbf u}_i^T {\mathbf v}_j
+  \tag{5.1}
   \]
 
 where μ is a global bias term, wi is the weight term for user i, wj is the weight term for item j, xi and yj are respectively the user and item side feature vectors, and a and b are respectively the weight vectors for those side features. The latent factors, which are vectors of length numfactors, are given by ui and vj.
@@ -124,18 +201,19 @@ $z_{mn}$ is the topic for the $n_{th}$ word in documenxt $m$, and
 
 $w_{mn}$ is the specific word.
 
-
 In order to actually infer the topics in a corpus, we imagine a generative process whereby the documents are created, so that we may infer, or reverse engineer, it. We imagine the generative process as follows. Documents are represented as random mixtures over latent topics, where each topic is characterized by a distribution over all the words. LDA assumes the following generative process for a corpus $D$ consisting of $M$ documents each of length $N_{i}$:
 
 1. Choose $\theta _{i}(\alpha ) \theta _{i} (\alpha)$, where $i\in \{1,\dots ,M\}$ and ($\alpha$ ) is a Dirichlet distribution with a symmetric parameter $\alpha$ which typically is sparse $\alpha$ < 1.
 
-2. Choose $\varphi _{k}$ {Dir} ($\beta$) $\varphi _{k} \beta$, where $k\in \{1,\dots ,K\}$ and $\beta$ typically is sparse
+2. Choose $\varphi _{k}$ {Dir} ($\beta$) $\varphi _{k} \beta$, where $k\in \{1,\dots ,K\}$ and $\beta$ typically is sparse.
 
-3. For each of the word positions $i,j$, where $i\in \{1,\dots ,M\}$, and $j\in \{1,\dots ,N_{i}\}$. \\
+3. For each of the word positions $i,j$, where $i\in \{1,\dots ,M\}$, and $j\in \{1,\dots ,N_{i}\}$.
 
-(a) Choose a topic $z_{i,j}$ $\theta_{i}$.\\
-(b) Choose a word $w_i,j$ $\varphi_{z_{i,j}} w_{i,j}$ $varphi _{z_{i,j}}$.
-(Note that multinomial distribution here refers to the multinomial with only one trial, which is also known as the categorical distribution.)
+\quad (a) Choose a topic $z_{i,j}$ $\theta_{i}$.
+
+\quad (b) Choose a word $w_i,j$ $\varphi_{z_{i,j}} w_{i,j}$ $varphi _{z_{i,j}}$.
+
+\quad (Note that multinomial distribution here refers to the multinomial with only one trial, which is also known as the categorical distribution.)
 
 The lengths $N_{i}$ are treated as independent of all the other data generating variables ($w$ and $z$). The subscript is often dropped, as in the plate diagrams shown here.
 

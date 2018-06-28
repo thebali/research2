@@ -8,6 +8,10 @@
 \usepackage{lipsum}
 \usepackage{breakcites}
 
+
+\usepackage{tikz}
+\usetikzlibrary{matrix,shapes,arrows,positioning,chains}
+
 % \usepackage[LGRgreek]{mathastext}
 % incompatible \usepackage{cite}
 % \usepackage[sorting=none, 
@@ -40,8 +44,8 @@
 
 \usepackage[
 breaklinks=true,colorlinks=true,
-linkcolor=blue,urlcolor=blue,citecolor=blue,anchorcolor=blue,% PDF VIEW
-%linkcolor=black,urlcolor=black,citecolor=black,% PRINT
+% linkcolor=blue,urlcolor=blue,citecolor=blue,anchorcolor=blue,% PDF VIEW
+linkcolor=black,urlcolor=black,citecolor=black,% PRINT
 bookmarks=true,bookmarksopenlevel=2]{hyperref}
 
 \usepackage{geometry}
@@ -175,10 +179,9 @@ heightrounded,}
 
 
 %\sfdefault
+\frontmatter % make the front page numbers roman
 
 \include{acknowledge}
-
-\tableofcontents*
 
 \clearpage
 \listoffigures
@@ -193,6 +196,10 @@ heightrounded,}
 % Reference symbols: $\gls{x}$, $\gls{v}$, $\gls{a}$, $\gls{t}$,
 % $\gls{F}$.
 
+\clearpage
+
+\tableofcontents*
+
 
 %%%%%%%%%%%%%%%
 
@@ -203,6 +210,7 @@ heightrounded,}
 
 \include{abstract}
 
+\mainmatter % normal page numbers start here
 \include{intro}
 
 \include{problem}
@@ -229,7 +237,7 @@ heightrounded,}
 
 \nocite{*}
 
-\bibliography{MyCollection}
+\bibliography{final_thesis}
 %% special package for bibliography
 %\bibliographystyle{plainnat}
 %\bibliographystyle{plain}

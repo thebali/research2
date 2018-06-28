@@ -1,22 +1,14 @@
-import os
 import json
 import pandas as pd
 
-review_path = "data/digitalmusic/reviews/"
-meta_path = "data/digitalmusic/meta/"
+filelocation = "./data/amazon5core/digitalmusic/"
+# filelocation = "./data/amazon5core/healthcare/"
 
-fileread = meta_path+"meta_Digital_Music.json"
+file = pd.read_json(filelocation+"Digital_Music_5.json", lines=True)
+# file = pd.read_json(filelocation+"Health_and_Personal_Care_5.json", lines=True)
 
-# file = open(meta_path+"meta_Digital_Music.json")
-# obj = json.load(file)
+file = file[["asin", "reviewerID", "overall", "reviewText"]]
+file = file.dropna()
+file = file.sample(frac=1, random_state=23) # frac=0.75   for 75% of the row in the data
+file.to_csv(filelocation+"healthcare-notna.csv", sep=",", encoding='utf-8')
 
-print(fileread)
-
-
-df = pd.read_json(fileread, lines=True)
-
-print(df.head())
-
-# df = df.to_csv(meta_path+"small_meta_Digital_Music.csv")
-
-# file = open(review_path, 'w')

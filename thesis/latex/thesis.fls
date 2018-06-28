@@ -39,49 +39,14 @@ INPUT C:/MiKTeX 2.9/tex/latex/amsmath/amsbsy.sty
 INPUT C:/MiKTeX 2.9/tex/latex/amsmath/amsbsy.sty
 INPUT C:/MiKTeX 2.9/tex/latex/amsmath/amsopn.sty
 INPUT C:/MiKTeX 2.9/tex/latex/amsmath/amsopn.sty
-INPUT C:/MiKTeX 2.9/tex/latex/biblatex/biblatex.sty
-INPUT C:/MiKTeX 2.9/tex/latex/biblatex/biblatex.sty
-INPUT C:/MiKTeX 2.9/tex/generic/oberdiek/pdftexcmds.sty
-INPUT C:/MiKTeX 2.9/tex/generic/oberdiek/pdftexcmds.sty
-INPUT C:/MiKTeX 2.9/tex/generic/oberdiek/infwarerr.sty
-INPUT C:/MiKTeX 2.9/tex/generic/oberdiek/infwarerr.sty
-INPUT C:/MiKTeX 2.9/tex/generic/oberdiek/ltxcmds.sty
-INPUT C:/MiKTeX 2.9/tex/generic/oberdiek/ltxcmds.sty
-INPUT C:/MiKTeX 2.9/tex/latex/etoolbox/etoolbox.sty
-INPUT C:/MiKTeX 2.9/tex/latex/etoolbox/etoolbox.sty
-INPUT C:/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty
-INPUT C:/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty
-INPUT C:/MiKTeX 2.9/tex/generic/oberdiek/kvsetkeys.sty
-INPUT C:/MiKTeX 2.9/tex/generic/oberdiek/kvsetkeys.sty
-INPUT C:/MiKTeX 2.9/tex/generic/oberdiek/etexcmds.sty
-INPUT C:/MiKTeX 2.9/tex/generic/oberdiek/etexcmds.sty
-INPUT C:/MiKTeX 2.9/tex/latex/logreq/logreq.sty
-INPUT C:/MiKTeX 2.9/tex/latex/logreq/logreq.sty
-INPUT C:/MiKTeX 2.9/tex/latex/logreq/logreq.def
-INPUT C:/MiKTeX 2.9/tex/latex/logreq/logreq.def
-INPUT C:/MiKTeX 2.9/tex/latex/base/ifthen.sty
-INPUT C:/MiKTeX 2.9/tex/latex/base/ifthen.sty
-INPUT C:/MiKTeX 2.9/tex/latex/url/url.sty
-INPUT C:/MiKTeX 2.9/tex/latex/url/url.sty
-INPUT C:/MiKTeX 2.9/tex/latex/xstring/xstring.sty
-INPUT C:/MiKTeX 2.9/tex/latex/xstring/xstring.sty
-INPUT C:/MiKTeX 2.9/tex/generic/xstring/xstring.tex
-INPUT C:/MiKTeX 2.9/tex/latex/biblatex/blx-dm.def
-INPUT C:/MiKTeX 2.9/tex/latex/biblatex/blx-dm.def
-INPUT C:/MiKTeX 2.9/tex/latex/biblatex/blx-compat.def
-INPUT C:/MiKTeX 2.9/tex/latex/biblatex/blx-compat.def
-INPUT C:/MiKTeX 2.9/tex/latex/biblatex/biblatex.def
-INPUT C:/MiKTeX 2.9/tex/latex/biblatex/biblatex.def
-INPUT C:/MiKTeX 2.9/tex/latex/biblatex/bbx/numeric.bbx
-INPUT C:/MiKTeX 2.9/tex/latex/biblatex/bbx/numeric.bbx
-INPUT C:/MiKTeX 2.9/tex/latex/biblatex/bbx/standard.bbx
-INPUT C:/MiKTeX 2.9/tex/latex/biblatex/bbx/standard.bbx
-INPUT C:/MiKTeX 2.9/tex/latex/biblatex/cbx/numeric.cbx
-INPUT C:/MiKTeX 2.9/tex/latex/biblatex/cbx/numeric.cbx
-INPUT C:/MiKTeX 2.9/tex/latex/biblatex/biblatex.cfg
-INPUT C:/MiKTeX 2.9/tex/latex/biblatex/biblatex.cfg
+INPUT C:/MiKTeX 2.9/tex/latex/lipsum/lipsum.sty
+INPUT C:/MiKTeX 2.9/tex/latex/lipsum/lipsum.sty
+INPUT C:/MiKTeX 2.9/tex/latex/breakcites/breakcites.sty
+INPUT C:/MiKTeX 2.9/tex/latex/breakcites/breakcites.sty
 INPUT C:/MiKTeX 2.9/tex/latex/algorithmicx/algorithmicx.sty
 INPUT C:/MiKTeX 2.9/tex/latex/algorithmicx/algorithmicx.sty
+INPUT C:/MiKTeX 2.9/tex/latex/base/ifthen.sty
+INPUT C:/MiKTeX 2.9/tex/latex/base/ifthen.sty
 INPUT C:/MiKTeX 2.9/tex/latex/float/float.sty
 INPUT C:/MiKTeX 2.9/tex/latex/float/float.sty
 INPUT C:/MiKTeX 2.9/tex/latex/ms/ragged2e.sty
@@ -94,6 +59,8 @@ INPUT C:/MiKTeX 2.9/tex/latex/xkeyval/xkeyval.sty
 INPUT C:/MiKTeX 2.9/tex/latex/xkeyval/xkeyval.sty
 INPUT C:/MiKTeX 2.9/tex/generic/xkeyval/xkeyval.tex
 INPUT C:/MiKTeX 2.9/tex/generic/xkeyval/xkvutils.tex
+INPUT C:/MiKTeX 2.9/tex/latex/etoolbox/etoolbox.sty
+INPUT C:/MiKTeX 2.9/tex/latex/etoolbox/etoolbox.sty
 INPUT C:/MiKTeX 2.9/tex/latex/glossaries/base/glossaries.sty
 INPUT C:/MiKTeX 2.9/tex/latex/glossaries/base/glossaries.sty
 INPUT C:/MiKTeX 2.9/tex/latex/mfirstuc/mfirstuc.sty
@@ -158,10 +125,14 @@ INPUT C:/MiKTeX 2.9/tex/generic/oberdiek/hobsub-generic.sty
 INPUT C:/MiKTeX 2.9/tex/generic/oberdiek/hobsub-generic.sty
 INPUT C:/MiKTeX 2.9/tex/latex/oberdiek/auxhook.sty
 INPUT C:/MiKTeX 2.9/tex/latex/oberdiek/auxhook.sty
+INPUT C:/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty
+INPUT C:/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty
 INPUT C:/MiKTeX 2.9/tex/latex/hyperref/pd1enc.def
 INPUT C:/MiKTeX 2.9/tex/latex/hyperref/pd1enc.def
 INPUT C:/MiKTeX 2.9/tex/latex/00miktex/hyperref.cfg
 INPUT C:/MiKTeX 2.9/tex/latex/00miktex/hyperref.cfg
+INPUT C:/MiKTeX 2.9/tex/latex/url/url.sty
+INPUT C:/MiKTeX 2.9/tex/latex/url/url.sty
 INPUT C:/MiKTeX 2.9/tex/latex/memoir/memhfixc.sty
 INPUT C:/MiKTeX 2.9/tex/latex/memoir/memhfixc.sty
 INPUT C:/MiKTeX 2.9/tex/latex/hyperref/hpdftex.def
@@ -189,8 +160,6 @@ INPUT C:/MiKTeX 2.9/tex/latex/base/ts1enc.dfu
 INPUT C:/MiKTeX 2.9/tex/latex/base/ts1enc.dfu
 INPUT C:/MiKTeX 2.9/tex/latex/fourier/fourier-orns.sty
 INPUT C:/MiKTeX 2.9/tex/latex/fourier/fourier-orns.sty
-INPUT C:/MiKTeX 2.9/tex/latex/biblatex/lbx/english.lbx
-INPUT C:/MiKTeX 2.9/tex/latex/biblatex/lbx/english.lbx
 INPUT thesis.aux
 INPUT thesis.aux
 OUTPUT thesis.aux
@@ -205,7 +174,6 @@ INPUT C:/MiKTeX 2.9/tex/latex/base/ts1cmr.fd
 INPUT C:/MiKTeX 2.9/tex/latex/fourier/t1futs.fd
 INPUT C:/MiKTeX 2.9/tex/latex/fourier/t1futs.fd
 INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/futr8t.tfm
-OUTPUT thesis.bcf
 INPUT C:/MiKTeX 2.9/tex/latex/graphics/color.sty
 INPUT C:/MiKTeX 2.9/tex/latex/graphics/color.sty
 INPUT C:/MiKTeX 2.9/tex/latex/graphics-cfg/color.cfg
@@ -311,19 +279,41 @@ INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/fourier-alt.tfm
 INPUT C:/MiKTeX 2.9/fonts/vf/public/fourier/futbc8t.vf
 INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/futb8r.tfm
 INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/fourier-alt-bold.tfm
-INPUT C:/MiKTeX 2.9/tex/latex/base/t1cmtt.fd
-INPUT C:/MiKTeX 2.9/tex/latex/base/t1cmtt.fd
-INPUT C:/MiKTeX 2.9/fonts/tfm/jknappen/ec/ectt1200.tfm
 OUTPUT problem.aux
 INPUT problem.tex
 INPUT problem.tex
 OUTPUT chap2.aux
 INPUT chap2.tex
 INPUT chap2.tex
+INPUT img/DissimEqn.png
+INPUT ./img/DissimEqn.png
+INPUT ./img/DissimEqn.png
+INPUT ./img/DissimEqn.png
+INPUT ./img/DissimEqn.png
 INPUT C:/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecsx1440.tfm
+INPUT img/PearsonEqn.png
+INPUT ./img/PearsonEqn.png
+INPUT ./img/PearsonEqn.png
+INPUT ./img/PearsonEqn.png
+INPUT ./img/PearsonEqn.png
 INPUT C:/MiKTeX 2.9/fonts/vf/public/fourier/futr8t.vf
 INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/futr8r.tfm
 INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/fourier-alt.tfm
+INPUT img/PredUserEqn.png
+INPUT ./img/PredUserEqn.png
+INPUT ./img/PredUserEqn.png
+INPUT ./img/PredUserEqn.png
+INPUT ./img/PredUserEqn.png
+INPUT img/ItemSimEqn.png
+INPUT ./img/ItemSimEqn.png
+INPUT ./img/ItemSimEqn.png
+INPUT ./img/ItemSimEqn.png
+INPUT ./img/ItemSimEqn.png
+INPUT img/PredItemEqn.png
+INPUT ./img/PredItemEqn.png
+INPUT ./img/PredItemEqn.png
+INPUT ./img/PredItemEqn.png
+INPUT ./img/PredItemEqn.png
 INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/futb8t.tfm
 INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/futr8t.tfm
 INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/futr8t.tfm
@@ -348,7 +338,6 @@ INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/fourier-bb.tfm
 INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/futb8t.tfm
 INPUT C:/MiKTeX 2.9/tex/latex/fourier/ts1futs.fd
 INPUT C:/MiKTeX 2.9/tex/latex/fourier/ts1futs.fd
-INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/futr8c.tfm
 INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/futri8c.tfm
 INPUT C:/MiKTeX 2.9/fonts/vf/public/fourier/futb8t.vf
 INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/futb8r.tfm
@@ -367,9 +356,10 @@ INPUT C:/MiKTeX 2.9/fonts/vf/public/fourier/futmii.vf
 INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/fourier-mlit.tfm
 INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/fourier-ml.tfm
 INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/futri8r.tfm
-INPUT C:/MiKTeX 2.9/fonts/vf/public/fourier/futr8c.vf
-INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/fourier-orns.tfm
 INPUT C:/MiKTeX 2.9/fonts/vf/public/fourier/futri8c.vf
+INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/fourier-orns.tfm
+INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/futr8c.tfm
+INPUT C:/MiKTeX 2.9/fonts/vf/public/fourier/futr8c.vf
 OUTPUT chap3.aux
 INPUT chap3.tex
 INPUT chap3.tex
@@ -379,21 +369,34 @@ INPUT ./img/kNNtrain.png
 INPUT ./img/kNNtrain.png
 INPUT ./img/kNNtrain.png
 INPUT ./img/kNNtrain.png
-INPUT C:/MiKTeX 2.9/fonts/vf/public/fourier/futsy.vf
-INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/fourier-ms.tfm
-INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/fourier-mcl.tfm
 INPUT img/SVD.png
 INPUT ./img/SVD.png
 INPUT ./img/SVD.png
 INPUT ./img/SVD.png
 INPUT ./img/SVD.png
+INPUT C:/MiKTeX 2.9/fonts/vf/public/fourier/futsy.vf
+INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/fourier-ms.tfm
+INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/fourier-mcl.tfm
+INPUT C:/MiKTeX 2.9/fonts/vf/public/fourier/futmi.vf
+INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/futrc8t.tfm
 INPUT C:/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecsx1200.tfm
+INPUT C:/MiKTeX 2.9/fonts/vf/public/fourier/futrc8t.vf
+INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/futr8r.tfm
+INPUT C:/MiKTeX 2.9/fonts/tfm/public/fourier/fourier-alt.tfm
 OUTPUT chap4.aux
 INPUT chap4.tex
 INPUT chap4.tex
 OUTPUT chap5.aux
 INPUT chap5.tex
 INPUT chap5.tex
+INPUT C:/MiKTeX 2.9/tex/latex/base/t1cmtt.fd
+INPUT C:/MiKTeX 2.9/tex/latex/base/t1cmtt.fd
+INPUT C:/MiKTeX 2.9/fonts/tfm/jknappen/ec/ectt1200.tfm
+INPUT img/lda-formula.png
+INPUT ./img/lda-formula.png
+INPUT ./img/lda-formula.png
+INPUT ./img/lda-formula.png
+INPUT ./img/lda-formula.png
 INPUT img/dataset/ItemPerUser50.png
 INPUT ./img/dataset/ItemPerUser50.png
 INPUT ./img/dataset/ItemPerUser50.png
@@ -435,21 +438,21 @@ INPUT conclusion.aux
 INPUT conclusion.aux
 INPUT ./thesis.out
 INPUT ./thesis.out
-INPUT thesis.run.xml
-OUTPUT thesis.run.xml
+INPUT C:/Users/cramdog/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk
+INPUT C:/Users/cramdog/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk
 INPUT C:/Users/cramdog/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecsx1200.pk
 INPUT C:/Users/cramdog/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecsx1200.pk
 INPUT C:/Users/cramdog/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecso1728.pk
 INPUT C:/Users/cramdog/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecso1728.pk
 INPUT C:/Users/cramdog/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecsx1440.pk
 INPUT C:/Users/cramdog/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecsx1440.pk
-INPUT C:/Users/cramdog/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk
-INPUT C:/Users/cramdog/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk
 INPUT C:/Users/cramdog/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecsx1728.pk
 INPUT C:/Users/cramdog/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ecsx1728.pk
 INPUT C:/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 INPUT C:/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb
 INPUT C:/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb
+INPUT C:/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pfb
+INPUT C:/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pfb
 INPUT C:/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlit.pfb
 INPUT C:/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlit.pfb
 INPUT C:/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb

@@ -1,23 +1,18 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
 \addvspace {10pt}
-\defcounter {refsection}{0}\relax 
 \addvspace {10pt}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Dissimilarity}}{14}{figure.2.1}
-\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {21}{\ignorespaces Dissimilarity}}{7}{figure.2.1}
+\contentsline {figure}{\numberline {22}{\ignorespaces 579483}}{8}{figure.2.2}
+\contentsline {figure}{\numberline {23}{\ignorespaces 464875}}{8}{figure.2.3}
+\contentsline {figure}{\numberline {24}{\ignorespaces 457900}}{9}{figure.2.4}
+\contentsline {figure}{\numberline {25}{\ignorespaces 679849}}{9}{figure.2.5}
 \addvspace {10pt}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces kNN training(with preprocessing) and testing. $p_{j}$ is an estimate for $P(c_{j}|S_{k}) = P(c_{j}|d)$. $c_{j}$ denotes the set of all documents in the class $c_{j}$.}}{24}{figure.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Svd}}{25}{figure.3.2}
-\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {31}{\ignorespaces kNN training(with preprocessing) and testing. $p_{j}$ is an estimate for $P(c_{j}|S_{k}) = P(c_{j}|d)$. $c_{j}$ denotes the set of all documents in the class $c_{j}$.}}{18}{figure.3.1}
+\contentsline {figure}{\numberline {32}{\ignorespaces Svd}}{19}{figure.3.2}
 \addvspace {10pt}
-\defcounter {refsection}{0}\relax 
 \addvspace {10pt}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces LDA algorithm}}{37}{figure.5.1}
-\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {51}{\ignorespaces LDA algorithm}}{31}{figure.5.1}
+\contentsline {figure}{\numberline {52}{\ignorespaces Items rated by per User}}{33}{figure.5.2}
+\contentsline {figure}{\numberline {53}{\ignorespaces Users who rated per Item Reviews}}{34}{figure.5.3}
+\contentsline {figure}{\numberline {54}{\ignorespaces Training RMSE curve}}{35}{figure.5.4}
 \addvspace {10pt}
-\defcounter {refsection}{0}\relax 
 \addvspace {10pt}

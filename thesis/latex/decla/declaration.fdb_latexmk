@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1529519969 "e:/ACADEMICS/PEC---/ME 4 SEM/thesis/latex/decla/declaration.tex" "declaration.pdf" "declaration" 1529519970
+["pdflatex"] 1530178522 "e:/ACADEMICS/PEC---/ME 4 SEM/thesis/latex/decla/declaration.tex" "declaration.pdf" "declaration" 1530178524
   "C:/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm" 1136765053 1524 4414a8315f39513458b80dfc63bff03a ""
   "C:/MiKTeX 2.9/fonts/tfm/public/cm/cmmi6.tfm" 1136765053 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -56,12 +56,12 @@
   "C:/MiKTeX 2.9/tex/latex/tools/multicol.sty" 1492423194 31235 4d723b83c66873ba53f72c4a8730d6d3 ""
   "C:/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty" 1463135581 57049 34128738f682d033422ca125f82e5d62 ""
   "C:/Users/cramdog/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1524006163 4161468 68fb1de6a3b4fd57bfd3c5aea40c05a7 ""
-  "C:/Users/cramdog/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1529519033 164796 a940c201c1bb52258219af2da3a5b17f ""
-  "declaration.aux" 1529519970 32 00c4328e8c6c75fce40642ef2bcfb215 ""
+  "C:/Users/cramdog/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1530133917 164796 a940c201c1bb52258219af2da3a5b17f ""
+  "declaration.aux" 1530178524 32 00c4328e8c6c75fce40642ef2bcfb215 ""
   "declaration.tex" 1529519967 2523 b7b920185fd44abc183dda4bb385e0d9 ""
   "e:/ACADEMICS/PEC---/ME 4 SEM/thesis/latex/decla/declaration.tex" 1529519967 2523 b7b920185fd44abc183dda4bb385e0d9 ""
-  "logo.jpg" 1507225774 132291 6891ffa61e2a507c1ffb72ef08bdf60b ""
+  "logo.jpg" 1530171289 35099 678526b149fd4eeeee93fb7c54269934 ""
   (generated)
   "declaration.log"
-  "declaration.aux"
   "declaration.pdf"
+  "declaration.aux"

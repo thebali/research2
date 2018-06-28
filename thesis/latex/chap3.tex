@@ -3,12 +3,12 @@ In this thesis, I have presented two way approach to improving the existing syst
 First, I have utilized the ratings present in the dataset corresponding to each purchase made by some user $x$ of some product $i$ to predict and recommend the items for some other user $y$ using item-item based collaborative filtering. Secondly, LDA was used to extract topic modelling based words and features from the reviews left by the users on the products.
 
 \section{\textit{k} Nearest Neighbour}
-\textit{k} nearest neighbor or $k$NN classification determines the decision boundary locally. For $1$NN we assign each document to the class of its closest neighbour. For kNN we assign each document to the majority class of its $k$ closest neighbors where k is a parameter. The rationale of kNN classification is that, based on the contiguity hypothesis, we expect a test document $d$ to have the same label as the training documents located in the local region surrounding $d$.
+\textit{k} nearest neighbor or $k$NN classification determines the decision boundary locally. For $1$NN we assign each document to the class of its closest neighbour. For kNN we assign each document to the majority class of its $k$ closest neighbors where k is a parameter. The rationale of kNN classification is that, based on the contiguity hypothesis, we expect a test document $d$ to have the same label as the training documents located in the local region surrounding $d$ \cite{Wang2013}.
 
 For general, k $\in$ N in kNN, consider the region in the space for which the set of k nearest neighbors is the same. This again is a convex polygon and the space is partitioned into convex polygons, within each of which the set of $k$ nearest neighbours is invariant.
 The parameter $k$ in kNN is often chosen based on experience or knowledge about the classification problem at hand. It is desirable for $k$ to be odd to make ties less likely. k = 3 and k = 5 are common choices, but much larger values between 50 and 100 are also used.  An alternative way of setting the parameter is to select the k that gives best results on a held-out portion of the training set.
 \begin{figure}[H]
-    {\centering {\includegraphics[width = 0.7 \textwidth]{img/kNNtrain}}\par}
+    {\centering {\includegraphics[width = 0.85 \textwidth]{img/kNNtrain}}\par}
     \caption{kNN  training(with preprocessing) and testing. $p_{j}$ is an estimate for $P(c_{j}|S_{k}) = P(c_{j}|d)$. $c_{j}$ denotes the set of all documents in the class $c_{j}$.}
 \end{figure}
 
@@ -18,12 +18,13 @@ The square decompositions are simpler and can be treated with sufficient mathema
 In LSI, we use SVD to construct a low-rank approximation matrix C, to the term-document matrix, for a value of k that is far smaller than original rank of C. 
 
 \subsection{Term-document matrices and Singular value Decomposition}
-However, the matrix we are interested in is the M × N term-document matrix C where (barring a rare coincidence) M 6 = N ;furthermore, C is very unlikely to be symmetric. To this end, we first describe an extension of the symmetric diagonal decomposition known as the singular value decomposition.
+However, the matrix we are interested in is the M $\times$ N term-document matrix C where (barring a rare coincidence) M 6 = N;furthermore, C is very unlikely to be symmetric. To this end, we first describe an extension of the symmetric diagonal decomposition known as the singular value decomposition.
 
-Given an M × N matrix C and  a positive  integer k , we  wish  to  find  an M $\times$ N matrix C k of rank at most k , so as to minimize the Frobenius norm of the matrix difference X = C − C k , defined to be:
+Given an M $\times$ N matrix C and a positive integer k , we  wish  to  find  an M $\times$ N matrix C k of rank at most k , so as to minimize the Frobenius norm of the matrix difference X = C - C k , defined to be:
 
 \[
     \| X_{F} \| = \sqrt{\sum_{i=1}^{M} \sum_{j=1}^{N} X_{ij}^2}
+    \label{I dont know what it is} \tag{3.1}
 \]
 
 Thus, the Frobenius norm of X measures the discrepancy between C k and C ; our goal is to find a matrix C k that minimizes this discrepancy, while con- straining C k to have rank at most k. If r is the  rank of C, clearly C r = C and the Frobenius norm of the discrepancy is zero in this case . When k is far smaller than r , we refer to C k as a low-rank approximation. The singular value decomposition can be used to solve the low -rank ma- trix approximation problem.   We then derive from it an applic ation to ap- proximating term-document matrices.
@@ -57,14 +58,14 @@ The simplest possible method for feature selection in document clustering is tha
 A much more aggressive technique for stop-word removal has been proposed in \cite{Wilbur1992}. The core idea of this approach is to extend techniques which are used in supervised learning to the unsupervised case. The term strength is essentially used to measure how informative a word is for identifying two related documents. For example, for two related documents x and y, the term strength $s(t)$ of term $t$ is defined in terms of the following probability:
 \[
     s(t) = P(t \in y | t \in x)
-    \label{eq:probTermStrength} \tag{233}
+    \label{eq:probTermStrength} \tag{3.2}
 \]
 
 Clearly, the main issue is how one might define the document x and y as related. One One possibility is to use manual (or user) feedback to define when a pair of documents are related. This is essentially equivalent to utilizing supervision in the feature selection process, and may be practical in situations in which predefined categories of documents are available. On the other hand, it is not practical to manually create related pairs in large collections in a comprehensive way. It is therefore desirable to use an automated and purely unsupervised way to define the concept of when a pair of documents is related. It has been shown in [94] that it is possible to use automated similarity functions such as the cosine function [81] to define the relatedness of document pairs. A pair of documents are defined to be related if their cosine similarity is above a user-defined threshold. In such cases, the term strength s(t) can be defined by randomly sampling a number of pairs of such related documents as follows:
 
 \[
 s(t) = \frac{\text{Number of pairs in which $t$ occurs in both}} {\text{Number of pairs in which $t$ occurs in the first of the pair}}
-\label{eq:samplingpairs} \tag{234}
+\label{eq:samplingpairs} \tag{3.3}
 \]
 Here, the first document of the pair may simply be picked randomly. In order to prune features, the term strength may be compared to the expected strength of a term which is randomly distributed in the training documents with the same frequency. If the term strength of t is not at least two standard deviations greater than that of the random word, then it is removed from the collection.
 One advantage of this approach is that it requires no initial supervision or training data for the feature selection, which is a key requirement in the unsupervised scenario. Of course, the approach can also be used for feature selection in either supervised clustering \cite{Bobadilla2013} or categorization \cite{Salakhutdinov2007}, when such training data is indeed available. One observation about this approach to feature selection is that it is particularly suited to similarity-based clustering because the discriminative nature of the underlying features is defined on the basis of similarities in the documents themselves.
@@ -82,12 +83,14 @@ Like PLSI, LDA is based on a hypothetical generative process for a corpus. A dia
 
 \[
 \Phi_i \sim D(\beta) ; \qquad p ( \Phi _ { i } | \beta ) = \frac { \Gamma ( W \beta ) } { [ \Gamma ( \beta ) ] W } \prod _ { v = 1 } ^ { W } \phi _ { i v } ^ { \beta - 1 }
+\tag{3.4}
 \]
 
 \textsc{Choose the topics of the document.} The topic distribution for document d is represented as a multinomial distribution θ d , which is drawn from a Dirichlet distribution with parameters α. The Dirichlet distribution captures the document-independent popularity and the within-document burstiness of each topic.
 
 \[
 \theta_{d} \sim D(\alpha); \qquad p ( \theta _ { d } | \alpha ) = \frac { \Gamma ( \sum _ { i = 1 } ^ { K } \alpha _ { i } ) } { \prod _ { i = 1 } ^ { K } \Gamma ( \alpha _ { i } ) } \prod _ { i = 1 } ^ { K } \theta _ { d i } ^ { \alpha _ { i } - 1 }
+\tag{3.5}
 \]
 
 
@@ -95,12 +98,14 @@ Like PLSI, LDA is based on a hypothetical generative process for a corpus. A dia
 
 \[
 z_{dn} \sim M(\theta_d); \qquad p ( z _ { d n } = i | \theta _ { d } ) = \theta _ { d i }
+\tag{3.6}
 \]
 
 \textsc{Choose each token.} Each token w at each index is chosen from the multinomial distribution associated with the selected topic.
 
 \[
 w{dn} \sim M(\phi_{z_{dn}}); \qquad p ( w _ { d n } = v | z _ { d n } = i , \phi _ { i } ) = \phi _ { i v }
+\tag{3.7}
 \]
 
 
