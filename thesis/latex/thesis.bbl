@@ -70,6 +70,12 @@ Covington, P., Adams, J., and Sargin, E. (2016).
 \newblock {\em Proceedings of the 10th ACM Conference on Recommender Systems -
   RecSys '16}, pages 191--198.
 
+\bibitem[Griffiths and Steyvers, 2004]{Griffiths2004}
+Griffiths, T.~L. and Steyvers, M. (2004).
+\newblock {Finding scientific topics}.
+\newblock {\em Proceedings of the National Academy of Sciences}, 101(Supplement
+  1):5228--5235.
+
 \bibitem[Gunes et~al., 2012]{Gunes2012}
 Gunes, I., Kaleli, C., Bilge, A., and Polat, H. (2012).
 \newblock {Shilling attacks against recommender systems: a comprehensive
@@ -81,12 +87,12 @@ He, R. and McAuley, J. (2016).
 \newblock {Ups and Downs: Modeling the Visual Evolution of Fashion Trends with
   One-Class Collaborative Filtering}.
 
-\bibitem[Herlocker et~al., 2004a]{Herlocker2004}
+\bibitem[Herlocker et~al., 2004a]{Herlocker2004a}
 Herlocker, J.~L., Konstan, J.~A., Terveen, L.~G., and Riedl, J.~T. (2004a).
 \newblock {Evaluating collaborative filtering recommender systems}.
 \newblock {\em ACM Transactions on Information Systems}, 22(1):5--53.
 
-\bibitem[Herlocker et~al., 2004b]{Herlocker2004a}
+\bibitem[Herlocker et~al., 2004b]{Herlocker2004}
 Herlocker, J.~L., Konstan, J.~A., Terveen, L.~G., and Riedl, J.~T. (2004b).
 \newblock {Evaluating collaborative filtering recommender systems}.
 \newblock {\em ACM Transactions on Information Systems}, 22(1):5--53.

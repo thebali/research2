@@ -1,17 +1,26 @@
 \documentclass[12pt,a4paper]{memoir}
 %\usepackage[utf8]{inputenc}
 % \usepackage[T1]{fontenc}
+
+%%
+%% LDA video lecture https://www.youtube.com/watch?v=DDq3OVp9dNA
+%%
 % \usepackage{microtype}
 \usepackage[dvips,xetex]{graphicx}
 % \usepackage{xcolor}
 \usepackage{amsmath}
 \usepackage{lipsum}
 \usepackage{breakcites}
+\usepackage{rotating}
+% \usepackage{times}
 
-
+\usepackage{algorithm}
+\usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
 \usepackage{tikz}
-\usetikzlibrary{matrix,shapes,arrows,positioning,chains}
-
+\usepackage{booktabs}
+% \usepackage{caption}
+% \usetikzlibrary{matrix,shapes,arrows,positioning,chains}
+\usetikzlibrary{shapes.geometric, arrows}
 % \usepackage[LGRgreek]{mathastext}
 % incompatible \usepackage{cite}
 % \usepackage[sorting=none, 
@@ -34,8 +43,8 @@
 
 \glsxtrnewsymbol[description={alpha}]{a}{\ensuremath{\alpha}}
 \glsxtrnewsymbol[description={velocity}]{v}{\ensuremath{\epsilon}}
-\glsxtrnewsymbol[description={time}]{t}{\ensuremath{t}}
-\glsxtrnewsymbol[description={force}]{F}{\ensuremath{F}}
+\glsxtrnewsymbol[description={Rating of $i_{th}$ User}]{ri}{\ensuremath{R_i}}
+\glsxtrnewsymbol[description={Dirichlet Distribution}]{lda}{\ensuremath{\Phi}}
 
 % \usepackage{textcomp}
 %% for the font     \usepackage{mathptmx}
@@ -136,7 +145,7 @@ heightrounded,}
 %
 %%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
 
-
+\stepcounter{section}
 \thispagestyle{empty}
 %\vspace*{1.0cm}
 {\centering
@@ -156,12 +165,12 @@ heightrounded,}
     \vspace{0.2cm}
     {\large \textbf{Rahul Bali}} \\ (Roll No. 16205025)\\
     \vspace{1.5cm}
-    {\textit{under the supervision of}} \\
-    \vspace{0.2cm}
-    { Prof. Shilpa Verma }\\
+    % {\textit{under the supervision of}} \\
+    % \vspace{0.2cm}
+    % { Prof. Shilpa Verma }\\
     \vspace {0.7cm}
     \begin{figure}[h]
-        {\centering {\includegraphics[width = .35 \textwidth]{logo.jpg}}\par}
+        {\centering {\includegraphics[width = .40 \textwidth]{logo.jpg}}\par}
     \end{figure}
     \vspace{0.5cm}
     {\normalsize{\textbf{DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING}}}\\
@@ -186,17 +195,18 @@ heightrounded,}
 \clearpage
 \listoffigures
 
-% \clearpage
+\clearpage
+\listoftables
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 
-\printunsrtglossary[type=symbols,style=long,title={List of Symbols}]
+% \printunsrtglossary[type=symbols,style=long,title={List of Symbols}]
 
 % \chapter{Sample}
 % Reference symbols: $\gls{x}$, $\gls{v}$, $\gls{a}$, $\gls{t}$,
 % $\gls{F}$.
 
-\clearpage
+\cleardoublepage
 
 \tableofcontents*
 
@@ -209,6 +219,8 @@ heightrounded,}
 %%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
 
 \include{abstract}
+
+\cleardoublepage
 
 \mainmatter % normal page numbers start here
 \include{intro}

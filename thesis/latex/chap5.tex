@@ -1,11 +1,108 @@
-\chapter{Methodology}
+\chapter{Implementation Techniques}
+
+
+\section{Proposed Methodology}
+
+% \tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+
+% \tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black]
+
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum height=1cm, text centered, draw=black]
+
+% \tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black]
+
+% \tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black]
+
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\begin{center}
+\begin{tikzpicture}[node distance=1.75cm]
+
+<TikZ code>
+
+% \node (start) [startstop] {Start};
+
+\node (in1) [io] {Acquire Amazon 5-core Dataset};
+
+\node (pro1) [process, below of=in1] {Splitting the Dataset into Train and Test};
+
+\node (dec1) [decision, below of=pro1, yshift=-1.5cm] {Training the Model};
+
+%%%%%%%% turn left
+
+\node (pro2) [process, left of=dec1, xshift=-3.5cm] {Remove all stopwords};
+
+\node (pro3) [process, below of=pro2] {Word Stemming};
+
+\node (pro4) [process, below of=pro3, align=center] {Extract the List of\\Reviews per Item};
+
+\node (pro5) [process, below of=pro4, align=center] {Extract and Form Keywords\\using Latent Dirichlet Allocation};
+
+%%%%%%%%%%% turn right
+
+\node (pro6) [process, right of=dec1, align=center, xshift=3.5cm] {Making a User-Item\\Rating Matrix};
+
+\node (pro7) [process, below of=pro6] {Finding Similar users};
+
+% \node (pro2b) [process, below of=pro2a] {Process 2b};
+
+%%%%%%%%% combine rating and reviews
+
+\node (out1) [io, below of=pro5, xshift=5.5cm] {Generating Top-10 Recommendations};
+
+\node (out2) [io, below of=out1] {Comparing Accuracy of the Model};
+
+% \node (stop) [startstop, below of=out1] {End};
+
+%% draw arrows..
+
+% \draw [arrow] (start) -- (in1);
+\draw [arrow] (in1) -- (pro1);
+\draw [arrow] (pro1) -- (dec1);
+
+\draw [arrow] (dec1) -- node[anchor=south] {reviews} (pro2);
+\draw [arrow] (dec1) -- node[anchor=south] {ratings} (pro6);
+
+\draw [arrow] (pro2) -- (pro3);
+\draw [arrow] (pro3) -- (pro4);
+\draw [arrow] (pro4) -- (pro5);
+
+% \draw [arrow] (dec1) -- node[anchor=east] {yes} (pro2a);
+% \draw [arrow] (dec1) -- node[anchor=south] {no} (pro2b);
+
+\draw [arrow] (pro5) -- (out1);
+\draw [arrow] (pro6) -- (pro7);
+\draw [arrow] (pro7) -- (out1);
+\draw [arrow] (out1) -- (out2);
+% \draw [arrow] (out1) -- (stop);
+
+% \draw [arrow] (pro2b) |- (pro1);
+
+
+\end{tikzpicture}
+\end{center}
+
+\subsection{Choice of Hyperparameters/Variables Explained}
+
+Use of RMSE value is justified by the previous findings in the study by Koren \cite{Koren2010} \cite{Koren2008} that small improvements in RMSE terms can have significant impact on the quality of some of the top recommendations.
+
+
+\begin{figure}[H]
+  {\centering {\includegraphics[width = \textwidth]{img/dataset/ItemPerUser50.png}}\par}
+  \caption{Items rated by per User}\label{Items rated by per User}
+\end{figure}
 
 \section{Dataset}
 In respect with this thesis, material is required for achieving, files with customer data for reviews is derived products from the Amazon.com are being used. Files mentioned above are collected by Julian McAuley, Researcher, University of California, and is available on website: http://jmcauley.ucsd.edu/data/amazon/.
 
 The files were extracted from the compressed json format into json files which had users with atleast 5 reviews each (5-core). The duplicates found in the dataset were removed, less than 1 percent of reviews.
 
-The dataset contained product reviews spanning May 1996 - July 2014. Each product review is provided with the following labels:
+The dataset contained product reviews spanning May 1996 - July 2014. Each product review is provided with the following labels:\newline
+\fbox{\begin{minipage}{38em}
 \begin{itemize}
   \item reviewerID: the ID of the reviewer
   \item asin: \textit{Amazon Standard Identification Number} given to specific amazon listed item being reviewed
@@ -17,6 +114,9 @@ The dataset contained product reviews spanning May 1996 - July 2014. Each produc
   \item unixReviewTime: time of the review (unix time)
   \item reviewTime: time of the review in mm/dd/yyyy
 \end{itemize}
+\end{minipage}}
+
+\smallskip
 
 \textbf{Sample review} from the dataset:
 \begin{verbatim}
@@ -25,12 +125,15 @@ The dataset contained product reviews spanning May 1996 - July 2014. Each produc
     "asin": "5555991584", 
     "reviewerName": "Heather", 
     "helpful": [2, 3], 
-    "reviewText": "I just recently purchased her ''Paint The Sky With Stars''
-    CD and was so impressed that I bought 3 of her previously released CD's and
-    plan to buy all her music.  She is truely talented and her music is very
-    unique with a combination of modern classical and pop with a hint of an
-    Angelic tone. I still recommend you buy this CD. Anybody who has an
-    appreciation for music will certainly enjoy her music.",
+    "reviewText": "I just recently purchased her 
+    Paint The Sky With Stars CD and was so impressed
+    that I bought 3 of her previously released CD's
+    and plan to buy all her music.  She is truely
+    talented and her music is very unique with a
+    combination of modern classical and pop with
+    a hint of an Angelic tone. I still recommend
+    you buy this CD. Anybody who has an appreciation
+    for music will certainly enjoy her music.",
     "overall": 5.0, 
     "summary": "New Enya Fan.  Simply beautiful.", 
     "unixReviewTime": 978393600, 
@@ -38,13 +141,17 @@ The dataset contained product reviews spanning May 1996 - July 2014. Each produc
   }
 \end{verbatim}
 
-From these labels, we extracted the following columns for analysis:
+From these labels, we extracted the following columns for analysis:\newline
+\fbox{\begin{minipage}{38em}
 \begin{itemize}
-	\item asin: the product ID of the item being reviewed
-	\item reviewText: the text review
-	\item overall: the corresponding overall rating of the text review
-	\item reviewerID: the amazon user id of the user who posted the review
+  \item asin: the product ID of the item being reviewed
+  \item reviewText: the text review
+  \item overall: the corresponding overall rating of the text review
+  \item reviewerID: the amazon user id of the user who posted the review
 \end{itemize}
+\end{minipage}}
+
+\smallskip
 
 The remaining elements were considered irrelevant in the scope of this thesis work, as our work mostly focuses on creating Rating Matrix, Document-term Matrix, and other matrices. This data was retrieved from the json files with the help of Python programming language.
 
@@ -57,103 +164,56 @@ While, search products are products that can be objectively evaluated through ke
 To end, the size of both the datasets was large with upto 230,000 reviews for the largest one. An additional step was performed to \textbf{manage the dataset} to a resonable size. The dataset was reduced to 10,000 product reviews that have been randomly sampled from the original dataset. This was essentially done to perform the experiments and test the hypothesis efficiently.
 
 
-\begin{figure}[H]
-  {\centering {\includegraphics[width = \textwidth]{img/lda-formula.png}}\par}
-  \caption{LDA algorithm}
-\end{figure}
+% \begin{figure}[H]
+%   {\centering {\includegraphics[width = \textwidth]{img/lda-formula.png}}\par}
+%   \caption{LDA algorithm}
+% \end{figure}
 
 
-
-\section{Proposed Methodology}
-\tikzset{
-desicion/.style={
-    diamond,
-    draw,
-    text width=4em,
-    text badly centered,
-    inner sep=0pt
-},
-block/.style={
-    rectangle,
-    draw,
-    text width=10em,
-    text centered,
-    rounded corners
-},
-cloud/.style={
-    draw,
-    ellipse,
-    minimum height=2em
-},
-descr/.style={
-    fill=white,
-    inner sep=2.5pt
-},
-connector/.style={
-    -latex,
-    font=\scriptsize
-},
-rectangle connector/.style={
-    connector,
-    to path={(\tikztostart) -- ++(#1,0pt) \tikztonodes |- (\tikztotarget) },
-    pos=0.5
-},
-rectangle connector/.default=-2cm,
-straight connector/.style={
-    connector,
-    to path=--(\tikztotarget) \tikztonodes
-}
-}
-
-\begin{tikzpicture}
-\matrix (m)[matrix of nodes, column  sep=2cm,row  sep=8mm, align=center, nodes={rectangle,draw, anchor=center} ]{
-    |[block]| {Start}              &  \\
-    |[block]| {Assume that $a=c$ the optimilalty cretierin given by }               &                                            \\
-    |[desicion]| {Locally optimal}          &                                             \\
-   |[block]| {Assume that $a=d$ the optimilalty cretierin given by}    &                                             \\
-    |[desicion]| {Locally optimal}         &           |[block]| {Stop}                                   \\
-         |[block]| {Assume that $a=e$ the optimilalty cretierin given by}    &    |[desicion]| {Locally optimal}                                          \\
-            |[desicion]| {Locally optimal}         &       |[block]| {Assume that $a=k$ the optimilalty cretierin given by}                                      \\
-                 |[block]| {Assume that $a=f$ the optimilalty cretierin given by}    &   |[desicion]| {Locally optimal}                                         \\
-}
-\path [>=latex,->] (m-1-1) edge (m-2-1);
-\path [>=latex,->] (m-2-1) edge (m-3-1);
-\path [>=latex,->] (m-3-1) edge (m-4-1);
-\path [>=latex,->] (m-4-1) edge (m-5-1);
-\path [>=latex,->] (m-5-1) edge (m-6-1);
-\path [>=latex,->] (m-6-1) edge (m-7-1);
-\path [>=latex,->] (m-7-1) edge (m-8-1);
-\path [>=latex,->] (m-8-1) edge (m-8-2);
-\path [>=latex,->] (m-8-2) edge (m-7-2);
-\path [>=latex,->] (m-7-2) edge (m-6-2);
-\path [>=latex,->] (m-6-2) edge (m-5-2);
-
-\end{tikzpicture}
+% \begin{algorithm}[H]
+% % \caption{How to write algorithms}
+% \begin{algorithmic}[1]
+% \Procedure{APPLY-KNN}{C, D',k,d}
+% \For topics k E [1, K] do 
+%    \State sample mixture components cpk ••• Dir(5)
+% \EndFor
+% \State \textbf{return} arg \textit{max}$_j p_j$
+% \EndProcedure
+% \end{algorithmic}
+% \end{algorithm}
 
 
-\subsection{Choice of Hyperparameters/Variables Explained}
+% The generative process of LDA can be seen in the following algorithm [22]: 
+% 1: "topic plate" 
+% 2: for all 
+% 3: sample mixture components cpk ••• Dir(5) 
+% 4: "document plate" 
+% 5: for all documents m E [1, MI do 
+% 6: sample mixture proportion in Dir(d) 
+% 7: "word plate" 
+% 8: for all words n E [1, Nm] in document m do 
+% 9: sample topic index r ultirtomial(em) 
+% 10: sample term for word w,„,„ ti Multinamial(cpc„,,n) 
+% 11: return 
 
-Use of RMSE value is justified by the previous findings in the study by Koren \cite{Koren2010} \cite{Koren2008} that small improvements in RMSE terms can have significant impact on the quality of some of the top recommendations.
+% Generative process of LDA 
+% M number of documents in the corpus K number of latent topics/ mixture components V number of terms t in vocabulary 
+
+
+% \clearpage
+
+
 
 \section{Experiments}
 In the course of this thesis, many methods were tried and tested for the recommender systems. Many of them were done on the different datasets, but for the sake of a complete experiment with amazon dataset of the two categories decided as we have seen in the previous section.
 
 \subsection{Approach}
-In order to comprehensively describe the experiments made for thesis, a small application of the whole datasets has been implemented which will be fitting the models on the described datasets and evaluate each model on the accuracy basis, and thereafter write the results to the file for the record. The fitting is done using a \textit{4-fold cross validation} mechanism to balance the bad areas of the dataset with longer execution time. Moreover, various values are tried and tested to find the values that are suited best for the better results. 
-
-
-\begin{figure}[H]
-  {\centering {\includegraphics[width = \textwidth]{img/dataset/ItemPerUser50.png}}\par}
-  \caption{Items rated by per User}
-\end{figure}
-
-
+In order to comprehensively describe the experiments made for thesis, a small application of the whole datasets has been implemented which will be fitting the models on the described datasets and evaluate each model on the accuracy basis, and thereafter write the results to the file for the record. The fitting is done using a \textit{5-fold cross validation} mechanism to balance the bad areas of the dataset with longer execution time. Moreover, various values are tried and tested to find the values that are suited best for the better results. 
 
 \begin{figure}[H]
   {\centering {\includegraphics[width = \textwidth]{img/dataset/UserPerItem50.png}}\par}
-  \caption{Users who rated per Item Reviews}
+  \caption{Users who rated per Item Reviews}\label{Users who rated per Item Reviews}
 \end{figure}
-
 
 \subsection{Implemention}
 For implementing the Probabilistic Matrix Factorization and Topic Modelling using Latent Dirichlet Allocation, we used GraphLab - Scientific Library for Python, and also implemented Gibbs Sampling technique.
@@ -178,14 +238,14 @@ The factor terms model interactions between users and items. For example, if a u
 
 \[
   \operatorname{score}(i, j) = \mu + w_i + w_j + \mathbf{a}^T \mathbf{x}_i + \mathbf{b}^T \mathbf{y}_j + {\mathbf u}_i^T {\mathbf v}_j
-  \tag{5.1}
+  \tag{19}
   \]
 
-where μ is a global bias term, wi is the weight term for user i, wj is the weight term for item j, xi and yj are respectively the user and item side feature vectors, and a and b are respectively the weight vectors for those side features. The latent factors, which are vectors of length numfactors, are given by ui and vj.
+where $\mu$ is a global bias term, $w_i$ is the weight term for user $i$, $w_j$ is the weight term for item j, $x_i$ and $y_j$ are respectively the user and item side feature vectors, and $a$ and $b$ are respectively the weight vectors for those side features. The latent factors, which are vectors of length numfactors, are given by $u_i$ and $v_j$.
 
 \subsubsection{Topic Modelling}
 
-A topic model assumes each document is a mixture of a set of topics, where for each topic some words are more likely than others. One statistical approach to do this is called a “topic model”. This method learns a topic model for the given document collection.
+A topic model assumes each document is a mixture of a set of topics, where for each topic some words are more likely than others. One statistical approach to do this is called a "topic model". This method learns a topic model for the given document collection.
 
 With plate notation, which is often used to represent probabilistic graphical models (PGMs), the dependencies among the many variables can be captured concisely. The boxes are "plates" representing replicates, which are repeated entities. The outer plate represents documents, while the inner plate represents the repeated word positions in a given document, each of which position is associated with a choice of topic and word. M denotes the number of documents, N the number of words in a document. The variable names are defined as follows:
 
@@ -215,6 +275,11 @@ In order to actually infer the topics in a corpus, we imagine a generative proce
 
 \quad (Note that multinomial distribution here refers to the multinomial with only one trial, which is also known as the categorical distribution.)
 
-The lengths $N_{i}$ are treated as independent of all the other data generating variables ($w$ and $z$). The subscript is often dropped, as in the plate diagrams shown here.
+The lengths $N_{i}$ are treated as independent of all the other data generating variables ($w$ and $z$). Below is the combination error equation that is minimized while training the dataset.
 
+\[
+f ( T | \Theta , \Phi , \kappa , z ) = \sum_{r_{u,i} \in T} (rec(u,i) - {r_{u,i}})^2 - \mu l(T|\theta, \phi,z)
+\tag{10}
+\]
 
+$\theta$ and $\Phi$ are the rating and topic parameters(respectively), $k$ controls the transform and $z$ is the set of topic assignments for each word in the corpus $T$. The first part of the equation is the error of the predicted ratings and the second is part of the (log) likelihood of the review corpus.

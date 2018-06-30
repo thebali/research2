@@ -1,12 +1,7 @@
-\chapter{Recommender System}
+\chapter{Background and Preliminaries}
 Recommender system is and remains a hot topic within computer science in 2015. Huge conferences are hosted in different parts of the world annually, featuring many big companies. The RecSys conference \cite{RecSys2018} is a good example
-of this. Recommender Systems has a wide use-area within all kinds of advertisement on the web when specifically targeted ads are needed. These ads can be seen everywhere from websites and apps to emails, text-messages etc. In the list of big actors on the stage of recommender systems, hardly surprisingly, one find companies such as Facebook, Google etc. But Recommender Systems are also used for recommending music in for instance Spotify and movies/TV-shows in Netflix. There are a variety of different algorithms for each use-area. The setting of which this thesis will focus consists in algorithms for recommender systems within garment-based e-commerce. Here follows some of the more common general techniques used in recommender systems.
-
-\cite{Adomavicius2005}
+of this. Recommender Systems has a wide use-area within all kinds of advertisement on the web when specifically targeted ads are needed. These ads can be seen everywhere from websites and apps to emails, text-messages etc. In the list of big actors on the stage of recommender systems, hardly surprisingly, one find companies such as Facebook, Google etc. But Recommender Systems are also used for recommending music in for instance Spotify and movies/TV-shows in Netflix. There are a variety of different algorithms for each use-area. The setting of which this thesis will focus consists in algorithms for recommender systems within garment-based e-commerce. Here follows some of the more common general techniques used in recommender systems \cite{Adomavicius2005}.
 \nocite{Adomavicius2015}
-\nocite{Aggarwal2013}
-\nocite{Aggarwal2015}
-\nocite{Ansari2000}
 \nocite{Bobadilla}
 \nocite{Bobadilla2013}
 
@@ -14,72 +9,86 @@ of this. Recommender Systems has a wide use-area within all kinds of advertiseme
 The basic idea of collaborative filtering is to find information or patterns using collaborative techniques among multiple data sources. Data sources typically consist of users and items such as movies, songs etc. Within e-commerce, and this project specifically, those data sources mainly consist of users, and products that can be bought by these users. Finding these patterns is accomplished through collecting and analysing huge amounts of data on users’ behaviours and activities as well as items. Within e-commerce those activities and behaviours include but are not limited to purchases and click-able ad- vertisements. Collaborative filtering is one of the most common general methods for recommender systems being applicable within several big use-areas. Collaborative Filtering is frequently used in social networks such as Facebook, LinkedIn, mySpace, Twitter etc to effectively recommend new friends, pages, groups as well as who to follow or what to like.
 Amazon uses the most prominent Recommender systems till date for their world class website. The website recommends and portrays the ways for its users to interact with website and find the best products they have been looking for.
 
-These ways are not usually much clearer at first as seeing the number and diversity of the products on the website to choose from. Recommender system plays a very important role here. It provides the best possible recommendations for the user depending upon various aspects of the interaction of the user with the website. These aspects may include user's private information submitted by user itself to the website, location of the user, past purchases of the user, etc. There are endless possibilities for the recommendations to happen on a real world website. Also applications such as Youtube, Reddit, Netflix etc make use of collaborative filtering. Collaborative filtering is viable in all applications where one can observe connections between a user and their registered friends or followers. But it is also widely used within e-commerce, where Amazon is a good example who popularised algorithms for item-to-item based collaborative filtering [21].
+These ways are not usually much clearer at first as seeing the number and diversity of the products on the website to choose from. Recommender system plays a very important role here. It provides the best possible recommendations for the user depending upon various aspects of the interaction of the user with the website. These aspects may include user's private information submitted by user itself to the website, location of the user, past purchases of the user, etc. There are endless possibilities for the recommendations to happen on a real world website \cite{Aggarwal2015}. Also applications such as Youtube, Reddit, Netflix etc make use of collaborative filtering. Collaborative filtering is viable in all applications where one can observe connections between a user and their registered friends or followers. But it is also widely used within e-commerce, where Amazon is a good example who popularised algorithms for item-to-item based collaborative filtering [21].
 
 
 The paper discusses the state-of-the-art recommender systems for the current generation. Industry and academia has shown great interest in the field of recommendation systems (RS). Abundant approaches the RS which can be further improved to enhance the capabilities and functionality. Major application in industry has given research a boost and many companies/vendors have incorporated RS in to their commercial servers. Recommender systems have been the major milestones in the application of Computer Science to other areas. This can be categorized into collaborative-filtering, content based RS and some Hybrid Approaches. Content-based RS focuses on building user profile of a single user for recommendations while collaborative-filtering(CF) RS uses data from fellow users/peers to recommend a particular user. Content-based RS has its roots in Information Retrieval, utility function is defined for each item for a user based on the history of the user purchases, searches, etc. Usually, higher the utility function value, higher is the preference for recommendation. Limited feature Extraction leads to limited possible recommendations. Also, only domain specific recommendations can be inferred. New user problem exists for the both kind of the RS systems. Almost no information is present about the new users into the application environment. Collaborative-filtering techniques create user groups/clusters based on similar tastes/browsing habits, and few techniques consider stereotypes for peer groups. And collaborative-filtering is of two types based on the data mining techniques; heuristics (memory) based, model-based CF. Both techniques have decent application in the industry for real world problem solving. Improvements have been shown in the combined use of these data mining techniques.
 
-\begin{figure}[H]
-    {\centering {\includegraphics[width = \textwidth]{img/DissimEqn.png}}\par}
-    \caption{Dissimilarity}
-\end{figure}
+% \begin{figure}[H]
+%     {\centering {\includegraphics[width = \textwidth]{img/DissimEqn.png}}\par}
+%     \caption{Dissimilarity}
+% \end{figure}
 
-In memory-based CF, similarity among users is calculated using cosines of the user matrices. Correlation and similarity are calculated by heuristic techniques.Heuristics basically work by aggregation or summation($\Sigma$) of the past activities of the users who are similar to a user for whom recommendations are required. Another is Model-based CF, models are prepared based on ANN, K-means clustering, Gibbs sampling, Probabilistic latent semantic analysis, generative semantics of latent Dirichlet Allocation. CF recommendation systems also faces few issues; new item problem, in which recommendations of this new item are not made to any use because of the shortage of the data; Sparsity, this issue arises for a user whose tastes are fairly diverse from the other users which increases hardness of the recommendations. Demographic-based filtering and preference-based filtering could be helpful with these kind of limitations. Preference-based filtering is currently high on research and industry use. Improvements over the limitations of the above RS have been implemented using hybrid RS and many extensions of current RS. Current state of the recommender systems can be enhanced by extending the capabilities of RS. One approach highlighted is use of advanced profiling of items and users. Another by the use of Mathematical Approximation Theory and some RBF. Multidimensionality Reduction based on contextual approaches on recommender systems. Multiple rating criterias which help user to rate an item from various perspectives not just one. Making RS less intrusive to a user of the application system, providing some control to the user for change in the behavior of RS. Improving flexibility of RS, providing language like RQL for handling operations on RS. Measuring how effective RS has been by calculating the results in various fashions. There are many unexplored characteristics of RS which may even lead to other fields of study.
+
+Euclidean Dissimilarity
+\begin{equation}
+dissim(x, y) = \sqrt{\sum_{i=1}^{n}\left ( x_{i} - y_{i} \right )^{2}} = \left \| x - y \right \|_2
+\label{dissimilarity} \tag{1}
+\end{equation}
+
+
+
+Cosine Similarity
+\begin{equation}
+sim(x,y) = \frac{\sum_{i=1}^{n} x_{i} \ast y_{i}}{\sqrt{\sum_{i=1}^{n} x_{i}^{2}} \sqrt{\sum_{i=1}^{n} y_{i}^{2}}}
+\label{eq:similarity} \tag{2}
+\end{equation}
+
+
+In memory-based CF, similarity among users is calculated using cosines of the user matrices. Correlation and similarity are calculated by heuristic techniques.Heuristics basically work by aggregation or summation($\Sigma$) of the past activities of the users who are similar to a user for whom recommendations are required. Another is Model-based CF, models are prepared based on ANN, K-means clustering, Gibbs sampling, Probabilistic latent semantic analysis, generative semantics of latent Dirichlet Allocation. CF recommendation systems also faces few issues; new item problem, in which recommendations of this new item are not made to any use because of the shortage of the data; Sparsity, this issue arises for a user whose tastes are fairly diverse from the other users which increases hardness of the recommendations. Demographic-based filtering and preference-based filtering could be helpful with these kind of limitations. Preference-based filtering is currently high on research and industry use. Improvements over the limitations of the above RS have been implemented using hybrid RS and many extensions of current RS. Current state of the recommender systems can be enhanced by extending the capabilities of RS. One approach highlighted is use of advanced profiling of items and users \cite{Ansari2000}. Another by the use of Mathematical Approximation Theory and some RBF. Multidimensionality Reduction based on contextual approaches on recommender systems. Multiple rating criterias which help user to rate an item from various perspectives not just one. Making RS less intrusive to a user of the application system, providing some control to the user for change in the behavior of RS. Improving flexibility of RS, providing language like RQL for handling operations on RS \cite{Aggarwal2013}. Measuring how effective RS has been by calculating the results in various fashions. There are many unexplored characteristics of RS which may even lead to other fields of study.
 
 Most Collaborative Filtering techniques can be expressed by the two general steps, Similarity Computation and Prediction Generation, described under 2.2
 
 \subsection{User based collaborative filtering}
 The main idea of recommender systems built on user-based collaborative filtering consists in computing the similarity between users’ {u,j} profiles, s u\textsubscript{j} . That is, computing a prediction for the probability of the user u liking a specific item i, consists in computing a rating based on all ratings made by users with similar profiles. All similar profiles contribute to this prediction depending on the similarity factor, s uj [34, 35, 36]. 
 
-\begin{figure}[H]
-    {\centering {\includegraphics[width = \textwidth]{img/PearsonEqn.png}}\par}
-    \caption{579483}
-\end{figure}
+% \begin{figure}[H]
+%     {\centering {\includegraphics[width = \textwidth]{img/PearsonEqn.png}}\par}
+%     \caption{579483}
+% \end{figure}
 
-Euclidean Dissimilarity
+
 \begin{equation}
-dissim(x, y) = \sqrt{\sum_{i=1}^{n}\left ( x_{i} - y_{i} \right )^{2}} = \left \| x - y \right \|_2
-\label{dissimilarity} \tag{3}
+\label{eq:pearsoncorrelation} \tag{3}
+sim(u, j)
+ = \frac{\sum_{i \in I}\left(r_{u,i} - \overline{r_{u}} \right ) \times \left ( r_{j,i} - \overline{r_{j}} \right)}{\sqrt{\sum_{i \in I}\left(U_{u, i} - \overline{r}_{u}\right)^{2}}\times\sqrt{\sum\left(r_{j,i}-\overline{r_{j}}\right)^{2}}}
 \end{equation}
 
-
-cosine similarity
-\begin{equation}
-sim(x,y) = \frac{\sum_{i=1}^{n} x_{i} \ast y_{i}}{\sqrt{\sum_{i=1}^{n} x_{i}^{2}} \sqrt{\sum_{i=1}^{n} y_{i}^{2}}}
-\label{eq:similarity} \tag{4}
-\end{equation}
 
 Typically this can be reduced to the two general steps. 
 1. While observing a user’s actions in a system, look for similar users with equal behaviour- and activity-patterns. 
 2. Use the observations from step 1 to compute a prediction for the specified user. 
 
-\begin{figure}[H]
-    {\centering {\includegraphics[width = \textwidth]{img/PredUserEqn.png}}\par}
-    \caption{464875}
-\end{figure}
+% \begin{figure}[H]
+%     {\centering {\includegraphics[width = \textwidth]{img/PredUserEqn.png}}\par}
+%     \caption{464875}
+% \end{figure}
+
+
+
+See 2.2 for more information regarding Similarity Computation and Prediction Generation techniques.
+
 
 \begin{equation}
-ItemSim(i, j) = \frac{\sum_{u \in U_{i,j}} ({R_{u,i} - \overline{R}_u}) ({R_{u,j} - \overline{R}_u})} {\sqrt{\sum_{u \in U_{i,j}}({R_{u,i} - \overline{R}_u})^2} \sqrt{\sum_{u \in U_{i,j}}({R_{u,j} - \overline{R}_u})^2}}
-\label{eq:ItemSim} \tag{4}
+P_{user-based}(x,i) = \overline{R}_{x} + \frac{\sum_{u_n = 0}^{N} UserSim(x,y) \ast (R_{y,i}-\overline{R}_{y})}{\sum_{u_n = 0}^{N} UserSim(x,y)}
+\label{eq:UserPred} \tag{4}
 \end{equation}
-
-
-See 2.2 for more information regarding Similarity Computation and Prediction Genera- tion techniques.
 
 \subsection{Item based collaborative filtering}
 The concept of item-based collaborative filtering applies the same idea as its User-based counterpart, but the similarity is computed between items instead of users, and is usually described as "Users who bought this also bought that". 
 
-\begin{figure}[H]
-    {\centering {\includegraphics[width = \textwidth]{img/ItemSimEqn.png}}\par}
-    \caption{457900}
-\end{figure}
+% \begin{figure}[H]
+%     {\centering {\includegraphics[width = \textwidth]{img/ItemSimEqn.png}}\par}
+%     \caption{457900}
+% \end{figure}
+
 
 
 \begin{equation}
-\label{eq:pearsoncorrelation} \tag{23}
-sim(u, j)
- = \frac{\sum_{i \in I}\left(r_{u,i} - \overline{r_{u}} \right ) \times \left ( r_{j,i} - \overline{r_{j}} \right)}{\sqrt{\sum_{i \in I}\left(U_{u, i} - \overline{r}_{u}\right)^{2}}\times\sqrt{\sum\left(r_{j,i}-\overline{r_{j}}\right)^{2}}}
+ItemSim(i, j) = \frac{\sum_{u \in U_{i,j}} ({R_{u,i} - \overline{R}_u}) ({R_{u,j} - \overline{R}_u})} {\sqrt{\sum_{u \in U_{i,j}}({R_{u,i} - \overline{R}_u})^2} \sqrt{\sum_{u \in U_{i,j}}({R_{u,j} - \overline{R}_u})^2}}
+\label{eq:ItemSim} \tag{5}
 \end{equation}
+
 
 
 More generally, taking an item-based approach means looking into the set, I, of items a specific user, u, has rated, using their context to compute the similarity of other items, \{i\textsubscript{0} ,i\textsubscript{1} ,...,i\textsubscript{n} \}, not in I. Their corresponding similarities are computed at the same time as {s i0 ,s i1 ,...,s in }. When these similarities and their corresponding items have been found, a prediction can be computed. [36, 37, 38]. 
@@ -89,21 +98,17 @@ This can typically be split into three steps:
 3. Generate predictions based on some prediction method, described under 2.2. Item-based collaborative filtering is a very common approach, often used together with algorithms for matrix factorization.
 
 
-\begin{figure}[H]
-    {\centering {\includegraphics[width = \textwidth]{img/PredItemEqn}}}
-    \caption{679849} 
- \end{figure}
+% \begin{figure}[H]
+%     {\centering {\includegraphics[width = \textwidth]{img/PredItemEqn}}}
+%     \caption{679849} 
+%  \end{figure}
 
 
 \begin{equation}
 P_{item-based}(u,i) = \frac{\sum_{i,j \in I} ItemSim(i,j) \ast R_(u,j)} {\sum_{i,j \in I} ItemSim(i,j)}
-\label{eq:ItemPred} \tag{5}
+\label{eq:ItemPred} \tag{6}
 \end{equation}
 
-\begin{equation}
-P_{user-based}(x,i) = \overline{R}_{x} + \frac{\sum_{u_n = 0}^{N} UserSim(x,y) \ast (R_{y,i}-\overline{R}_{y})}{\sum_{u_n = 0}^{N} UserSim(x,y)}
-\label{eq:UserPred} \tag{7}
-\end{equation}
 
 Some other new classified metrics are Recall, Precision, F1 Measure, F1-F2 measure.\\
 
@@ -133,7 +138,7 @@ NMAE = \frac{MAE}{r_{max} - r_{min}}
 Matrix factorization is an algebraic operation consisting in factorising a matrix M, meaning finding the matrices M 1 ,M 2 ,...,M 3 such that when they are multiplied, the resulting matrix is M. In collaborative filtering based recommender systems this can be used as a rather simple and very intuitive algorithm for discovering latent features. By constructing a User-Item matrix M, where each index contains a rating r on an item i performed by a user u:
 
 \[  
-\label{eq:ratingmatrix} \tag{1}
+\label{eq:ratingmatrix} \tag{7}
 \textbf{M\textsubscript{u,i}} = \left(
 \begin{array}{cccc}
 r_{{u_1}{i_1}}&r_{{u_1}{i_2}}& \ldots&r_{{u_1}{i_n}} \\
@@ -149,13 +154,15 @@ where $-$ symbolises yet unrated items, a matrix to be factorised might look som
 like \eqref{eq:ratingmatrix}
 
 \[  
-\label{eq:numbermatrix}
+\label{eq:numbermatrix} \tag{8}
 \textbf{M\textsubscript{u,i}} = \left(
-\begin{array}{cccc}
-5&1& - &4 \\
-3&-&\ldots&3 \\
-\vdots & \vdots & \ddots & \vdots \\
-2&-& \ldots&4
+\begin{array}{ccccc}
+5&1& - &4 & 5 \\
+4 & 3 &- 2 & 1 & -\\
+3&-&\ldots&3& 4 \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+2&-& \ldots&4 & 3
+
 \end{array}
 \right)
 \]
@@ -164,7 +171,7 @@ Matrix factorisation can be seen as the task of predicting the missing ratings m
 
 This means finding two matrices, N(\textit{a  |U| × k matrix }) and O(\textit{an  |I| × k  matrix}) which when multiplied approximating M:
 
-\[ M \approx N \times O = \hat{M} \]
+\[ M \approx N \times O = \hat{M} \tag{9} \]
 
 Further, using similarity and prediction computing techniques as described under 2.2, the gaps can be filled in and thereby resulting in really good recommendations.
 

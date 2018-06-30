@@ -1,4 +1,4 @@
-\chapter{Literature Review and Background}
+\chapter{Literature Review}
 In this thesis, I have presented two way approach to improving the existing systems of recommender systems.
 First, I have utilized the ratings present in the dataset corresponding to each purchase made by some user $x$ of some product $i$ to predict and recommend the items for some other user $y$ using item-item based collaborative filtering. Secondly, LDA was used to extract topic modelling based words and features from the reviews left by the users on the products.
 
@@ -7,12 +7,41 @@ First, I have utilized the ratings present in the dataset corresponding to each 
 
 For general, k $\in$ N in kNN, consider the region in the space for which the set of k nearest neighbors is the same. This again is a convex polygon and the space is partitioned into convex polygons, within each of which the set of $k$ nearest neighbours is invariant.
 The parameter $k$ in kNN is often chosen based on experience or knowledge about the classification problem at hand. It is desirable for $k$ to be odd to make ties less likely. k = 3 and k = 5 are common choices, but much larger values between 50 and 100 are also used.  An alternative way of setting the parameter is to select the k that gives best results on a held-out portion of the training set.
-\begin{figure}[H]
-    {\centering {\includegraphics[width = 0.85 \textwidth]{img/kNNtrain}}\par}
-    \caption{kNN  training(with preprocessing) and testing. $p_{j}$ is an estimate for $P(c_{j}|S_{k}) = P(c_{j}|d)$. $c_{j}$ denotes the set of all documents in the class $c_{j}$.}
-\end{figure}
 
-\section{Matrix Factorization | Singular Valued Decomposition | LSA }
+
+% \begin{figure}[H]
+%     {\centering {\includegraphics[width = 0.85 \textwidth]{img/kNNtrain}}\par}
+%     \caption{kNN  training(with preprocessing) and testing. $p_{j}$ is an estimate for $P(c_{j}|S_{k}) = P(c_{j}|d)$. $c_{j}$ denotes the set of all documents in the class $c_{j}$.}
+% \end{figure}
+
+
+\begin{algorithm}[H]
+% \caption{}
+\begin{algorithmic}[1]
+% \SetAlgoLined
+\Procedure{TRAIN-KNN}{C, D}
+\State D' $\leftarrow$ Preprocess(D)\;
+\State $k$ $\leftarrow$ Select-$K(C, D')$
+\State \textbf{return} $D', k$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+
+\begin{algorithm}[H]
+% \caption{How to write algorithms}
+\begin{algorithmic}[1]
+\Procedure{APPLY-KNN}{C, D',k,d}
+\For{ \textbf{each}} $c_j \in C$
+   \State $p_j \leftarrow |S_k \cap c_j|$/$k$\;
+\EndFor
+\State \textbf{return} arg \textit{max}$_j p_j$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+
+\section{Matrix Factorization}
 The square decompositions are simpler and can be treated with sufficient mathematical rigor to help understand how such decompositions work. Square symmetric matrices is the basis of the singular valued decomposition.
 
 In LSI, we use SVD to construct a low-rank approximation matrix C, to the term-document matrix, for a value of k that is far smaller than original rank of C. 
@@ -24,7 +53,7 @@ Given an M $\times$ N matrix C and a positive integer k , we  wish  to  find  an
 
 \[
     \| X_{F} \| = \sqrt{\sum_{i=1}^{M} \sum_{j=1}^{N} X_{ij}^2}
-    \label{I dont know what it is} \tag{3.1}
+    \label{I dont know what it is} \tag{9}
 \]
 
 Thus, the Frobenius norm of X measures the discrepancy between C k and C ; our goal is to find a matrix C k that minimizes this discrepancy, while con- straining C k to have rank at most k. If r is the  rank of C, clearly C r = C and the Frobenius norm of the discrepancy is zero in this case . When k is far smaller than r , we refer to C k as a low-rank approximation. The singular value decomposition can be used to solve the low -rank ma- trix approximation problem.   We then derive from it an applic ation to ap- proximating term-document matrices.
@@ -33,7 +62,7 @@ The singular value decomposition can be used to solve the low-rank matrix approx
 
 \begin{figure}[H]
     {\centering {\includegraphics[width = 0.9 \textwidth]{img/SVD}}\par}
-    \caption{Svd}
+    \caption{Singular Valued Decomposition}
     \label{eq:svd}
 \end{figure}
 
@@ -44,7 +73,7 @@ The singular value decomposition can be used to solve the low-rank matrix approx
 
 3. Compute and output C k = U $\Sigma$ k V T as the rank- k approximation to C . The rank of C k is at most k :  this follows from the fact that $\Sigma$ k has at most k non-zero values.  Next, we recall the intuition of Example 18.1 :  the effect of small eigenvalues on matrix products is small.  Thus, it se ems plausible that replacing these small eigenvalues by zero will not substantially alter the product, leaving it "close" to C .  The following theorem due to Eckart and Young tells us that, in fact, this procedure yields the matrix of rank k with the lowest possible Frobenius error.
 
-\section{Latent Factor Topic Modelling | Text Clustering}
+\section{Latent Factor Topic Modelling}
 
 % \begin{figure}[h]
 %    {\includegraphics[scale=1]{img/PearsonEqn.png}}
@@ -58,14 +87,14 @@ The simplest possible method for feature selection in document clustering is tha
 A much more aggressive technique for stop-word removal has been proposed in \cite{Wilbur1992}. The core idea of this approach is to extend techniques which are used in supervised learning to the unsupervised case. The term strength is essentially used to measure how informative a word is for identifying two related documents. For example, for two related documents x and y, the term strength $s(t)$ of term $t$ is defined in terms of the following probability:
 \[
     s(t) = P(t \in y | t \in x)
-    \label{eq:probTermStrength} \tag{3.2}
+    \label{eq:probTermStrength} \tag{10}
 \]
 
 Clearly, the main issue is how one might define the document x and y as related. One One possibility is to use manual (or user) feedback to define when a pair of documents are related. This is essentially equivalent to utilizing supervision in the feature selection process, and may be practical in situations in which predefined categories of documents are available. On the other hand, it is not practical to manually create related pairs in large collections in a comprehensive way. It is therefore desirable to use an automated and purely unsupervised way to define the concept of when a pair of documents is related. It has been shown in [94] that it is possible to use automated similarity functions such as the cosine function [81] to define the relatedness of document pairs. A pair of documents are defined to be related if their cosine similarity is above a user-defined threshold. In such cases, the term strength s(t) can be defined by randomly sampling a number of pairs of such related documents as follows:
 
 \[
 s(t) = \frac{\text{Number of pairs in which $t$ occurs in both}} {\text{Number of pairs in which $t$ occurs in the first of the pair}}
-\label{eq:samplingpairs} \tag{3.3}
+\label{eq:samplingpairs} \tag{11}
 \]
 Here, the first document of the pair may simply be picked randomly. In order to prune features, the term strength may be compared to the expected strength of a term which is randomly distributed in the training documents with the same frequency. If the term strength of t is not at least two standard deviations greater than that of the random word, then it is removed from the collection.
 One advantage of this approach is that it requires no initial supervision or training data for the feature selection, which is a key requirement in the unsupervised scenario. Of course, the approach can also be used for feature selection in either supervised clustering \cite{Bobadilla2013} or categorization \cite{Salakhutdinov2007}, when such training data is indeed available. One observation about this approach to feature selection is that it is particularly suited to similarity-based clustering because the discriminative nature of the underlying features is defined on the basis of similarities in the documents themselves.
@@ -83,14 +112,14 @@ Like PLSI, LDA is based on a hypothetical generative process for a corpus. A dia
 
 \[
 \Phi_i \sim D(\beta) ; \qquad p ( \Phi _ { i } | \beta ) = \frac { \Gamma ( W \beta ) } { [ \Gamma ( \beta ) ] W } \prod _ { v = 1 } ^ { W } \phi _ { i v } ^ { \beta - 1 }
-\tag{3.4}
+\tag{12}
 \]
 
 \textsc{Choose the topics of the document.} The topic distribution for document d is represented as a multinomial distribution θ d , which is drawn from a Dirichlet distribution with parameters α. The Dirichlet distribution captures the document-independent popularity and the within-document burstiness of each topic.
 
 \[
 \theta_{d} \sim D(\alpha); \qquad p ( \theta _ { d } | \alpha ) = \frac { \Gamma ( \sum _ { i = 1 } ^ { K } \alpha _ { i } ) } { \prod _ { i = 1 } ^ { K } \Gamma ( \alpha _ { i } ) } \prod _ { i = 1 } ^ { K } \theta _ { d i } ^ { \alpha _ { i } - 1 }
-\tag{3.5}
+\tag{13}
 \]
 
 
@@ -98,27 +127,46 @@ Like PLSI, LDA is based on a hypothetical generative process for a corpus. A dia
 
 \[
 z_{dn} \sim M(\theta_d); \qquad p ( z _ { d n } = i | \theta _ { d } ) = \theta _ { d i }
-\tag{3.6}
+\tag{14}
 \]
 
 \textsc{Choose each token.} Each token w at each index is chosen from the multinomial distribution associated with the selected topic.
 
 \[
 w{dn} \sim M(\phi_{z_{dn}}); \qquad p ( w _ { d n } = v | z _ { d n } = i , \phi _ { i } ) = \phi _ { i v }
-\tag{3.7}
+\tag{15}
 \]
 
 
 \subsubsection{Mechanism} LDA provides the mechanism for finding patterns of term co-occurrence and using those patterns to identify coherent topics. Suppose that we have used LDA to learn a topic i and that for term v, p(w = v|z = i) is high. As a result of the LDA generative process, any document d that contains term v has an elevated probability for topic i, that is, p(z dn ? = i|w dn = v) > p(z dn ? = i). This in turn means that all terms that co-occur with term v are more likely to have been gen- erated by topic i, especially as the number of co-occurrences increases. Thus, LDA results in topics in which the terms that are most probable frequently co-occur with each other in documents. Moreover, LDA also helps with polysemy. Consider a term v with two distinct meanings in topics i and i ? . Considering only this term, the model places equal probability on topics i and i ? . However, if the other words in the context place a 90\% probability on i and only a 9\% probability on i ? , then LDA will be able to use the context to disambiguate the topic: it is topic i with 90\% probability.
 
-Wallach et al. [60] show that the symmetry or asymmetry of the Dirichlet priors strongly influences the mechanism. For the topic-specific term distributions, a symmetric Dirichlet prior provides smoothing so that unseen terms will have non-zero probability. However, an asym- metric prior would equally affect all topics, making them less distinctive. In contrast, they showed that an asymmetric prior for the document- specific topic distributions made LDA more robust to stop words and less sensitive to the selection of the number of topics. The stop words were mainly relegated to a small number of highly probable topics that influence most documents uniformly. The asymmetric prior also results in more stable topics, which means that additional topics will make small improvements in the model instead of radically altering the topic structure. This is similar to the situation of LSI, where performance is optimal when Σ scales the contribution of each dimension according to its eigenvalue. In the same way, LDA will perform best if α is non- uniform and corresponds to some natural values characteristic of the dataset.
+Wallach et al. show that the symmetry or asymmetry of the Dirichlet priors strongly influences the mechanism. For the topic-specific term distributions, a symmetric Dirichlet prior provides smoothing so that unseen terms will have non-zero probability. However, an asym- metric prior would equally affect all topics, making them less distinctive. In contrast, they showed that an asymmetric prior for the document- specific topic distributions made LDA more robust to stop words and less sensitive to the selection of the number of topics. The stop words were mainly relegated to a small number of highly probable topics that influence most documents uniformly. The asymmetric prior also results in more stable topics, which means that additional topics will make small improvements in the model instead of radically altering the topic structure. This is similar to the situation of LSI, where performance is optimal when Σ scales the contribution of each dimension according to its eigenvalue. In the same way, LDA will perform best if α is non- uniform and corresponds to some natural values characteristic of the dataset.
 One disadvantage of LDA is that it tends to learn broad topics. Consider the case where a concept has a number of aspects to it. Each of the aspects co-occurs frequently with the main concept, and so LDA will favor a topic that includes the concept and all of its aspects. It will further favor adding other concepts to the same topic if they share the same aspects. As this process continues, the topics become more diffuse. When sharper topics are desired, a hierarchical topic model may be more appropriate.
 
-\subsubsection{Likelihood} Training an LDA model involves finding the optimal set of parameters, under which the probability of generating the training documents is maximized. The probability of the training documents under a given sLDA model is called the empirical likelihood L. It can also be used to identify the optimal model configuration using Bayesian model selection.
+\subsubsection{Likelihood.}
+Training an LDA model involves ﬁnding the optimal set of parameters, under which the probability of generating the training documents is maximized. The probability of the training documents under a given LDA model is called the empirical likelihood $L$. It can also be used to identify the optimal model conﬁguration using Bayesian model selection.
 
-\textbf{there is some equation}
+\[
+L = \prod _ { d = 1 } ^ { M } \prod _ { n = 1 } ^ { N } p ( w _ { d n } | z _ { d n } , \Phi ) p ( z _ { d n } | \theta _ { d } ) p ( \theta _ { d } | \alpha ) p ( \Phi | \beta )
+\tag{16}
+\]
 
-Unfortunately, the direct optimization of the likelihood is problematic because the topic assignments z dn are not directly observed. Even inference for a single document is intractable. We describe two different approximations for LDA. Collapsed Gibbs sampling samples a value for each z dn in turn, conditioned on the topic assignments for the other to- kens. Variational Bayes approximates the model with a series of simpler models that bound the likelihood but neglect the troublesome dependencies.
+\[
+= \phi _ { z w } \theta _ { d z } \frac { \Gamma ( \sum _ { i = 1 } ^ { K } \alpha _ { i } ) } { \prod _ { i = 1 } ^ { K } \Gamma ( \alpha _ { i } ) } \prod _ { i = 1 } ^ { K } \theta _ { d i } ^ { \alpha _ { d i } - 1 } \frac { \Gamma ( W \beta ) } { [ \Gamma ( \beta ) ] ! } \prod _ { v = 1 } ^ { W } \phi _ { v } ^ { \beta - 1 }
+\tag{17}
+\]
+Unfortunately, the direct optimization of the likelihood is problematic because the topic assignments zdn are not directly observed. Even inference for a single document is intractable. We describe two diﬀerent approximations for LDA. Collapsed Gibbs sampling samples a value for each zdn in turn, conditioned on the topic assignments for the other tokens. 
+
+\subsubsection{Collapsed Gibbs}
+Gibbs sampling is commonly used to estimate the distribution of values for a probability model when exact inference is intractable. First, values are assigned to each variable in the model, either randomly or using a heuristic. Each variable is then sampled in turn, conditioned on the values of the other variables. In the limit of the number of iterations, this process explores all conﬁgurations and yields unbiased estimates of the underlying distributions. In practice, Gibbs sampling is implemented by rejecting a large number of samples during an initial burn-in period and then averaging the assignments during an additional large number of samples.
+
+\[
+p ( z _ { d n } | z _ { d n } ) \propto ( N _ { d z } + \alpha _ { z } ) ( N _ { z w } + \beta )
+\tag{18}
+\]
+
+In collapsed Gibbs sampling, certain variables are marginalized out of the model. Griﬃths and Steyvers propose collapsed Gibbs sampling for LDA, with both $\theta$ and $\Phi$ marginalized. Only $z_{dn}$ is sampled, and the sampling is done conditioned on α, β and the topic assignments of other words $\hat{z{dn}}$.
+
 
 
 
