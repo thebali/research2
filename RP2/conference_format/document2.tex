@@ -160,10 +160,6 @@ I don't want this to happen
 
 % make the title area
 \maketitle
-\def\endthebibliography{%
-  \def\@noitemerr{\@latex@warning{Empty `thebibliography' environment}}%
-  \endlist
-}
 
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
@@ -189,16 +185,14 @@ I don't want this to happen
 %%% computer-human interaction
 %%% 
 \section{Introduction}
-this is the introduction\cite{su2009survey}
-
 
 \section{Recommender Systems Techniques}
 
 \section{Conclusion}
 
 \newpage
-\bibliographystyle{IEEEtran}
-\bibliography{ieeefull}
+% \bibliographystyle{IEEEtran}
+% \bibliography{ieeefull}
 
 % that's all folks
 \end{document}
