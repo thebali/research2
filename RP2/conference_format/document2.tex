@@ -204,6 +204,13 @@ These approaches extract latent topics or aspects from reviews. An early work [1
 Let D be a collection of reviews of item set I from a specific category (e.g., restaurant) written by a set of users U, and each review comes with an overall rating ru,i to indicate the overall satisfaction of user u to item i. The primary goal is to predict the unknown ratings of items that the users have not reviewed yet. A review $d_{u,i}$ is a piece of text which describes opinions of user u on different aspects $a \in A$ towards item $i$, such as food for restaurants. In this paper, we only consider the case that all the items are from the same category, i.e., they share the same set of aspectsA.Aspects that users care for items are latent and learned from reviews by our proposed topic model, in which each aspect is represented as a distribution of the same set (e.g., K) of latent topics. Table 1 lists the key notations. Before introducing our method, we would like to first clarify the concepts of aspects, latent topics, and latent factors.
 
 \section{Proposed Model}
+Our model is a probabilistic generative model that combines a topic model seamlessly with a rating model. 
+
+\subsection{Model and Notations}\
+Suppose there are $N$ users $U = {u_1,u_2, · · · ,u_N},$ $M$ items
+V = {v1, v2, · · · , vM}, a set of observed indices Q = {i, j}, where {ui, vj} ∈ U ×V defines the observed ratings X = {xi,j}, each of which is optionally associated with a reviewri,j = {w|w ⊂ V } of length Li,j , where V is the set of vocabulary used in the re- viewtext. Alternatively, let Uj denote the indices of users who have rated item vj. LetK denote the number of topics.
+
+
 
 \section{Experiments and Results}
 
