@@ -210,7 +210,7 @@ Our model is a probabilistic generative model that combines a topic model seamle
 Suppose there are $N$ users $U = \{u_1,u_2, \dots ,u_N\}$, $M$ items
 $V = \{v_1, v_2, \dots , v_M\}$, a set of observed indices $Q = \{i, j\}$, where $\{u_i, v_j\} \in U \times V$ defines the observed ratings $X = \{x_{i,j}\}$, each of which is optionally associated with a review $r_{i,j} = \{w|w \subset V\}$ of length $L_{i,j}$ , where $V$ is the set of vocabulary used in the reviewtext. Alternatively, let $U_j$ denote the indices of users who have rated item $v_j$. Let $K$ denote the number of topics.
 
-This distribution describes the proportion that the item belongs to each topic.
+This distribution describes the proportion that the item belongs to each topic. Here is the generative process.
 
 \begin{enumerate}
 
@@ -261,6 +261,11 @@ This distribution describes the proportion that the item belongs to each topic.
 		\end{enumerate}
 	\bigskip 
 \end{enumerate}
+
+
+From the generative process, we can identify that the text re-
+views are generated similarly as the LDA model. We use a mixture of Gaussian rather than matrix factorization based methods [16, 31] to model the ratings. These user-topic specific Gaussian distribu- tions have clear interpretations. They describe how a user values the aspects denoted by each latent topic. The item is modeled as a distribution of topics, which together with the user-topic specific Gaussian distributions determine how a user would rate the item. The ratings and review text are connected by the same item topic distribution θ. The more a user talks about certain aspects con- cerning an item, the higher the distribution will be on these topics, which in turn affects the rating that the user would assign to the item. We choose to model ratings using mixture of Gaussians for two
+reasons. First, we can avoid the difficult choice of the transfor- mation function employed in [16]. As discussed above, the trans- formation function is restrictive and the scaling parameter is non- trivial to select. Secondly, we can retain the interpretability of the topics with no compromise. The interpretability of the latent di- mensions is an important factor to solve the cold start problem. Take book recommendation for example, when a user showed strong interest in dimension with high probability onwords “da vinci code dan brown”. We can confidently recommend Dan Brown’s new book “Inferno”. We are able to associate the latent dimensions with the prior knowledge (for example, Meta data) that is available with- out ratings or reviews.
 
 \section{Experiments and Results}
 
