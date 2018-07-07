@@ -15,15 +15,6 @@
 % If IEEEtran.cls has not been installed into the LaTeX system files,
 % manually specify the path to it like:
 % \documentclass[conference]{../sty/IEEEtran}
-
-
-
-
-
-% Some very useful LaTeX packages include:
-% (uncomment the ones you want to load)
-
-% *** MATH PACKAGES ***
 %
 \usepackage[cmex10]{amsmath}
 % A popular package from the American Mathematical Society that provides
@@ -104,12 +95,11 @@
 % Do not put math or special symbols in the title.
 % title actual
 % Collaborative filtering: Techniques and Applications
-\title{Generating Recommendations from SVD, Neural network, kNN}
+\title{Recommendations based on Matrix Facotirzation and Latent Dirichlet Allocation}
 
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-
 
 \author{
 \IEEEauthorblockN{Rahul Bali}
@@ -163,7 +153,7 @@ I don't want this to happen
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-	The world has seen much change in ways which recommendations were made since the first arrival of the collaborative filtering in providing recommendations. The paper below describes the various advancements in the featured alorithms discussed here. The state of the art recommendations engines have been described with their best chances of survival. Certain trends have also made it to this work.
+	Although latent factor models (e.g., matrix factorization) achieve good accuracy in rating prediction, they suffer from several prob- lems including cold-start, non-transparency, and suboptimal recom- mendation for local users or items. In this paper, we employ textual review information with ratings to tackle these limitations. Firstly, we apply a proposed aspect-aware topic model (ATM) on the review text to model user preferences and item features from different as- pects, and estimate the aspect importance of a user towards an item. The aspect importance is then integrated into a novel aspect-aware latent factor model (ALFM), which learns user’s and item’s latent factors based on ratings. In particular, ALFM introduces a weighted matrix to associate those latent factors with the same set of aspects discovered by ATM, such that the latent factors could be used to estimate aspect ratings. Finally, the overall rating is computed via a linear combination of the aspect ratings, which are weighted by the corresponding aspect importance. To this end, our model could alleviate the data sparsity problem and gain good interpretability for recommendation. Besides, an aspect rating is weighted by an aspect importance, which is dependent on the targeted user’s preferences and targeted item’s features. Therefore, it is expected that the proposed method can model a user’s preferences on an item more accurately for each user-item pair locally. Comprehensive experimental studies have been conducted on three datasets from Amazon dataset. Results show that our method achieves significant improvement compared with strong baseline methods, especially for users with only few ratings. Moreover, our model could interpret the recommendation results in depth.
 \end{abstract}
 
 
@@ -184,16 +174,39 @@ I don't want this to happen
 %%% computer-human interaction
 %%% 
 \section{Introduction}
-I am the editor. \cite{linden2003amazon}
-fdjkalf fkdsf jkl fdjskf ls fjdsk fljsf iewof jeiw viubvuosvbsuvb dvffnfsfds. jdsfkhs jifosdfs dfskfjdsfs ds fsd dfs fsd fsf dfgsjgkke re tgerjegebjer rej e tgjr gt. rbhek jr  j k jrere er e r r.
 
-\section{Recommender Systems Techniques}
+
+Nowadays, most people use the Internet and spend more time on social networks or e-commerce
+sites than in the past. The exponential growth of the amount of information on the Internet has
+made users face challenges in finding useful information [1 – 3]. Fortunately, studying the users’
+behaviors, their preferences can be analyzed. Recommender systems (RS) are used to do so [ 4 ].
+Recommender systems adopt to provide recommendations to each user based on their activity,
+preferences, and behaviors which are consistent with the users’ personal preferences and assist them
+in decision-making [5].
+
+
+Moreover, MF cannot achieve optimal rating prediction locally for each user-item pair, because it learns the latent factors of users ($p_u$ ) and items ($q_i$) via a global optimization strategy [10]. In other words, $p_u$ and $q_i$ are optimized to achieve a global optimization over all the user-item ratings in the training dataset.1 As a result, the performance could be severely compromised locally for individual users or items. MF predicts an unknown rating by the dot product of the targeted user $u$'s and item $i$'s latent factors. The overall rating of a user towards an item $r_{u,i}$ ) is decided by the importance/contribution of all factors. Take the k-th factor as anexample, its contribution is pu,k ∗qi,k . For accurate prediction, it is important to accurately capture the importance ofeach latent factor for a user towards an item. It is well-known that different users may care about different aspects of an item. For example, in the domain of restaurants, some users care more about the taste of food while others pay more attention to the ambience. Even for the same aspect, the preference of users could be different from each other. For example, in the food aspect, some users like Chinese cuisines while some others favor Italian cuisines. Similarly, the characteristics of items on an aspect could also be different from each other.
+\cite{linden2003amazon}
+
+Recommender systems are implemented with three techniques including: content-based [6], knowledge-based [7], and collaborative filtering [8]. Collaborative filtering (CF) is one of the most commonly used techniques in RS [9 – 11]. In this study, we use collaborative filtering. In CF, opinions and ratings of similar users to the target user are used to provide recommendations. The target user is a user who should receive recommendations. In fact, the core of CF is to find the similarities between users. CF is possible in two ways: using memory-based and model-based approaches [12]; the combination of these two methods is also used [13 , 14]. The memory-based CF is used in this study. In the memory-based method, the similarity between users is calculated using one of three techniques of similarity algorithms [10, 15], similarity measures [16 – 21], or heuristics methods [22]. Similarity measures are used this study. Then, a rating is predicted for the items that are not rated by the target user using rating prediction formulas. Finally, the items with the highest predicted ratings are recommended to the target user [10,17,23].
+
+
+\section{Related Work}
+When making comments on an item (e.g., product, movie, and restaurant) in the online review/business websites, such as Amazon, reviewers also provide an overall rating, which indicates their overall preference or satisfaction towards the corresponding items. Hence, predicting users' overall ratings to unrated items or personalized rating prediction is an important research problem in recommender systems. Latent factor models (e.g., matrix factorization [9, 21, 37]) are the most widely used and successful techniques for rating prediction, as demonstrated by the Netflix Prize contest [3]. These methods characterize user's interests and item's features using latent factors inferred from rating patterns in user-item rating records. As a typical collaborative filtering technique, the performance of MF suffers when the ratings of items or users are insufficient (also known as the cold-start problem) [17]. Besides, a rating only indicates the overall satisfaction of a user towards an item, it cannot explain the underlying rationale. For example, a user could give a restaurant a high rating because of its delicious food or due to its nice ambience. Most existing MF models cannot provide such fine-grained analysis. Therefore, relying solely on ratings makes these methods hard to explicitly and accurately model users' preferences [17, 23, 26, 35, 36].
+
+\textbf{Topic-based}: These approaches extract latent topics or aspects from reviews. An early work [14] in this direction relied on domain knowledge to manually label reviews into different aspects, which requires expensive domain knowledge and high labor cost. Later on, most works attempt to extract latent topics or aspects from reviews automatically [2, 12, 17, 23, 26, 26, 31, 36, 39]. A general approach of these methods is to extract latent topics from reviews using topic models [23, 26, 31, 32, 39] or non-negative MF [2, 29] and learn latent factors from ratings using MF methods. HFT [26] and TopicMF [2] link the latent topics and latent factors by using a defined transform function. ITLFM [39] and RBLT [31] assume that the latent topics and latent factors are in the same space, and linearly combine them to form the latent representations for users and items to model the ratings in MF. CTR [32] assumes that the latent factors of items depend on the latent topic distributions of their text, and adds a latent variable to offset the topic distributions of items when modeling the ratings. RMR [23] also learns item’s features using topic models on reviews, while it models ratings using a mixture of Gaussian rather than MF methods. Diao et al. [12] propose an integrated graphical model called JMARS to jointly model aspects, ratings and sentiments for movie rating prediction. Those models all assume an one-to-one mapping between the learned latent topics from reviews and latent factors from ratings. Although we adopt the same strategy to extract latent topics and learn latent factors, our model does not have the constraint of one-to-one mapping. Besides, Zhang et al. [42] extracted aspects by decomposing the user–item rating matrix into item–aspect and user–aspect matrices. He et al. [17] extracted latent topics from reviews by modeling the user-item-aspect relation with a tripartite graph.
+
+\section{Proposed Model}
+
+
+
+\section{Experiments and Results}
 
 \section{Conclusion}
 
 \newpage
 \bibliographystyle{IEEEtran}
-\bibliography{references}
+\bibliography{ref}
 
 % that's all folks
 \end{document}
