@@ -292,6 +292,9 @@ We use the Amazon Review Dataset gathered and distributed by \cite{He2016}. This
 We use Root Mean Squared Error (RMSE) to evaluate various models.
 For each of the dataset, we randomly select 80\% as reviews training set. The remaining reviews are split evenly into validation set and testing set. The initial latent variables $z$ and $f$ are uniformly randomly assigned. We run 2500 iterations with a thinning of 50 iterations to get samples and MSE readout. We report the MSE of the testing set which has the lowest MSE on the validation set. The training of the baseline methods MF, LDAMF, CTR and HFT follow the same routine described in [16]. We use K = 5 for all models. We set hyperparameters4 $\alpha$ = 0.1, $\beta$ = 0.02, $\mu_theta$ = 0, $\sigma^2$ 0 = 1 and we use the empirical variance of x as σ2. In practice, the time required to train the RMR model is about half the time spend on training the HFT model on the same machine.
 
+\section{Rating Prediction}
+Shown in Table 3 are the MSE results. The best MSE of each dataset is in bold. We listed the performance of various models on the datasets and the average improvement. The standard deviations of MSE results are shown in parenthesis. Out of the 27 datasets, RMR performs the best on 19 datasets among all considered meth- ods.
+
 \section{Conclusion}
 
 \newpage
