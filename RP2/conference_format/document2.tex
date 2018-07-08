@@ -288,6 +288,9 @@ We conduct an empirical study of MF-LDA, Matrix Factorization and Latent Dirichl
 
 We use the Amazon Review Dataset gathered and distributed by \cite{He2016}. This dataset consists of 24 datasets that are categories in the Amazon website. This is the largest ratings dataset with text reviews publically avaliable to the best of our knowledge. We have used three datasets from these categories mentioned above. The datasets and their statistics are described in the Table 1. The datasets described have very sparse nature.
 
+\subsection{Evaluation}
+We use Root Mean Squared Error (RMSE) to evaluate various models.
+For each of the dataset, we randomly select 80\% as reviews training set. The remaining reviews are split evenly into validation set and testing set. The initial latent variables $z$ and $f$ are uniformly randomly assigned. We run 2500 iterations with a thinning of 50 iterations to get samples and MSE readout. We report the MSE of the testing set which has the lowest MSE on the validation set. The training of the baseline methods MF, LDAMF, CTR and HFT follow the same routine described in [16]. We use K = 5 for all models. We set hyperparameters4 α = 0.1, β = 0.02, µ0 = 0, σ2 0 = 1 and we use the empirical variance of x as σ2. In practice, the time required to train the RMR model is about half the time spend on training the HFT model on the same machine.
 
 \section{Conclusion}
 
