@@ -295,6 +295,9 @@ For each of the dataset, we randomly select 80\% as reviews training set. The re
 \section{Rating Prediction}
 Shown in Table 3 are the MSE results. The best MSE of each dataset is in bold. We listed the performance of various models on the datasets and the average improvement. Out of the 27 datasets, RMR performs the best on 19 datasets among all considered methods.
 
+Compared with matrix factorization (MF column in Table 3),
+RMR performs better on 26 out of the 27 datasets with an average improvement on MSE of nearly 8%. Matrix factorization method usually performs well in practice [10, 23] and is a strong baseline method. However, as is shown in our case, in datasets which are extremely sparse, MF is unable to learn an accurate representation of users/items and thus under-performs other methods which take the review text into consideration. However, in the datasets such as Music, Movies and TV and Books, which are relatively denser
+
 
 
 \section{Conclusion}
