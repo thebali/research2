@@ -302,6 +302,62 @@ We use Root Mean Squared Error (RMSE) to evaluate various models.
 For each of the dataset, we randomly select 80\% as reviews training set. The remaining reviews are split evenly into validation set and testing set. The initial latent variables $z$ and $f$ are uniformly randomly assigned. We run 2500 iterations with a thinning of 50 iterations to get samples and MSE readout. We report the MSE of the testing set which has the lowest MSE on the validation set. The training of the baseline methods MF, LDAMF, CTR and HFT follow the same routine described in [16]. We use K = 5 for all models. We set hyperparameters4 $\alpha$ = 0.1, $\beta$ = 0.02, $\mu_theta$ = 0, $\sigma^2$ 0 = 1 and we use the empirical variance of x as σ2. In practice, the time required to train the MF-LDA model is about half the time spend on training the HFT model on the same machine.
 
 \section{Rating Prediction}
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{ llllll }
+\toprule
+\textbf{Method} & \textbf{Time for Training the Model} & \textbf{RMSE} & \textbf{Recall} & \textbf{Precision}  \\
+\midrule
+Matrix Factorization & 70.49s & 1.1914 & 0.473 & 0.798  \\
+\hline
+Topic Modelling & 65.33s & 1.8145 & 0.631 & 0.539 \\
+\hline
+Combined Model & 117.89s  & \textbf{1.0787} & 0.588 & 0.751 \\ 
+\bottomrule
+\end{tabular}
+\caption{Digital Music Results}
+\label{Digital Music Results}
+\end{table}
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{ llllll }
+\toprule
+\textbf{Method} & \textbf{Time for Training the Model} & \textbf{RMSE} & \textbf{Recall} & \textbf{Precision}  \\
+\midrule
+Matrix Factorization & 89.49s & 1.1957 & 0.398 & 0.738  \\
+\hline
+Topic Modelling & 105.45s & 1.714 & 0.588 & 0.550 \\
+\hline
+Combined Model & 125.45s  & \textbf{1.1134} & 0.671 & 0.686 \\ 
+\bottomrule        
+\end{tabular}
+\caption{Health and Personal Care Results}
+% \label{Health and Personal Care Results}
+\end{table}
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{ llllll }
+\toprule
+\textbf{Method} & \textbf{Time for Training the Model} & \textbf{RMSE} & \textbf{Recall} & \textbf{Precision}  \\
+\midrule
+Matrix Factorization & 78.69s & 1.2914 & 0.510 & 0.780  \\
+\hline
+Topic Modelling & 97.45s & 1.6145 & 0.653 & 0.578 \\
+\hline
+Combined Model & 122.48s  & \textbf{1.1234} & 0.563 & 0.647 \\ 
+\bottomrule        
+\end{tabular}
+\caption{Cell Phones and Accessories Results}\label{Cell Phones and Accessories Results}
+\end{table}
+
+
+
 Shown in Table 3 are the MSE results. The best MSE of each dataset is in bold. We listed the performance of various models on the datasets and the average improvement.
 
 We consider the improvements of R​MR over CTR (3.28\%) and HFT (1.22\%) significant because both of these​ two baselines are full-fledged models that take both the ratings and reviews into con- sideration. Also, these improvements are verified on 27 r​eal-life datasets. In a real system where recommendation plays a central ro​le, e.g. Amazon, Netflix, these ​improvements could le​ad to better revenue and profit.	
