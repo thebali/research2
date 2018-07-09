@@ -303,6 +303,10 @@ For each of the dataset, we randomly select 80\% as reviews training set. The re
 
 \section{Rating Prediction}
 
+Shown in Table 2,3,4 are the RMSE results. We listed the performance of various models on the datasets and the average improvement.
+
+We consider the improvements of R​MR over CTR (3.28\%) and HFT (1.22\%) significant because both of these​ two baselines are full-fledged models that take both the ratings and reviews into con- sideration. Also, these improvements are verified on 27 r​eal-life datasets. In a real system where recommendation plays a central ro​le, e.g. Amazon, Netflix, these ​improvements could le​ad to better revenue and profit.	
+
 
 \begin{table}[h]
 \centering
@@ -356,12 +360,6 @@ Combined Model & 122.48s  & \textbf{1.1234} \\
 \end{tabular}
 \end{table}
 
-
-
-Shown in Table 3 are the MSE results. The best MSE of each dataset is in bold. We listed the performance of various models on the datasets and the average improvement.
-
-We consider the improvements of R​MR over CTR (3.28\%) and HFT (1.22\%) significant because both of these​ two baselines are full-fledged models that take both the ratings and reviews into con- sideration. Also, these improvements are verified on 27 r​eal-life datasets. In a real system where recommendation plays a central ro​le, e.g. Amazon, Netflix, these ​improvements could le​ad to better revenue and profit.	
-​
 \subsection{Interpretability of Topics}
 Apart from being more accurate at pred​iction, another advantage of MF-LDA is that it learns interpretable latent topics. We show two examples of the top words in each topic learnt in MF-LDA in Table 4 and Table 5. Table 4 shows the top words for topics learnt with software dataset. Note that Roxio is software for burning DVDs and Quicken is personal financial software. Leopard and Tiger are the code name of Mac OS X and Parallels is a popular virtual ma- chine on OS X. The fourth topic is about the company Microsoft and its products and the last topic is related to Linux. Table 5 shows the topwords for topics learnt with Movie and TV dataset. The first topic is dedicated to workout related videos. The second topic con- tains commonly used words to describe TV series. Batman, Matrix trilogy, Alien and Harry Potter are either science fiction, adventure or fantasy movies. Godzilla is a disaster thriller and Hitchcock is a famous director of psychological thrillers. Nicole Kidman is the leading actress of the classic thriller “Eyes Wide Shut”. Clearly these interpretable topicswould help us understand items and users better. For items, the top topic words can be employed as extended tags attached to the item and may improve the prediction accuracy in a tag-aware recommender system [5]. We may also gain better understanding of items by analyzing the topic distri- bution similarities. For users, once obtaining the topic preferences, we can recommend “cold” items which have fewor no ratings to the users with confidence. For example, if we know that a user tends to rate high for topic three and five in Table 5, we can confidently recommend the movie “Interstellar” (a Sci-Fi Thriller movie) even if this movie is not being shown yet. Our prior knowledge of items therefore can help alleviate the cold-start problem.
 
