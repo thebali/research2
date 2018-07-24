@@ -298,7 +298,7 @@ We use Root Mean Squared Er​ror (RMSE) to evaluate various models.
 For each of the dataset, w​e randomly select 80\% as reviews training set. The remaining review​s are split evenly into validation set and testing set. The initial la​tent variables $z$ and $f$ are uniformly randomly assigned. We repor​t the RMSE of the testing set whi​ch has the lowest RMSE on the valid​ation set. The training of the b​aseline methods MF, LDAMF, CTR and HF​T follow the same routi​ne described in [11]. We use K = 5 for all mo​dels. We set hyperparam​eters: $\alpha$ = 0.1, $\beta$ = 0.​02, $\mu_\theta$ = 0, $\sigma^2$ = 1 and we use the empirical varia​nce of $x$ as $\sigma^2$.
 
 \section{Rating Prediction}
-Shown in Table 2,3,4 are the RMSE results. We listed the performance of various models on the datasets and the average improvement.
+Shown in Table 2,3,4 are the RMSE results. We listed the performance of selected models and proposed model on the datasets and the average improvement.
 We consider the improvements of Combined Model(MF-LDA) significant over the general Matrix factorization techniques which are considered to be the benchmark in the recommendation industry. In a real system where r​ecommendation plays a central ro​le, e.g. Amazon, Netflix, these ​improvements could le​ad to bett​er revenue and profit.
 
 \begin{table}[h]
