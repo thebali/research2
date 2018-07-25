@@ -288,14 +288,7 @@ Above stated generative process, we are able to recognize that the text reviews 
 
 User-topics explains the user behaviour for valuing the aspects which are denoted by each latent topic. The item is modeled as a distribution of topics which together with the user-topic specific Gaussian conveyances control how a user would rate the item in the system. The ratings and reviews of the items are jointly characterized by the same item topic distribution $\theta$. 
 
-The higher the user writes about a particular aspect of an item, the higher the distribution on these specific topics, which thus affects the user rating that the user might assign to that specific item. We choose to model ratings using blend of Gaussians from two reasons. Firstly, we can maintain the strategic distance from the troublesome decision of the transformation work employed in [13]. As discussed, transformation function is restrictive in nature and scaling parameter is significant to choose. Secondly, we are able to retain the comprehensibility of the topics without any information loss. The interpretability of the latent 
-
-
-
-%% //////////////////////
-
-The interpreta​b​ility of the latent dimensions is an im​portant factor to solve the c​old start problem. Take book r​ecommend​ation for example, when a user showed strong interest in dimensi​on with high p​robability onwords "da vinci code dan brown". We can ​confidently recommend Dan Brown’s​ new book "Inferno". We are a​ble ​to associate the latent dimen​sions with the prior k​nowledge (​for example, Meta data) that is avai​lable without ratings or reviews.
-
+The higher the user writes about a particular aspect of an item, the higher the distribution on these specific topics, which thus affects the user rating that the user might assign to that specific item. We choose to model ratings using blend of Gaussians from two reasons. Firstly, we can maintain the strategic distance from the troublesome decision of the transformation work employed in [13]. As discussed, transformation function is restrictive in nature and scaling parameter is significant to choose. Secondly, we are able to retain the comprehensibility of the topics without any information loss. The interpretability of the latent topics is an important factor to solve the cold start problem. Using the music recommendation in the example, when a user is displaying strong interest in dimensions with high probability for words "billie jean michael jackson". We can hopefully recommend all the new music from Michael Jackson. We are also able to relate the prior information(​for example, Meta data) with the latent topics that are available with or without ratings or reviews.
 %% rahul​bali
 
 \section{Experiments and Results}
