@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.18)  11 JUN 2018 23:09
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6670 64-bit) (preloaded format=xelatex 2018.4.18)  7 JUL 2018 17:05
 entering extended mode
-**"E:/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format/document.tex"
-("E:/ACADEMICS/PEC---/ME 4 SEM/RP1/conference_format/document.tex"
+**./document.tex
+(document.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
 (IEEEtran.cls
@@ -13,58 +13,31 @@ Document Class: IEEEtran 2012/12/27 V1.8 by Michael Shell
 \@IEEEtrantmpcountA=\count80
 \@IEEEtrantmpcountB=\count81
 \@IEEEtrantmptoksA=\toks14
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 368.
+LaTeX Font Info:    Try loading font information for TU+ptm on input line 368.
+LaTeX Font Info:    No file TUptm.fd. on input line 368.
 
-("C:\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
+LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 368.
+
 -- Using 8.5in x 11in (letter) paper.
--- Using PDF output.
+-- Using DVI output.
 \@IEEEnormalsizeunitybaselineskip=\dimen104
 -- This is a 10 point document.
 \CLASSINFOnormalsizebaselineskip=\dimen105
 \CLASSINFOnormalsizeunitybaselineskip=\dimen106
 \IEEEnormaljot=\dimen107
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+
+LaTeX Font Warning: Font shape `TU/ptm/bx/n' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 726.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 726.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/bx/it' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 726.
+
 \IEEEilabelindentA=\dimen108
 \IEEEilabelindentB=\dimen109
 \IEEEilabelindent=\dimen110
@@ -153,13 +126,12 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 ("C:\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: xetex.def on input line 225.
 
-("C:\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+("C:\MiKTeX 2.9\tex\latex\graphics-def\xetex.def"
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
@@ -174,6 +146,7 @@ ings
 \@dblbotnum=\count105
 \c@dblbotnumber=\count106
 )
+("C:\MiKTeX 2.9\tex\latex\breakcites\breakcites.sty")
 ("C:\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2018/02/14 3.18 The Babel package
 
@@ -195,7 +168,8 @@ File: babel.def 2018/02/14 3.18 Babel common definitions
 \babel@savecnt=\count107
 \U@D=\dimen126
 
-("C:\MiKTeX 2.9\tex\generic\babel\txtbabel.def")
+("C:\MiKTeX 2.9\tex\generic\babel\xebabel.def"
+("C:\MiKTeX 2.9\tex\generic\babel\txtbabel.def"))
 \bbl@dirlevel=\count108
 )
 \l@canadian = a dialect from \language\l@american 
@@ -218,7 +192,7 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 ("C:\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: xetex.def on input line 99.
 )
 \Gin@req@height=\dimen127
 \Gin@req@width=\dimen128
@@ -298,18 +272,16 @@ Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode not found.
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-))
-("C:\MiKTeX 2.9\tex\latex\cite\cite.sty"
+
+Package epstopdf Warning: Drivers other than `pdftex' and `luatex' are not supp
+orted.
+
+)) ("C:\MiKTeX 2.9\tex\latex\cite\cite.sty"
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
@@ -320,77 +292,39 @@ LaTeX Warning: Label `fig:verticalcell' multiply defined.
 )
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
- ("C:\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count113
-\scratchdimen=\dimen145
-\scratchbox=\box31
-\nofMPsegments=\count114
-\nofMParguments=\count115
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count116
-\MPscratchDim=\dimen146
-\MPnumerator=\count117
-\makeMPintoPDFobject=\count118
-\everyMPtoPDFconversion=\toks22
-)
-<images/history-use.png, id=1, 1216.545pt x 413.545pt>
-File: images/history-use.png Graphic file (type png)
-<use images/history-use.png>
-Package pdftex.def Info: images/history-use.png  used on input line 193.
-(pdftex.def)             Requested size: 516.0pt x 175.41039pt.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
 
 
-LaTeX Warning: Citation `su2009survey' on page 1 undefined on input line 210.
+LaTeX Font Warning: Font shape `TU/ptm/m/sc' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 186.
 
+File: images/history-use.png Graphic file (type bmp)
+<images/history-use.png>
 
-LaTeX Warning: Citation `zuva2012survey' on page 1 undefined on input line 211.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-LaTeX Warning: Citation `herlocker2004evaluating' on page 1 undefined on input 
-line 212.
-
-
-LaTeX Warning: Citation `linden2003amazon' on page 1 undefined on input line 21
-3.
-
-
-LaTeX Warning: Citation `adomavicius2005toward' on page 1 undefined on input li
-ne 214.
-
-
-LaTeX Warning: Citation `park2012literature' on page 1 undefined on input line 
-215.
-
-[1{C:/Users/cramdog/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+ [1
 
 
 ]
-
-LaTeX Warning: Citation `sarwar2001item' on page 2 undefined on input line 254.
-
-
-[2 <./images/history-use.png>]
-<images/chart.png, id=19, 448.67625pt x 348.55219pt>
-File: images/chart.png Graphic file (type png)
-<use images/chart.png>
-Package pdftex.def Info: images/chart.png  used on input line 261.
-(pdftex.def)             Requested size: 516.0pt x 400.8957pt.
- [3 <./images/chart.png>]
-Overfull \hbox (10.76727pt too wide) detected at line 338
+[2]
+File: images/chart.png Graphic file (type bmp)
+<images/chart.png>
+ [3]
+Overfull \hbox (10.76727pt too wide) detected at line 329
 \OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; i\OT1/cmr/m/n/10 ) = [
 ][] + []
  []
@@ -398,45 +332,60 @@ Overfull \hbox (10.76727pt too wide) detected at line 338
 [4]
 
 LaTeX Warning: Citation `ekstrand2011collaborative' on page 5 undefined on inpu
-t line 356.
+t line 346.
 
 
-Underfull \hbox (badness 1990) in paragraph at lines 360--361
-[]\OT1/ptm/m/n/10 Recommendations used for the large large on-line e-
- []
-
-
-LaTeX Warning: Citation `heree' on page 5 undefined on input line 383.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 382--384
-
+Underfull \hbox (badness 1622) in paragraph at lines 350--351
+\TU/ptm/m/sc/10 commerce companies like eBay, Flipkart and Ama-
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 389--391
+
+LaTeX Warning: Citation `heree' on page 6 undefined on input line 373.
+
+
+Underfull \hbox (badness 2401) in paragraph at lines 372--374
+[]\TU/ptm/m/sc/10 r[] Some other new classified metrics are Recall,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--374
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--397
+Underfull \hbox (badness 10000) in paragraph at lines 379--381
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--404
+Underfull \hbox (badness 10000) in paragraph at lines 385--387
 
  []
 
-<images/AUC.png, id=33, 458.46281pt x 173.89969pt>
-File: images/AUC.png Graphic file (type png)
-<use images/AUC.png>
-Package pdftex.def Info: images/AUC.png  used on input line 409.
-(pdftex.def)             Requested size: 206.39685pt x 78.28862pt.
-(document.bbl
-Overfull \hbox (45.43745pt too wide) in paragraph at lines 26--32
-\OT1/ptm/m/n/8 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.45.5230
-&rep=rep1&type=pdf 
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--394
+
+ []
+
+File: images/AUC.png Graphic file (type bmp)
+<images/AUC.png>
+[6] (document.bbl
+Overfull \hbox (97.04001pt too wide) in paragraph at lines 42--48
+\TU/ptm/bx/it/8 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.45.523
+0&rep=rep1&type=pdf 
+ []
+
+
+Overfull \hbox (24.32pt too wide) in paragraph at lines 51--56
+\TU/ptm/bx/it/8 https://www.sciencedirect.com/science/article/pii/0022249675900
+012 
+ []
+
+
+Overfull \hbox (39.20001pt too wide) in paragraph at lines 83--89
+\TU/ptm/bx/it/8 http://rfrost.people.si.umich.edu/courses/SI110/readings/Privac
+y/Stupid
  []
 
 )
@@ -451,35 +400,27 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6 <./images/AUC.png>] (document.aux)
+[7
+
+] (document.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
- ) 
+ )
+(\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
- 4059 strings out of 492976
- 57824 string characters out of 3125865
- 143797 words of memory out of 3000000
- 7861 multiletter control sequences out of 15000+200000
- 38868 words of font info for 70 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 42i,9n,35p,1757b,252s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmex10.pfb><C:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-><C:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmmi7.pfb><C:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmsy5.pfb><C:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C
-:/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/MiKTeX 2.9/fonts/type1/urw/ti
-mes/utmbi8a.pfb><C:/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/MiKTeX 2.9/
-fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (6 pages, 221106 bytes).
-PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3674 strings out of 427799
+ 51098 string characters out of 3147465
+ 150404 words of memory out of 3000000
+ 7615 multiletter control sequences out of 15000+200000
+ 4184 words of font info for 28 fonts, out of 3000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 42i,9n,35p,1705b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
 
+Output written on document.pdf (7 pages).

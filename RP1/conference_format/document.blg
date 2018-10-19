@@ -1,18 +1,16 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: document.aux
 The style file: IEEEtran.bst
 Database file #1: references.bib
-Warning--I didn't find a database entry for "su2009survey"
-Warning--I didn't find a database entry for "zuva2012survey"
-Warning--I didn't find a database entry for "herlocker2004evaluating"
-Warning--I didn't find a database entry for "linden2003amazon"
-Warning--I didn't find a database entry for "adomavicius2005toward"
-Warning--I didn't find a database entry for "park2012literature"
-Warning--I didn't find a database entry for "sarwar2001item"
 Warning--I didn't find a database entry for "ekstrand2011collaborative"
 Warning--I didn't find a database entry for "heree"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in Su2009
+Name 1 in "{Jonathan L. Herlocker, Joseph A. Konstan, Al Borchers}, And and Riedl, John and Herlocker, Jonathan L and Konstan, Joseph A and Borchers, Al and Riedl, John" has a comma at the end for entry JonathanL.HerlockerJosephA.KonstanAlBorchers1999
+while executing---line 2403 of file IEEEtran.bst
+Warning--empty journal in Pagano2017
+Warning--empty journal in Ekstrand2011
 
 Done.
-(There were 9 warnings)
+(There was 1 error message)

@@ -87,12 +87,12 @@ He, R. and McAuley, J. (2016).
 \newblock {Ups and Downs: Modeling the Visual Evolution of Fashion Trends with
   One-Class Collaborative Filtering}.
 
-\bibitem[Herlocker et~al., 2004a]{Herlocker2004a}
+\bibitem[Herlocker et~al., 2004a]{Herlocker2004}
 Herlocker, J.~L., Konstan, J.~A., Terveen, L.~G., and Riedl, J.~T. (2004a).
 \newblock {Evaluating collaborative filtering recommender systems}.
 \newblock {\em ACM Transactions on Information Systems}, 22(1):5--53.
 
-\bibitem[Herlocker et~al., 2004b]{Herlocker2004}
+\bibitem[Herlocker et~al., 2004b]{Herlocker2004a}
 Herlocker, J.~L., Konstan, J.~A., Terveen, L.~G., and Riedl, J.~T. (2004b).
 \newblock {Evaluating collaborative filtering recommender systems}.
 \newblock {\em ACM Transactions on Information Systems}, 22(1):5--53.
@@ -185,8 +185,8 @@ Park, D.~H., Kim, H.~K., Choi, I.~Y., and Kim, J.~K. (2012).
   research}.
 \newblock {\em Expert Systems with Applications}, 39(11):10059--10072.
 
-\bibitem[{RecSys 2018}, ]{RecSys2018}
-{RecSys 2018}.
+\bibitem[RecSys, 2018]{RecSys2018}
+RecSys (2018).
 \newblock {RecSys 2018 – Challenge – RecSys}.
 \newblock https://recsys.acm.org/recsys18/challenge/.
 

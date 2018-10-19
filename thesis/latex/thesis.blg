@@ -2,7 +2,6 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: acknowledge.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: intro.aux
-A level-1 auxiliary file: problem.aux
 A level-1 auxiliary file: chap2.aux
 A level-1 auxiliary file: chap3.aux
 A level-1 auxiliary file: chap4.aux
@@ -27,7 +26,6 @@ while executing---line 1098 of file apalike.bst
 Warning--there's a number but no volume in McNee2006
 Warning--empty journal in Mooney1999
 Warning--empty journal in Pagano2017
-Warning--empty year in RecSys2018
 Warning--empty publisher in Ricci2015
 Warning--there's a number but no volume in Schein2002
 (There were 3 error messages)
